@@ -1,21 +1,90 @@
-# Runtime state
+# Python cache and build artifacts
+__pycache__/
+*.py[codz]
+*$py.class
+*.so
+.Python
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.manifest
+*.spec
+
+# Test, coverage, and tool caches
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache/
+.pytest_cache/
+.hypothesis/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+cython_debug/
+.ipynb_checkpoints/
+
+# Virtual environments and local config
+.env
+.envrc
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.pdm-python
+.pdm-build/
+.pixi/
+__pypackages__/
+
+# Runtime state and private local data
 logs/
 data/
 checkpoints/
 .lae/
-__pycache__/
-*.py[cod]
+instance/
+.webassets-cache
+.scrapy/
+/site
+docs/_build/
 
-# Databases and trajectories
+# Databases, trajectories, and generated state
 *.db
 *.db-*
 *.db.*
+db.sqlite3
+db.sqlite3-journal
 *.jsonl
+*.rdb
+*.aof
+*.pid
+celerybeat-schedule
+celerybeat.pid
 
-# Logs and errors
+# Logs and command outputs
 *.log
 *.err
 *.out
+pip-log.txt
+pip-delete-this-directory.txt
 
 # Model weights and generated artifacts
 *.pt
@@ -29,7 +98,10 @@ __pycache__/
 *.bak
 *.tmp
 
-# Environment
-.env
-.venv/
-venv/
+# Editor/project local files
+.spyderproject
+.spyproject
+.ropeproject
+tempCodeRunnerFile.py
+.streamlit/secrets.toml
+.pypirc

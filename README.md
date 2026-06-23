@@ -134,3 +134,7 @@ tl-ego/
 这个仓库是从本地 OpenClaw 工作区整理出的源码发布版，只包含可审查的源码、测试脚本和文档。
 
 未随仓库发布的内容包括：运行日志、SQLite 数据库、轨迹 JSONL、模型权重、缓存、检查点、个人记忆数据和本地修复备份。完整运行通常还需要本地 embedding/LLM/GAC 服务以及对应的私有数据资产。
+
+## License
+
+Apache License 2.0. See LICENSE.
