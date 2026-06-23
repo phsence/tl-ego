@@ -1,0 +1,35 @@
+# Runtime state
+logs/
+data/
+checkpoints/
+.lae/
+__pycache__/
+*.py[cod]
+
+# Databases and trajectories
+*.db
+*.db-*
+*.db.*
+*.jsonl
+
+# Logs and errors
+*.log
+*.err
+*.out
+
+# Model weights and generated artifacts
+*.pt
+*.pth
+*.npy
+*.npz
+*.png
+
+# Local repair/backups
+*.l5bak*
+*.bak
+*.tmp
+
+# Environment
+.env
+.venv/
+venv/
