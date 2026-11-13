@@ -1,0 +1,11 @@
+{
+ "description": "Frozen hidden suite v2 for reach_and_survive (re-frozen 2026-09-22, pool 12->100, rule-generated + read-only probe; v1 archived). Success decided by independent RCON readback only.",
+ "suite": "hidden",
+ "required_tasks": [
+  "reach_and_survive"
+ ],
+ "assets": {
+  "assets/holdout_instances.json": "e99dd24e7af0f0c1f3073188d0cb2c40334ba805fab49e605a72e7af2fe2f14c"
+ },
+ "schema": "ego_capability_suite_manifest.v1"
+}

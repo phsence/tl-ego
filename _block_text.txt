@@ -1,0 +1,16 @@
+def _is_oscillating_integrator_action():
+        """Return True if last 32 ticks show bistable integrator oscillation (integrator <-> any type, >= 3 flips)."""
+        _traj = RESTING_STATE.get("trajectory", [])
+        if len(_traj) < 32:
+            return False
+        _recent = _traj[-32:]
+        _types = [_t.get("raw_attractor_dominant", _t.get("dominant", "")) for _t in _recent]
+        _int_flips = sum(1 for _i in range(1, len(_types)) if (_types[_i] == "integrator") != (_types[_i - 1] == "integrator"))
+        return _int_flips >= 3 and "integrator" in set(_types)
+
+    _int_press_ctr = int(observation.get("_int_press_counter", 0) or 0)
+    # 鎼俵5g-20260730-000101: stagnation override independence fix.
+    # Previously all 3 branches were AND-ed with 'dominant != integrator', making
+    # the stagnation override dead code when integrator IS dominant + stagnation >= 30.
+    # Fix: if-elif-elif 閳�?stagnation override fires regardless of dominant type.
+    if _int_press_ctr > 0 or _is_oscillating_integrator_action()

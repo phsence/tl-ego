@@ -29,8 +29,14 @@ from typing import Optional, Dict, Any, List
 
 # ─── 路径 ─────────────────────────────────────────────
 WORKSPACE = Path(__file__).resolve().parent.parent.parent
-GRAPH_DB = Path.home() / ".openclaw" / "graph-memory.db"
-AGENT_MEMORY_DB = Path.home() / "memory" / "memu.db"
+# 2026-09-06: was Path.home() — service runs as LocalSystem, whose home is
+# systemprofile, so graph_db.exists() was always False → graph retrieval
+# silently returned [] under nssm (worked only in user-shell tests).
+GRAPH_DB = Path(__file__).resolve().parents[3] / "graph-memory.db"
+# 2026-08-29 fix: was Path.home()/"memory"/"memu.db" (never existed → retrieval
+# layer 3 was permanently dead). Now points at the live DB that tl_ego_server
+# (llm_classify [Past Experience]) and sync_mc_activity write/read.
+AGENT_MEMORY_DB = Path(__file__).resolve().parents[2] / "memory" / "memu.db"
 
 # ─── Hy-Memory 端点 ───────────────────────────────────
 HY_MEMORY_URL = "http://127.0.0.1:19527"
@@ -125,32 +131,57 @@ class MemoryBridge:
             return []
 
     def _retrieve_agent_memory(self, query: str, limit: int) -> List[str]:
-        """从 agent-memory (memu.db) 关键词检索，替代已禁用的 Hy-Memory。"""
+        """从 agent-memory (memu.db) 关键词检索，替代已禁用的 Hy-Memory。
+
+        2026-08-29 fix: 旧实现 (a) 指向不存在的 ~/memory/memu.db（第三层检索
+        永远返回空），(b) 查询虚构的 memories 表 schema（实际表是 memory_items，
+        列为 summary/content/memory_type/confidence/recalls/salience/ts），
+        (c) 直接整串 LIKE，中文长句永远无法命中。现按活库真实 schema 重写，
+        并移植 tl_ego_server._memory_search 的 CJK bigram 分词。
+        """
         try:
-            db_path = Path.home() / "memory" / "memu.db"
+            db_path = Path(AGENT_MEMORY_DB)
             if not db_path.exists():
                 return []
             conn = sqlite3.connect(str(db_path))
             cur = conn.cursor()
 
-            tokens = [t for t in query.strip().split() if len(t) >= 2]
+            # Tokenize like tl_ego_server._memory_search: CJK words + bigrams,
+            # ASCII words as-is, so CJK queries can actually hit rows.
+            token_set = set()
+            for tok in query.strip().split():
+                if len(tok) >= 2:
+                    token_set.add(tok)
+                    if any('\u4e00' <= ch <= '\u9fff' for ch in tok):
+                        for i in range(len(tok) - 1):
+                            token_set.add(tok[i:i + 2])
+            tokens = [t for t in token_set if len(t) >= 2]
             if not tokens:
                 conn.close()
                 return []
+
+            # 2026-09-06: same expression-tree cap as _retrieve_graph —
+            # CJK bigrams blow past SQLite's 1000-depth OR limit.
+            def _tok_rank(s):
+                return (all(c.isascii() for c in s), len(s))
+            tokens = sorted(tokens, key=_tok_rank, reverse=True)[:12]
 
             clauses = []
             params = []
             for tok in tokens:
                 p = f"%{tok}%"
-                clauses.append("(text LIKE ? OR summary LIKE ?)")
+                clauses.append("(summary LIKE ? OR content LIKE ?)")
                 params.extend([p, p])
 
             where_sql = " OR ".join(clauses)
             params.append(limit)
+            # Rank like the server: confidence dominates, fresh rows win ties.
             cur.execute(
-                f"SELECT id, text, type, created_at, score "
-                f"FROM memories WHERE ({where_sql}) "
-                f"ORDER BY created_at DESC LIMIT ?",
+                f"SELECT id, summary, content, memory_type, confidence, recalls, ts "
+                f"FROM memory_items WHERE ({where_sql}) "
+                f"ORDER BY (salience * 0.4 + confidence * 10 + MIN(recalls, 50) * 0.1 "
+                f"+ (ts - strftime('%s','now')) / 86400.0 * 24) DESC, id DESC "
+                f"LIMIT ?",
                 params
             )
             rows = cur.fetchall()
@@ -158,10 +189,14 @@ class MemoryBridge:
 
             lines = []
             for row in rows:
-                mem_id, text, mem_type, created_at, score = row
-                text_preview = (text or "")[:300]
+                mem_id, summary, content, mem_type, confidence, recalls, ts = row
+                text_preview = (content or summary or "")[:300]
                 src = mem_type or "agent"
-                lines.append(f"  [{src}|score={score or 0:.2f}|{mem_id}] {text_preview}")
+                try:
+                    score = float(confidence or 0)
+                except (TypeError, ValueError):
+                    score = 0.0
+                lines.append(f"  [{src}|score={score:.2f}|{mem_id}] {text_preview}")
             return lines
         except Exception as e:
             print(f"  [memory_bridge] agent-memory retrieve failed: {e}")
@@ -181,22 +216,80 @@ class MemoryBridge:
                 conn.close()
                 return []
 
+            # 2026-09-06 fix: whitespace-only split turned a whole CJK sentence
+            # into ONE token that LIKE-matched nothing (graph retrieval blind
+            # for Chinese queries). Port the CJK bigram tokenizer from
+            # tl_ego_server._memory_search so mixed CN/EN queries hit rows.
+            import re as _re
+            _CJK = _re.compile(r"[\u4e00-\u9fff\u3400-\u4dbf]")
+            token_set = set()
+            for tok in tokens:
+                parts = _re.findall(r"[A-Za-z0-9_]+|[\u4e00-\u9fff\u3400-\u4dbf]+", tok)
+                for part in parts:
+                    if _CJK.match(part):
+                        if 2 <= len(part) <= 12:
+                            token_set.add(part)
+                        for i in range(len(part) - 1):
+                            token_set.add(part[i:i + 2])
+                    elif len(part) >= 2:
+                        token_set.add(part)
+            tokens = [t for t in token_set if len(t) >= 2]
+            if not tokens:
+                conn.close()
+                return []
+
+            # 2026-09-06: cap clause count — CJK bigrams from one sentence
+            # produce 100+ OR-terms -> SQLite "Expression tree is too large
+            # (maximum depth 1000)" -> retrieval silently returns []. Keep
+            # the most specific tokens: full ASCII keywords first, then
+            # longest CJK words.
+            def _tok_rank(s):
+                return (all(c.isascii() for c in s), len(s))
+            tokens = sorted(tokens, key=_tok_rank, reverse=True)[:12]
+
             clauses = []
             params = []
             for tok in tokens:
                 p = f"%{tok}%"
-                clauses.append("(content LIKE ? OR description LIKE ? OR type LIKE ?)")
-                params.extend([p, p, p])
+                # 2026-09-06: include name — TASK/EVENT nodes carry the key
+                # facts in name (e.g. 'world-verify-tick-7667',
+                # 'torch-line-third-verification'), not content.
+                clauses.append("(name LIKE ? OR content LIKE ? OR description LIKE ? OR type LIKE ?)")
+                params.extend([p, p, p, p])
 
             where_sql = " OR ".join(clauses)
             params.append(limit)
+            # 2026-09-06 fix: created_at has mixed types (35931 int-ms vs 1132
+            # ISO-text rows). SQLite sorts text > integers, so bare
+            # ORDER BY created_at DESC always surfaced stale ISO rows
+            # (2026-07 arxiv backfill) above today's records. Normalize both
+            # to epoch seconds for ordering. CAST is required: strftime
+            # returns TEXT which sorts above any REAL.
+            _TS = "CASE typeof(created_at)\n                             WHEN 'integer' THEN created_at / 1000.0\n                             ELSE CAST(strftime('%s', substr(created_at, 1, 19)) AS REAL)\n                           END"
+            # Name matches first (TASK/EVENT names carry the facts), then
+            # content matches — else query-echo events crowd out the real
+            # verification records.
             cur.execute(
-                f"SELECT type, name, description, content, created_at "
-                f"FROM gm_nodes WHERE ({where_sql}) "
-                f"ORDER BY created_at DESC LIMIT ?",
-                params
+                f"SELECT type, name, description, content, {_TS} AS ts_s "
+                f"FROM gm_nodes WHERE ({where_sql}) AND name LIKE ? "
+                f"ORDER BY ts_s DESC LIMIT ?",
+                params[:-1] + [f"%{tokens[0]}%", limit]
             )
             rows = cur.fetchall()
+            if len(rows) < limit:
+                seen = {r["name"] for r in rows}
+                cur.execute(
+                    f"SELECT type, name, description, content, {_TS} AS ts_s "
+                    f"FROM gm_nodes WHERE ({where_sql}) "
+                    f"ORDER BY ts_s DESC LIMIT ?",
+                    params
+                )
+                for r in cur.fetchall():
+                    if r["name"] not in seen:
+                        rows.append(r)
+                        seen.add(r["name"])
+                        if len(rows) >= limit:
+                            break
             conn.close()
 
             lines = []
@@ -308,8 +401,35 @@ class MemoryBridge:
 
         return hy_ok or gm_ok  # 至少一个成功就算成功
 
+    def _write_memu(self, text: str) -> bool:
+        """Idempotent insert into agent-memory (memu.db).
+
+        The deterministic keyword channel: no LLM in the path, so recall's
+        LIKE tokens hit it regardless of hy-memory's extractor mood.
+        Idempotent on content so the hy fallback and the sediment dual-write
+        cannot duplicate rows.
+        """
+        try:
+            conn = sqlite3.connect(str(AGENT_MEMORY_DB))
+            conn.execute(
+                "INSERT INTO memory_items (summary, content, memory_type, confidence, recalls, salience, ts) "
+                "SELECT ?, ?, 'contemplation', 0.9, 0, 0.5, strftime('%s','now') "
+                "WHERE NOT EXISTS (SELECT 1 FROM memory_items WHERE content = ?)",
+                (text[:200], text, text)
+            )
+            conn.commit(); conn.close()
+            return True
+        except Exception as e:
+            print(f"  [memory_bridge] memu.db write failed: {e}")
+            return False
+
     def _write_hy(self, text: str) -> bool:
         """写入 Hy-Memory"""
+        # 2026-10-27: a 200 response with success:false (502 EMPTY_RESPONSE —
+        # the extractor LLM returned empty on this content) used to be a
+        # silent drop. Content-triggered, so retrying the same text never
+        # helps; route it to the same memu.db fallback as the exception path.
+        _ok = False
         try:
             payload = {
                 "text": text,
@@ -324,10 +444,21 @@ class MemoryBridge:
             )
             with urllib.request.urlopen(req, timeout=30) as resp:
                 result = json.loads(resp.read().decode())
-            return result.get("success", False)
+            _ok = bool(result.get("success", False))
+            if not _ok:
+                print(f"  [memory_bridge] Hy-Memory rejected: "
+                      f"{str(result.get('error_message'))[:120]}", flush=True)
         except Exception as e:
             print(f"  [memory_bridge] Hy-Memory write failed: {e}")
-            return False
+        if _ok:
+            return True
+        # 2026-09-06: fallback to agent-memory (memu.db) so remember()
+        # still persists when Hy-Memory (:19527) is down — otherwise
+        # writes silently fail and recall has nothing to find.
+        if self._write_memu(text):
+            print("  [memory_bridge] Hy-Memory unavailable → wrote to memu.db fallback", flush=True)
+            return True
+        return False
 
     def _write_graph(self, query: str, result: dict) -> bool:
         """

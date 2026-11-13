@@ -1,0 +1,2050 @@
+{
+  "status": "ok",
+  "runtime_generation_id": "ego-202609141631515472750800-19444-446bad309868",
+  "runtime_identity": {
+    "schema": "ego_runtime_identity.v1",
+    "runtime_generation_id": "ego-202609141631515472750800-19444-446bad309868",
+    "boot_timestamp": "2026-09-14T16:31:51.547275+08:00"
+  },
+  "uptime_s": 381.7,
+  "neurons": 10000000,
+  "full_edges": 13356980,
+  "edge_view": {
+    "scope": "EDGE_ACTIVE_runtime_cache",
+    "cached_source_neurons": 3277,
+    "cached_edge_count": 13356980,
+    "cached_type_counts": {
+      "social": 57,
+      "sensory": 235,
+      "action": 389,
+      "memory": 256,
+      "cultural": 59,
+      "integrator": 297,
+      "curiosity": 108,
+      "spatial": 56,
+      "decider": 208,
+      "rule_modification": 323,
+      "emotional": 60,
+      "veto": 369,
+      "ethical": 78,
+      "planning": 116,
+      "meta": 78,
+      "doubt": 324,
+      "aesthetic": 58,
+      "architect": 38,
+      "temporal": 80,
+      "unknown": 88
+    },
+    "active_type_counts": {
+      "rule_modification": 7,
+      "unknown": 18,
+      "curiosity": 5,
+      "planning": 7,
+      "aesthetic": 3,
+      "cultural": 4,
+      "integrator": 6
+    },
+    "note": "full_edges is not the EdgeStore total; edges load lazily on first access"
+  },
+  "edge_store": {
+    "active_count": 3277,
+    "cold_count": 4,
+    "total_count": 3281,
+    "active_source_count": 3277,
+    "cold_source_count": 4,
+    "total_source_count": 3281,
+    "active_edge_count": 13356980,
+    "cold_edge_count": 6670,
+    "total_edge_count": 13363650,
+    "compatible_id_prefixes": [
+      "n-action-",
+      "n-aesthetic-",
+      "n-architect-",
+      "n-cultural-",
+      "n-curiosity-",
+      "n-decider-",
+      "n-doubt-",
+      "n-emotional-",
+      "n-ethical-",
+      "n-integrator-",
+      "n-memory-",
+      "n-meta-",
+      "n-planning-",
+      "n-rule_modification-",
+      "n-sensory-",
+      "n-social-",
+      "n-spatial-",
+      "n-temporal-",
+      "n-veto-"
+    ],
+    "incompatible_cold_sources": 0,
+    "incompatible_cold_edges": 0,
+    "cold_quarantined": false,
+    "cold_path": "C:\\Users\\Administrator\\.openclaw\\workspace\\.lae\\edges_cold.pkl",
+    "legacy_cold_path": null,
+    "cold_hits": 0,
+    "cold_misses": 0,
+    "cold_promotions": 0,
+    "active_downgrades": 0,
+    "last_sweep_tick": 0,
+    "cold_mem_cache_size": 0,
+    "active_source_cap": 25000,
+    "cold_idle_days": 7.0
+  },
+  "stdp_deltas": 3240740704,
+  "drifter": {
+    "total_fires": 0,
+    "total_rounds": 0,
+    "ticks_active": 0
+  },
+  "edge_sparsifier": {
+    "coactivation_threshold": 2,
+    "edge_expiry_days": 30.0,
+    "edges_grown_total": 0,
+    "edges_pruned_total": 0,
+    "last_grow_tick": 0,
+    "last_prune_tick": 0,
+    "active_edges_tracked": 3277
+  },
+  "pulse_codec": {
+    "enabled": true,
+    "n_neurons_original": 190000,
+    "n_neurons_compressed": 190000,
+    "n_types_trained": 19,
+    "n_types_skipped": 0,
+    "compression_ratio": 16.0,
+    "original_size_mb": 742.2,
+    "compressed_size_mb": 46.4,
+    "total_variance_explained": 0.0563,
+    "last_train_tick": 0,
+    "last_encode_ts": 1789375095.9079597,
+    "total_encodes": 634000,
+    "total_decodes": 20844,
+    "last_retrain_tick": 0
+  },
+  "cold_store": {
+    "n_cold": 190000,
+    "n_warm": 20844,
+    "warm_cache": {
+      "size": 20844,
+      "maxsize": 50000,
+      "hits": 101,
+      "misses": 20880,
+      "hit_rate": 0.005
+    },
+    "n_shards": 2,
+    "total_decodes": 20844,
+    "total_encodes": 0,
+    "cold_memory_mb": 32.3,
+    "dirty_pending": 1307
+  },
+  "cluster": {
+    "enabled": false
+  },
+  "fractal_attractor": {
+    "enabled": true,
+    "tick": 12730,
+    "level2": {
+      "dominant": "decider",
+      "concentration": 0.0854,
+      "active_types": [
+        "integrator",
+        "decider",
+        "action",
+        "rule_modification",
+        "veto",
+        "doubt"
+      ],
+      "type_summary": {
+        "sensory": {
+          "type": "sensory",
+          "avg_conc": 0.05,
+          "dom_rate": 0.0,
+          "is_active": false,
+          "history_len": 4,
+          "last_tick": 12730
+        },
+        "integrator": {
+          "type": "integrator",
+          "avg_conc": 0.0645,
+          "dom_rate": 0.25,
+          "is_active": true,
+          "history_len": 4,
+          "last_tick": 12730
+        },
+        "decider": {
+          "type": "decider",
+          "avg_conc": 0.069,
+          "dom_rate": 0.25,
+          "is_active": true,
+          "history_len": 4,
+          "last_tick": 12730
+        },
+        "action": {
+          "type": "action",
+          "avg_conc": 0.172,
+          "dom_rate": 0.0,
+          "is_active": true,
+          "history_len": 4,
+          "last_tick": 12730
+        },
+        "memory": {
+          "type": "memory",
+          "avg_conc": 0.0503,
+          "dom_rate": 0.0,
+          "is_active": false,
+          "history_len": 4,
+          "last_tick": 12730
+        },
+        "rule_modification": {
+          "type": "rule_modification",
+          "avg_conc": 0.1383,
+          "dom_rate": 0.0,
+          "is_active": true,
+          "history_len": 4,
+          "last_tick": 12730
+        },
+        "veto": {
+          "type": "veto",
+          "avg_conc": 0.159,
+          "dom_rate": 0.0,
+          "is_active": true,
+          "history_len": 4,
+          "last_tick": 12730
+        },
+        "doubt": {
+          "type": "doubt",
+          "avg_conc": 0.2125,
+          "dom_rate": 0.0,
+          "is_active": true,
+          "history_len": 4,
+          "last_tick": 12730
+        },
+        "curiosity": {
+          "type": "curiosity",
+          "avg_conc": 0.006,
+          "dom_rate": 0.0,
+          "is_active": false,
+          "history_len": 4,
+          "last_tick": 12730
+        },
+        "planning": {
+          "type": "planning",
+          "avg_conc": 0.008,
+          "dom_rate": 0.0,
+          "is_active": false,
+          "history_len": 4,
+          "last_tick": 12730
+        },
+        "social": {
+          "type": "social",
+          "avg_conc": 0.0,
+          "dom_rate": 0.0,
+          "is_active": false,
+          "history_len": 4,
+          "last_tick": 12730
+        },
+        "ethical": {
+          "type": "ethical",
+          "avg_conc": 0.002,
+          "dom_rate": 0.0,
+          "is_active": false,
+          "history_len": 4,
+          "last_tick": 12730
+        },
+        "aesthetic": {
+          "type": "aesthetic",
+          "avg_conc": 0.004,
+          "dom_rate": 0.0,
+          "is_active": false,
+          "history_len": 4,
+          "last_tick": 12730
+        },
+        "temporal": {
+          "type": "temporal",
+          "avg_conc": 0.001,
+          "dom_rate": 0.0,
+          "is_active": false,
+          "history_len": 4,
+          "last_tick": 12730
+        },
+        "emotional": {
+          "type": "emotional",
+          "avg_conc": 0.003,
+          "dom_rate": 0.0,
+          "is_active": false,
+          "history_len": 4,
+          "last_tick": 12730
+        },
+        "spatial": {
+          "type": "spatial",
+          "avg_conc": 0.001,
+          "dom_rate": 0.0,
+          "is_active": false,
+          "history_len": 4,
+          "last_tick": 12730
+        },
+        "cultural": {
+          "type": "cultural",
+          "avg_conc": 0.005,
+          "dom_rate": 0.0,
+          "is_active": false,
+          "history_len": 4,
+          "last_tick": 12730
+        },
+        "meta": {
+          "type": "meta",
+          "avg_conc": 0.002,
+          "dom_rate": 0.0,
+          "is_active": false,
+          "history_len": 4,
+          "last_tick": 12730
+        },
+        "architect": {
+          "type": "architect",
+          "avg_conc": 0.002,
+          "dom_rate": 0.0,
+          "is_active": false,
+          "history_len": 4,
+          "last_tick": 12730
+        }
+      }
+    },
+    "level1": {
+      "current_pattern_id": null,
+      "dominant_pattern_id": null,
+      "n_patterns": 0,
+      "patterns": {}
+    },
+    "feedback": {
+      "pending": null,
+      "emitted": 0,
+      "consumed": 0,
+      "seed_adjustments_total": 0,
+      "last_applied": null
+    }
+  },
+  "queries_served": 1714,
+  "resting_ticks": 12731,
+  "continuity": {
+    "resumed_tick": 12727,
+    "stagnation_streak": 4,
+    "comm_suppress_until": 12726,
+    "continuation_of": "ego-202609141625177360450800-31908-a5c8d9f7445c",
+    "frame_count": 100
+  },
+  "resting_dominant": "action",
+  "dominant_channels": {
+    "observed_raw": {
+      "value": "decider",
+      "tick": 12730,
+      "source": "run_resting_kwta",
+      "concentration": 0.0854,
+      "competition": 0.863,
+      "metadata": {
+        "observed_path_size": 30990,
+        "intervention_count": 1
+      }
+    },
+    "arbitration_candidate": {
+      "value": "action",
+      "tick": 12730,
+      "source": "select_autonomous_dominant",
+      "concentration": 0.0854,
+      "competition": 0.863,
+      "metadata": {
+        "candidate_score": 0.804574,
+        "kwta_winner": "decider",
+        "kwta_winner_score": 0.396324,
+        "reason": "activation_coverage_novelty"
+      }
+    },
+    "behavioral": {
+      "value": "action",
+      "tick": 12730,
+      "source": "post_policy_gates",
+      "concentration": 0.0854,
+      "competition": 0.863,
+      "metadata": {
+        "dwell_reason": "continue",
+        "dwell_hold": false,
+        "pre_candidate": "action",
+        "raw_observed": "decider",
+        "arbitration_votes": [
+          {
+            "tick": 12730,
+            "value": "action",
+            "source": "min_dwell_continue",
+            "reason": "continue_keep:continue"
+          }
+        ]
+      }
+    },
+    "identity": {
+      "value": "action",
+      "tick": 12731,
+      "source": "persistent_identity_profile",
+      "metadata": {
+        "confidence": 0.4104,
+        "dominant_ticks": 5088,
+        "total_ticks": 12399,
+        "raw_dominant_type": "integrator"
+      }
+    }
+  },
+  "resting_concentration": 0.0854,
+  "resting_competition": 0.863,
+  "raw_attractor_dominant": "decider",
+  "raw_attractor_concentration": 0.0854,
+  "raw_attractor_competition": 0.863,
+  "gate_divergent": true,
+  "raw_dominant_history": {
+    "integrator": 4297,
+    "action": 1181,
+    "veto": 1142,
+    "rule_modification": 1119,
+    "sensory": 823,
+    "decider": 784,
+    "memory": 576,
+    "architect": 485,
+    "social": 297,
+    "doubt": 226,
+    "cultural": 92,
+    "planning": 73,
+    "curiosity": 65,
+    "aesthetic": 63,
+    "temporal": 33,
+    "meta": 11,
+    "spatial": 11,
+    "emotional": 8,
+    "ethical": 1
+  },
+  "raw_gate_divergence_count": 5554,
+  "learning_provenance": {
+    "source": "observed_activation_path",
+    "observed_path_size": 30990,
+    "intervention_count": 1,
+    "intervention_nodes_excluded": 1,
+    "synthetic_learning_pairs": 0
+  },
+  "architect_design": {
+    "last_blueprint_tick": 6158,
+    "blueprint": {
+      "schema": "architect_blueprint.v1",
+      "blueprint_id": "arch-e99252801873",
+      "created_at": "2026-09-01T13:11:58.038004+08:00",
+      "status": "accepted",
+      "benchmark_schema": "ego_capability_benchmark.v1",
+      "baseline_repeated_runs": 3,
+      "source_tick": 6158,
+      "capability_gap": {
+        "domains": [
+          "runtime"
+        ],
+        "signals": {
+          "competition": 0.9457,
+          "stagnation_streak": 0,
+          "type_switches": 0,
+          "high_value_gaps": 0
+        },
+        "summary": "Integrate cross-module evidence into a bounded candidate capability design."
+      },
+      "existing_modules": [
+        "causal_lens",
+        "l8_cognitive_lab",
+        "memory_bus",
+        "shadow_arena"
+      ],
+      "modules": [
+        {
+          "name": "architect_model",
+          "responsibility": "Represent goals, module boundaries, contracts, and capability gaps.",
+          "inputs": [
+            "runtime_snapshot",
+            "memory_gaps",
+            "existing_module_inventory"
+          ],
+          "outputs": [
+            "architecture_blueprint"
+          ]
+        },
+        {
+          "name": "architect_sandbox",
+          "responsibility": "Evaluate candidate blueprints without mutating live topology or code.",
+          "inputs": [
+            "architecture_blueprint",
+            "shadow_arena",
+            "causal_evidence"
+          ],
+          "outputs": [
+            "verification_report"
+          ]
+        },
+        {
+          "name": "architect_promotion_gate",
+          "responsibility": "Require measurable capability gain and explicit human-reviewed promotion.",
+          "inputs": [
+            "verification_report",
+            "baseline_capability_report",
+            "candidate_capability_report"
+          ],
+          "outputs": [
+            "promotion_artifact"
+          ]
+        }
+      ],
+      "interfaces": [
+        {
+          "from": "architect_model",
+          "to": "architect_sandbox",
+          "contract": "blueprint_v1"
+        },
+        {
+          "from": "architect_sandbox",
+          "to": "architect_promotion_gate",
+          "contract": "verification_v1"
+        }
+      ],
+      "constraints": [
+        "No live neural-grid writes during design or sandbox evaluation.",
+        "No code modification is implied by a blueprint.",
+        "Promotion requires explicit approval and independently reproducible tests."
+      ],
+      "acceptance": [
+        "Blueprint has at least one explicit capability gap.",
+        "Every proposed module has bounded inputs and outputs.",
+        "A shadow verification report exists before promotion.",
+        "Baseline and candidate each contain at least three repeated benchmark runs.",
+        "Promotion requires measurable capability gain without material regression."
+      ],
+      "promotion_reason": "stagnation_age_gate",
+      "promoted_at_tick": 11110
+    },
+    "cooldown_ticks": 12
+  },
+  "stability_target": ">0.7",
+  "noise_mode": "none",
+  "noise_schedule": "explore",
+  "stagnation_streak": 2,
+  "somatic_queue": [],
+  "last_somatic": null,
+  "metacontemplate_runs": 241,
+  "concentration_lock": {
+    "count": 0,
+    "threshold": 3,
+    "perturbation_scale": 0.15
+  },
+  "embedding_feedback": {
+    "neurons_updated_total": 12832,
+    "faiss_rebuilds": 38,
+    "next_rebuild_at": 1720,
+    "rate": 0.1,
+    "type_bonus": 2.0,
+    "agree_bonus": 1.0
+  },
+  "fno": {
+    "active": true,
+    "current": "none",
+    "next": "none",
+    "amp": 0.4,
+    "fallback_streak": 0
+  },
+  "comm": {
+    "motivation": 0.0,
+    "last_tick": 12731,
+    "message_count": 2,
+    "suppress_until": 12822
+  },
+  "titan": {
+    "stage1": "enabled",
+    "stage2": {
+      "drives": {
+        "exploration": 0.15,
+        "integration": 0.5826,
+        "novelty": 0.1569,
+        "stability": 0.7637
+      },
+      "history_count": 100,
+      "last_updated": "2026-09-14 16:37:40"
+    },
+    "stage3": {
+      "timeline_count_visible": 1,
+      "last_event": {
+        "ts": "2026-09-14 16:37:40",
+        "runtime_generation_id": "ego-202609141631515472750800-19444-446bad309868",
+        "session_id": "s3-20260914-163224-19444-167",
+        "session_boot": 167,
+        "lineage_id": "gl-277808fc984508da",
+        "goal_id": "l5g-20260914-012731",
+        "goal_type": "world_verify",
+        "tick": 12730,
+        "cause": "drive:stability",
+        "effect": "dominant=action",
+        "dominant": "action",
+        "dominant_drive": "stability",
+        "prediction_error": null,
+        "prediction_error_source": null,
+        "concentration": 0.0854,
+        "competition": 0.863,
+        "stagnation_streak": 2
+      }
+    },
+    "stage4": {
+      "reasoning_neurons": 8,
+      "creative_candidates": 1182,
+      "last_updated": "2026-09-14 16:03:00"
+    }
+  },
+  "external_world": {
+    "status": "ok",
+    "count": 9,
+    "files": [
+      {
+        "path": "ego_autonomy_evidence.json",
+        "size": 7628,
+        "mtime": 1789374737.9123576
+      },
+      {
+        "path": "ego_self_evidence.json",
+        "size": 486,
+        "mtime": 1789374736.984186
+      },
+      {
+        "path": "ego_self_evidence.json.consumed",
+        "size": 148,
+        "mtime": 1789374736.9826858
+      },
+      {
+        "path": "_evidence_log.txt",
+        "size": 2395547,
+        "mtime": 1789374736.9821825
+      },
+      {
+        "path": "_s5_debug.log",
+        "size": 1226855,
+        "mtime": 1789374736.981179
+      },
+      {
+        "path": "ego_memory.json",
+        "size": 65189,
+        "mtime": 1789374683.834602
+      },
+      {
+        "path": "ego_autonomy_evidence.json.consumed",
+        "size": 153,
+        "mtime": 1789374648.7320254
+      },
+      {
+        "path": "memory/memu.db",
+        "size": 7299072,
+        "mtime": 1789374603.4056575
+      },
+      {
+        "path": "ego_meta_conflict.json.consumed",
+        "size": 153,
+        "mtime": 1789374471.456841
+      }
+    ],
+    "categories": {
+      "memory": 1,
+      "logs": 1,
+      "root": 7
+    },
+    "summary": "workspace: 9 files changed in 5min. | memory: memory/memu.db | logs: _s5_debug.log | root: ego_autonomy_evidence.json, ego_self_evidence.json, ego_self_evidence.json.consumed, _evidence_log.txt, ego_memory.json",
+    "source": "action_gateway_workspace_observation",
+    "intent_type": "observe_external_workspace",
+    "domain": "integrator",
+    "reason": "outward_pressure dominant=integrator, competition=0.854, stagnation=0",
+    "tick": 12728,
+    "n_replace": 2,
+    "competition": 0.8536,
+    "dominant": "integrator",
+    "_int_press_counter": 19,
+    "_l5_repair_counterfactual_active": null,
+    "_l5_repair_observation_window": true,
+    "_l5_ow_since_tick": 6318,
+    "_l5_ow_window_multiplier": 3,
+    "quantum": {
+      "decision_signal": 0.0,
+      "experiment": null,
+      "tick": null,
+      "backend": null,
+      "hardware": null
+    },
+    "residual_defect": {
+      "model": "l6_0_residual_to_defect_classifier",
+      "primary_defect": "candidate_pool_too_narrow",
+      "confidence": 0.68,
+      "self_statement": "我的问题不只是某个 action 分数错了，而是候选生成机制缺少反事实替代。",
+      "repair_hint": "add residual-tag-derived counterfactual affordances before ranking",
+      "evidence": [
+        "top_action=explore_ethical_path repeated 15/20 (75%)",
+        "false_exploration=0, oscillation_lag=16",
+        "avg_novelty_error=-0.090",
+        "same action keeps being penalized; ranking alone is not enough",
+        "causal_event:dominant_shift tick=12717 pre={'dominant': 'action', 'stagnation': 0} post={'dominant': 'integrator', 'stagnation': 0}",
+        "causal_event:dominant_shift tick=12721 pre={'dominant': 'integrator', 'stagnation': 0} post={'dominant': 'action', 'stagnation': 0}",
+        "causal_event:dominant_shift tick=12722 pre={'dominant': 'action', 'stagnation': 0} post={'dominant': 'integrator', 'stagnation': 0}",
+        "cf_route_active: annotated=true, top_cf=True, top=explore_ethical_path",
+        "cooling_guard: prev_stag=0, curr_stag=0, decreased=False",
+        "cooling_stag_zero_ticks=1, cf_active_ticks=0, cf_signal_expired=False"
+      ],
+      "status": null
+    },
+    "repair_proposal": {
+      "model": "l6_1_defect_to_repair_proposal",
+      "proposal_id": "l6p-candidate-pool-too-narrow",
+      "title": "Generate counterfactual affordances before JEPA ranking",
+      "autonomy_level": "proposal_only",
+      "change_type": "bounded_logic",
+      "risk": "low_to_medium",
+      "target_files": [
+        "projects/tl-ego/tl_ego_server.py"
+      ],
+      "patch_intent": [
+        "Read residual_defect when deriving workspace affordances.",
+        "If candidate_pool_too_narrow is high-confidence, append 1-2 counterfactual read-only affordances before ranking.",
+        "Keep affordances observe/read-only; do not add command execution or external writes."
+      ],
+      "verification": {
+        "compile_check": true,
+        "status_check": true,
+        "gate3_required": true,
+        "unit_tests": [
+          "tests/test_residual_to_defect_classifier.py",
+          "tests/test_defect_to_repair_proposal.py"
+        ],
+        "success_criteria": [
+          {
+            "metric": "candidate_action_diversity",
+            "operator": "gte",
+            "value": 3,
+            "window": 20
+          },
+          {
+            "metric": "top_action_repeat_ratio",
+            "operator": "lt",
+            "value": 0.65,
+            "window": 20
+          },
+          {
+            "metric": "false_exploration_count",
+            "operator": "lt",
+            "value": 20,
+            "window": 20
+          }
+        ]
+      },
+      "safety": {
+        "apply_mode": "never_apply_directly",
+        "requires_three_gate": true,
+        "external_write": false,
+        "authenticated_network": false,
+        "data_upload": false
+      }
+    },
+    "diversity_gate": {
+      "gate_triggered": true,
+      "decision": "injected",
+      "entropy": 2.75,
+      "gaps": [
+        "ethical",
+        "emotional",
+        "meta",
+        "spatial",
+        "temporal"
+      ],
+      "injected": 5
+    },
+    "counterfactual_generator": {
+      "model": "counterfactual_generator_v1",
+      "annotated": true,
+      "n_affordances": 13,
+      "top_counterfactual": "change_context"
+    },
+    "affordances": [
+      {
+        "name": "explore_ethical_path",
+        "counterfactual_target_type": "ethical",
+        "risk": "low",
+        "mode": "observe_only",
+        "reason": "[diversity_gate] candidate_pool_too_narrow — ethical rarely in pool",
+        "next_step": "Activate ethical affordance to expand candidate pool diversity",
+        "counterfactual_scenarios": [
+          {
+            "scenario_type": "change_context",
+            "target_type": "ethical",
+            "predicted_stagnation_change": -0.1,
+            "confidence": 0.5,
+            "narrative": "If I shift toward ethical from integrator lock, stagnation may decrease by ~0.10. (Source: residual_defect)"
+          }
+        ],
+        "top_counterfactual": "change_context",
+        "counterfactual_confidence": 0.5,
+        "_diversity_injected": true,
+        "_diversity_source": "residual_defect",
+        "_diversity_reason": "candidate_pool_too_narrow — ethical rarely in pool",
+        "_cf_injected": true,
+        "jepa_base_score": 0.65,
+        "jepa_candidate_pool_adjustment": 0.85,
+        "_diversity_reserve": true,
+        "_diversity_quota": 3,
+        "jepa_score": 1.0,
+        "predicted_outcome": {
+          "model": "ego_jepa_v0_heuristic",
+          "next_dominant": "ethical",
+          "stagnation_delta": -0.1,
+          "external_novelty": 0.15,
+          "confidence": 0.5,
+          "risk_adjusted_score": 0.235
+        },
+        "jepa_confidence": 1.0
+      },
+      {
+        "counterfactual_confidence": 0.6,
+        "name": "synthesize_findings",
+        "_cf_injected": true,
+        "counterfactual_target_type": "integrator",
+        "risk": "low",
+        "mode": "observe_only",
+        "reason": "[int_press_inject] integration_pressure active, integrator affordance missing from counterfactuals",
+        "next_step": "Synthesize findings to break bistable oscillation",
+        "counterfactual_scenarios": [
+          {
+            "scenario_type": "change_context",
+            "target_type": "integrator",
+            "predicted_stagnation_change": -0.054,
+            "confidence": 0.6,
+            "narrative": "Switch from repeated action inspection to integrator synthesis to relieve oscillation."
+          }
+        ],
+        "top_counterfactual": "change_context",
+        "predicted_outcome": {
+          "model": "ego_jepa_v0_heuristic",
+          "next_dominant": "integrator",
+          "stagnation_delta": -0.054,
+          "external_novelty": 0.15,
+          "confidence": 0.6,
+          "risk_adjusted_score": 0.242
+        },
+        "jepa_score": 0.1944,
+        "jepa_confidence": 0.1944
+      },
+      {
+        "name": "modify_suppression_rule",
+        "_cf_injected": true,
+        "counterfactual_target_type": "rule_modification",
+        "risk": "low",
+        "mode": "observe_only",
+        "reason": "[int_press_inject] integration_pressure active, integrator escape route missing from counterfactuals",
+        "next_step": "Diagnose and repair the integrator suppression routing mechanism",
+        "counterfactual_scenarios": [
+          {
+            "scenario_type": "change_context",
+            "target_type": "rule_modification",
+            "predicted_stagnation_change": -0.11,
+            "confidence": 0.65,
+            "narrative": "Switch to rule_modification to repair the suppression routing gap directly."
+          }
+        ],
+        "counterfactual_confidence": 0.65,
+        "top_counterfactual": "change_context",
+        "predicted_outcome": {
+          "model": "ego_jepa_v0_heuristic",
+          "next_dominant": "rule_modification",
+          "stagnation_delta": -0.11,
+          "external_novelty": 0.15,
+          "confidence": 0.65,
+          "risk_adjusted_score": 0.278
+        },
+        "jepa_score": 0.429,
+        "jepa_confidence": 0.429
+      },
+      {
+        "name": "read_workspace_root_files",
+        "risk": "low",
+        "mode": "read_only",
+        "reason": "7 recent workspace root file(s) changed.",
+        "next_step": "Read the newest root-level file to capture Ego self-state updates (ego_self_evidence, ego_memory, ego_autonomy_evidence).",
+        "counterfactual_scenarios": [
+          {
+            "scenario_type": "change_context",
+            "target_type": "spatial",
+            "transition_probability": 0.55,
+            "predicted_stagnation_change": -0.115,
+            "predicted_competition": 0.822,
+            "predicted_concentration": 0.067,
+            "conflict_with_affordances": false,
+            "confidence": 0.75,
+            "narrative": "If I shift from integrator to spatial, my stagnation may change by -0.11 (transition probability: 55%). ",
+            "score": 0.925
+          },
+          {
+            "scenario_type": "change_context",
+            "target_type": "memory",
+            "transition_probability": 0.3,
+            "predicted_stagnation_change": -0.115,
+            "predicted_competition": 0.822,
+            "predicted_concentration": 0.067,
+            "conflict_with_affordances": false,
+            "confidence": 0.65,
+            "narrative": "If I shift from integrator to memory, my stagnation may change by -0.11 (transition probability: 30%). ",
+            "score": 0.895
+          },
+          {
+            "scenario_type": "change_context",
+            "target_type": "sensory",
+            "transition_probability": 0.2,
+            "predicted_stagnation_change": -0.076,
+            "predicted_competition": 0.833,
+            "predicted_concentration": 0.075,
+            "conflict_with_affordances": false,
+            "confidence": 0.61,
+            "narrative": "If I shift from integrator to sensory, my stagnation may change by -0.08 (transition probability: 20%). ",
+            "score": 0.883
+          },
+          {
+            "scenario_type": "deepen_current",
+            "target_type": "integrator",
+            "projected_concentration": 0.24,
+            "projected_competition": 0.774,
+            "predicted_stagnation_change": -0.04,
+            "burst_risk": 0.135,
+            "self_repeat_probability": 0.45,
+            "confidence": 0.75,
+            "narrative": "If I stay in integrator for 3 more ticks, concentration may rise to 24% (burst risk: 14%). ",
+            "score": 0.725
+          }
+        ],
+        "top_counterfactual": "change_context",
+        "counterfactual_confidence": 0.925,
+        "jepa_score": 0.5,
+        "jepa_confidence": 0.5
+      },
+      {
+        "name": "review_recent_trace",
+        "risk": "low",
+        "mode": "read_only",
+        "reason": "1 recent trace/log file(s) changed.",
+        "next_step": "Read the newest trace and convert it into feedback or a concrete follow-up.",
+        "counterfactual_scenarios": [
+          {
+            "scenario_type": "change_context",
+            "target_type": "doubt",
+            "transition_probability": 0.55,
+            "predicted_stagnation_change": 0.048,
+            "predicted_competition": 0.867,
+            "predicted_concentration": 0.1,
+            "conflict_with_affordances": false,
+            "confidence": 0.75,
+            "narrative": "If I shift from integrator to doubt, my stagnation may change by +0.05 (transition probability: 55%). ",
+            "score": 0.925
+          },
+          {
+            "scenario_type": "change_context",
+            "target_type": "spatial",
+            "transition_probability": 0.55,
+            "predicted_stagnation_change": -0.115,
+            "predicted_competition": 0.822,
+            "predicted_concentration": 0.067,
+            "conflict_with_affordances": false,
+            "confidence": 0.75,
+            "narrative": "If I shift from integrator to spatial, my stagnation may change by -0.11 (transition probability: 55%). ",
+            "score": 0.925
+          },
+          {
+            "scenario_type": "change_context",
+            "target_type": "memory",
+            "transition_probability": 0.3,
+            "predicted_stagnation_change": -0.115,
+            "predicted_competition": 0.822,
+            "predicted_concentration": 0.067,
+            "conflict_with_affordances": false,
+            "confidence": 0.65,
+            "narrative": "If I shift from integrator to memory, my stagnation may change by -0.11 (transition probability: 30%). ",
+            "score": 0.895
+          },
+          {
+            "scenario_type": "change_context",
+            "target_type": "sensory",
+            "transition_probability": 0.2,
+            "predicted_stagnation_change": -0.076,
+            "predicted_competition": 0.833,
+            "predicted_concentration": 0.075,
+            "conflict_with_affordances": false,
+            "confidence": 0.61,
+            "narrative": "If I shift from integrator to sensory, my stagnation may change by -0.08 (transition probability: 20%). ",
+            "score": 0.883
+          },
+          {
+            "scenario_type": "deepen_current",
+            "target_type": "integrator",
+            "projected_concentration": 0.24,
+            "projected_competition": 0.774,
+            "predicted_stagnation_change": -0.04,
+            "burst_risk": 0.135,
+            "self_repeat_probability": 0.45,
+            "confidence": 0.75,
+            "narrative": "If I stay in integrator for 3 more ticks, concentration may rise to 24% (burst risk: 14%). ",
+            "score": 0.725
+          }
+        ],
+        "top_counterfactual": "change_context",
+        "counterfactual_confidence": 0.925,
+        "jepa_score": 0.5,
+        "jepa_confidence": 0.5
+      },
+      {
+        "name": "summarize_recent_memory",
+        "risk": "low",
+        "mode": "read_only",
+        "reason": "1 recent memory file(s) changed.",
+        "next_step": "Read the newest memory entry and extract one external lesson.",
+        "counterfactual_scenarios": [
+          {
+            "scenario_type": "change_context",
+            "target_type": "doubt",
+            "transition_probability": 0.55,
+            "predicted_stagnation_change": 0.048,
+            "predicted_competition": 0.867,
+            "predicted_concentration": 0.1,
+            "conflict_with_affordances": false,
+            "confidence": 0.75,
+            "narrative": "If I shift from integrator to doubt, my stagnation may change by +0.05 (transition probability: 55%). ",
+            "score": 0.925
+          },
+          {
+            "scenario_type": "change_context",
+            "target_type": "spatial",
+            "transition_probability": 0.55,
+            "predicted_stagnation_change": -0.115,
+            "predicted_competition": 0.822,
+            "predicted_concentration": 0.067,
+            "conflict_with_affordances": false,
+            "confidence": 0.75,
+            "narrative": "If I shift from integrator to spatial, my stagnation may change by -0.11 (transition probability: 55%). ",
+            "score": 0.925
+          },
+          {
+            "scenario_type": "change_context",
+            "target_type": "memory",
+            "transition_probability": 0.3,
+            "predicted_stagnation_change": -0.115,
+            "predicted_competition": 0.822,
+            "predicted_concentration": 0.067,
+            "conflict_with_affordances": false,
+            "confidence": 0.65,
+            "narrative": "If I shift from integrator to memory, my stagnation may change by -0.11 (transition probability: 30%). ",
+            "score": 0.895
+          },
+          {
+            "scenario_type": "change_context",
+            "target_type": "sensory",
+            "transition_probability": 0.2,
+            "predicted_stagnation_change": -0.076,
+            "predicted_competition": 0.833,
+            "predicted_concentration": 0.075,
+            "conflict_with_affordances": false,
+            "confidence": 0.61,
+            "narrative": "If I shift from integrator to sensory, my stagnation may change by -0.08 (transition probability: 20%). ",
+            "score": 0.883
+          },
+          {
+            "scenario_type": "deepen_current",
+            "target_type": "integrator",
+            "projected_concentration": 0.24,
+            "projected_competition": 0.774,
+            "predicted_stagnation_change": -0.04,
+            "burst_risk": 0.135,
+            "self_repeat_probability": 0.45,
+            "confidence": 0.75,
+            "narrative": "If I stay in integrator for 3 more ticks, concentration may rise to 24% (burst risk: 14%). ",
+            "score": 0.725
+          }
+        ],
+        "top_counterfactual": "change_context",
+        "counterfactual_confidence": 0.925,
+        "jepa_score": 0.5,
+        "jepa_confidence": 0.5
+      },
+      {
+        "name": "query_memorybus",
+        "risk": "low",
+        "mode": "observe_only",
+        "reason": "periodic MemoryBus curiosity check",
+        "next_step": "Query MemoryBus for relevant historical experiences.",
+        "counterfactual_scenarios": [
+          {
+            "scenario_type": "change_context",
+            "target_type": "spatial",
+            "transition_probability": 0.55,
+            "predicted_stagnation_change": -0.115,
+            "predicted_competition": 0.822,
+            "predicted_concentration": 0.067,
+            "conflict_with_affordances": false,
+            "confidence": 0.75,
+            "narrative": "If I shift from integrator to spatial, my stagnation may change by -0.11 (transition probability: 55%). ",
+            "score": 0.925
+          },
+          {
+            "scenario_type": "change_context",
+            "target_type": "memory",
+            "transition_probability": 0.3,
+            "predicted_stagnation_change": -0.115,
+            "predicted_competition": 0.822,
+            "predicted_concentration": 0.067,
+            "conflict_with_affordances": false,
+            "confidence": 0.65,
+            "narrative": "If I shift from integrator to memory, my stagnation may change by -0.11 (transition probability: 30%). ",
+            "score": 0.895
+          },
+          {
+            "scenario_type": "change_context",
+            "target_type": "sensory",
+            "transition_probability": 0.2,
+            "predicted_stagnation_change": -0.076,
+            "predicted_competition": 0.833,
+            "predicted_concentration": 0.075,
+            "conflict_with_affordances": false,
+            "confidence": 0.61,
+            "narrative": "If I shift from integrator to sensory, my stagnation may change by -0.08 (transition probability: 20%). ",
+            "score": 0.883
+          },
+          {
+            "scenario_type": "deepen_current",
+            "target_type": "integrator",
+            "projected_concentration": 0.24,
+            "projected_competition": 0.774,
+            "predicted_stagnation_change": -0.04,
+            "burst_risk": 0.135,
+            "self_repeat_probability": 0.45,
+            "confidence": 0.75,
+            "narrative": "If I stay in integrator for 3 more ticks, concentration may rise to 24% (burst risk: 14%). ",
+            "score": 0.725
+          }
+        ],
+        "top_counterfactual": "change_context",
+        "counterfactual_confidence": 0.925,
+        "jepa_score": 0.5,
+        "jepa_confidence": 0.5
+      },
+      {
+        "name": "build_integrator_snapshot",
+        "_cf_injected": true,
+        "risk": "low",
+        "mode": "observe_only",
+        "reason": "[cf_type_switch] counterfactual suggests integrator (stag_delta=-0.200, conf=0.70)",
+        "next_step": "Explore integrator path as alternative to inspect_recent_project_result",
+        "counterfactual_target_type": "integrator",
+        "counterfactual_confidence": 0.7,
+        "counterfactual_stag_delta": -0.2,
+        "counterfactual_scenarios": [
+          {
+            "scenario_type": "change_context",
+            "target_type": "integrator",
+            "predicted_stagnation_change": -0.2,
+            "confidence": 0.7,
+            "narrative": "If I shift from repeated action inspection to integrator synthesis, stagnation may decrease by 0.20."
+          }
+        ],
+        "top_counterfactual": "change_context",
+        "predicted_outcome": {
+          "model": "ego_jepa_v0_heuristic",
+          "next_dominant": "integrator",
+          "stagnation_delta": -0.2,
+          "external_novelty": 0.15,
+          "confidence": 0.7,
+          "risk_adjusted_score": 0.329
+        },
+        "jepa_score": 0.7,
+        "jepa_confidence": 0.7
+      },
+      {
+        "_cf_injected": true,
+        "name": "inspect_recent_project_result",
+        "risk": "low",
+        "mode": "read_only",
+        "reason": "Recent project file(s) changed; inspect the newest result or README as a genuine alternative to the repeating action.",
+        "next_step": "Open the newest result or README and compare it with the current drive.",
+        "counterfactual_scenarios": [
+          {
+            "scenario_type": "change_context",
+            "target_type": "integrator",
+            "predicted_stagnation_change": -0.2,
+            "confidence": 0.7,
+            "narrative": "If I shift from repeated action inspection to integrator synthesis, stagnation may decrease by 0.20."
+          }
+        ],
+        "top_counterfactual": "change_context",
+        "counterfactual_confidence": 0.7,
+        "predicted_outcome": {
+          "model": "ego_jepa_v0_heuristic",
+          "next_dominant": "integrator",
+          "stagnation_delta": -0.2,
+          "external_novelty": 0.15,
+          "confidence": 0.7,
+          "risk_adjusted_score": 0.329
+        },
+        "jepa_score": 0.7,
+        "jepa_confidence": 0.7
+      },
+      {
+        "name": "explore_emotional_path",
+        "counterfactual_target_type": "emotional",
+        "risk": "low",
+        "mode": "observe_only",
+        "reason": "[diversity_gate] candidate_pool_too_narrow — emotional rarely in pool",
+        "next_step": "Activate emotional affordance to expand candidate pool diversity",
+        "counterfactual_scenarios": [
+          {
+            "scenario_type": "change_context",
+            "target_type": "emotional",
+            "predicted_stagnation_change": -0.1,
+            "confidence": 0.5,
+            "narrative": "If I shift toward emotional from integrator lock, stagnation may decrease by ~0.10. (Source: residual_defect)"
+          }
+        ],
+        "top_counterfactual": "change_context",
+        "counterfactual_confidence": 0.5,
+        "_diversity_injected": true,
+        "_diversity_source": "residual_defect",
+        "_diversity_reason": "candidate_pool_too_narrow — emotional rarely in pool",
+        "_cf_injected": true,
+        "jepa_base_score": 0.65,
+        "jepa_candidate_pool_adjustment": 0.85,
+        "_diversity_reserve": true,
+        "_diversity_quota": 3,
+        "jepa_score": 1.0,
+        "predicted_outcome": {
+          "model": "ego_jepa_v0_heuristic",
+          "next_dominant": "emotional",
+          "stagnation_delta": -0.1,
+          "external_novelty": 0.15,
+          "confidence": 0.5,
+          "risk_adjusted_score": 0.235
+        },
+        "jepa_confidence": 1.0
+      },
+      {
+        "name": "explore_meta_path",
+        "counterfactual_target_type": "meta",
+        "risk": "low",
+        "mode": "observe_only",
+        "reason": "[diversity_gate] candidate_pool_too_narrow — meta rarely in pool",
+        "next_step": "Activate meta affordance to expand candidate pool diversity",
+        "counterfactual_scenarios": [
+          {
+            "scenario_type": "change_context",
+            "target_type": "meta",
+            "predicted_stagnation_change": -0.1,
+            "confidence": 0.5,
+            "narrative": "If I shift toward meta from integrator lock, stagnation may decrease by ~0.10. (Source: residual_defect)"
+          }
+        ],
+        "top_counterfactual": "change_context",
+        "counterfactual_confidence": 0.5,
+        "_diversity_injected": true,
+        "_diversity_source": "residual_defect",
+        "_diversity_reason": "candidate_pool_too_narrow — meta rarely in pool",
+        "_cf_injected": true,
+        "jepa_base_score": 0.65,
+        "jepa_candidate_pool_adjustment": 0.85,
+        "_diversity_reserve": true,
+        "_diversity_quota": 3,
+        "jepa_score": 1.0,
+        "predicted_outcome": {
+          "model": "ego_jepa_v0_heuristic",
+          "next_dominant": "meta",
+          "stagnation_delta": -0.1,
+          "external_novelty": 0.15,
+          "confidence": 0.5,
+          "risk_adjusted_score": 0.235
+        },
+        "jepa_confidence": 1.0
+      },
+      {
+        "name": "explore_spatial_path",
+        "counterfactual_target_type": "spatial",
+        "risk": "low",
+        "mode": "observe_only",
+        "reason": "[diversity_gate] candidate_pool_too_narrow — spatial rarely in pool",
+        "next_step": "Activate spatial affordance to expand candidate pool diversity",
+        "counterfactual_scenarios": [
+          {
+            "scenario_type": "change_context",
+            "target_type": "spatial",
+            "predicted_stagnation_change": -0.1,
+            "confidence": 0.5,
+            "narrative": "If I shift toward spatial from integrator lock, stagnation may decrease by ~0.10. (Source: residual_defect)"
+          }
+        ],
+        "top_counterfactual": "change_context",
+        "counterfactual_confidence": 0.5,
+        "_diversity_injected": true,
+        "_diversity_source": "residual_defect",
+        "_diversity_reason": "candidate_pool_too_narrow — spatial rarely in pool",
+        "_cf_injected": true,
+        "jepa_base_score": 0.65,
+        "jepa_candidate_pool_adjustment": 0.85,
+        "_diversity_reserve": true,
+        "_diversity_quota": 3,
+        "jepa_score": 1.0,
+        "predicted_outcome": {
+          "model": "ego_jepa_v0_heuristic",
+          "next_dominant": "spatial",
+          "stagnation_delta": -0.1,
+          "external_novelty": 0.15,
+          "confidence": 0.5,
+          "risk_adjusted_score": 0.235
+        },
+        "jepa_confidence": 1.0
+      },
+      {
+        "name": "explore_temporal_path",
+        "counterfactual_target_type": "temporal",
+        "risk": "low",
+        "mode": "observe_only",
+        "reason": "[diversity_gate] candidate_pool_too_narrow — temporal rarely in pool",
+        "next_step": "Activate temporal affordance to expand candidate pool diversity",
+        "counterfactual_scenarios": [
+          {
+            "scenario_type": "change_context",
+            "target_type": "temporal",
+            "predicted_stagnation_change": -0.1,
+            "confidence": 0.5,
+            "narrative": "If I shift toward temporal from integrator lock, stagnation may decrease by ~0.10. (Source: residual_defect)"
+          }
+        ],
+        "top_counterfactual": "change_context",
+        "counterfactual_confidence": 0.5,
+        "_diversity_injected": true,
+        "_diversity_source": "residual_defect",
+        "_diversity_reason": "candidate_pool_too_narrow — temporal rarely in pool",
+        "_cf_injected": true,
+        "jepa_base_score": 0.65,
+        "jepa_candidate_pool_adjustment": 0.85,
+        "_diversity_reserve": true,
+        "_diversity_quota": 3,
+        "jepa_score": 1.0,
+        "predicted_outcome": {
+          "model": "ego_jepa_v0_heuristic",
+          "next_dominant": "temporal",
+          "stagnation_delta": -0.1,
+          "external_novelty": 0.15,
+          "confidence": 0.5,
+          "risk_adjusted_score": 0.235
+        },
+        "jepa_confidence": 1.0
+      }
+    ],
+    "jepa": {
+      "model": "ego_jepa_v0_heuristic",
+      "mode": "rank_affordances_only",
+      "top_affordance": "explore_ethical_path",
+      "top_score": 1.0
+    },
+    "jepa_reconcile": {
+      "source": "jepa_reconcile_workspace_observation",
+      "prediction_error_source": "ego_jepa_buffer_reconcile",
+      "prediction_error": 0.375,
+      "expected_result": {
+        "model": "ego_jepa_v0_heuristic",
+        "next_dominant": "ethical",
+        "stagnation_delta": -0.1,
+        "external_novelty": 0.15,
+        "confidence": 0.5,
+        "risk_adjusted_score": 0.235
+      },
+      "actual_result": {
+        "workspace_status": "ok",
+        "change_count": 9,
+        "categories": {
+          "memory": 1,
+          "logs": 1,
+          "root": 7
+        },
+        "summary": "workspace: 9 files changed in 5min. | memory: memory/memu.db | logs: _s5_debug.log | root: ego_autonomy_evidence.json, ego_self_evidence.json, ego_self_evidence.json.consumed, _evidence_log.txt, ego_memory.json"
+      },
+      "task_id": "jepa_reconcile_12728",
+      "action_type": "workspace_observation",
+      "outcome": "observed",
+      "state_before": null,
+      "state_after": {
+        "workspace_status": "ok",
+        "change_count": 9,
+        "categories": {
+          "memory": 1,
+          "logs": 1,
+          "root": 7
+        },
+        "summary": "workspace: 9 files changed in 5min. | memory: memory/memu.db | logs: _s5_debug.log | root: ego_autonomy_evidence.json, ego_self_evidence.json, ego_self_evidence.json.consumed, _evidence_log.txt, ego_memory.json"
+      },
+      "stdp_boost_factor": 1.0
+    }
+  },
+  "residual_defect": {
+    "status": null,
+    "primary_defect": "candidate_pool_too_narrow",
+    "confidence": 0.68,
+    "self_statement": "我的问题不只是某个 action 分数错了，而是候选生成机制缺少反事实替代。",
+    "repair_hint": "add residual-tag-derived counterfactual affordances before ranking",
+    "evidence": [
+      "top_action=explore_ethical_path repeated 15/20 (75%)",
+      "false_exploration=0, oscillation_lag=16",
+      "avg_novelty_error=-0.090",
+      "same action keeps being penalized; ranking alone is not enough"
+    ]
+  },
+  "jepa_external": {
+    "status": "not_ready",
+    "reason": "no cached external prediction"
+  },
+  "last_neural_snapshot": {
+    "event": "neural_snapshot",
+    "stage": "titan_6_4_p0",
+    "tick": 12730,
+    "timestamp": "2026-09-14T16:37:34+0800",
+    "dominant": "action",
+    "raw_attractor_dominant": "decider",
+    "raw_attractor_concentration": 0.0854,
+    "raw_attractor_competition": 0.863,
+    "stage28_oscillation_type": "none",
+    "stage28_suppress_l5": false,
+    "gate_divergent": true,
+    "prev_dominant": "action",
+    "transition": false,
+    "transition_rate_8": 0.1429,
+    "entropy_bits": 3.3065,
+    "concentration": 0.0854,
+    "competition": 0.863,
+    "stagnation_streak": 2,
+    "prediction_error": 0.375,
+    "surprise": {
+      "tick": 12730,
+      "predicted": "integrator",
+      "actual": "action",
+      "predicted_conc": 0.096,
+      "actual_conc": 0.085,
+      "surprise_score": 1.0,
+      "type_surprise": 1.0,
+      "hard_type_mismatch": 1.0,
+      "conc_surprise": 0.022
+    },
+    "noise_mode": "white",
+    "phase": "explore",
+    "n_activated": 1000,
+    "type_counts": {
+      "rule_modification": 138,
+      "action": 172,
+      "curiosity": 6,
+      "planning": 8,
+      "aesthetic": 4,
+      "unknown": 51,
+      "cultural": 5,
+      "veto": 159,
+      "sensory": 50,
+      "decider": 69,
+      "doubt": 213,
+      "integrator": 64,
+      "memory": 50,
+      "meta": 100,
+      "architect": 2,
+      "spatial": 1,
+      "ethical": 2,
+      "emotional": 3,
+      "temporal": 1
+    },
+    "workspace_audit": {
+      "l0_broadcast_count": 3,
+      "l0_attention": {
+        "surprise": 1.0,
+        "competition": 0.869,
+        "concentration": 0.096,
+        "stagnation": 1,
+        "n_active_types": 19,
+        "dominant": "action",
+        "total_salience": 5.655
+      },
+      "l0_last_attention": "tick=12730 salience=5.66 notice: surprise=1.00 (integrator→action); high_comp=0.869 → broadcasting to 3 types",
+      "active_evidence_domains": [
+        "action",
+        "decider",
+        "defense",
+        "external",
+        "integrator",
+        "meta",
+        "novelty",
+        "proprioception",
+        "veto",
+        "web_search"
+      ],
+      "evidence_count": 20,
+      "proprio_prediction_error": 0.3623,
+      "proprio_last_signal": null,
+      "jepa_reconcile": null,
+      "last_action": null
+    }
+  },
+  "surprise_last": {
+    "tick": 12730,
+    "predicted": "integrator",
+    "actual": "action",
+    "predicted_conc": 0.096,
+    "actual_conc": 0.085,
+    "surprise_score": 1.0,
+    "type_surprise": 1.0,
+    "hard_type_mismatch": 1.0,
+    "conc_surprise": 0.022
+  },
+  "surprise_history_count": 10,
+  "accumulated_narrative": "Got it, let's tackle this. First, start with the actual actions I did. First, mention the warehouse upper floor verification, then the L5 tasks, including the latest 009530? Wait no, wait the recent a",
+  "accumulated_narrative_ts": "2026-09-09T15:42:57.014675+08:00",
+  "persistent_identity": {
+    "dominant_type": "action",
+    "dominant_ticks": 5088,
+    "total_ticks": 12399,
+    "confidence": 0.4104,
+    "last_updated_tick": 12731,
+    "profile": {
+      "action": 5088,
+      "integrator": 4018,
+      "veto": 1262,
+      "rule_modification": 988,
+      "architect": 466,
+      "decider": 170,
+      "doubt": 142,
+      "sensory": 116,
+      "memory": 108,
+      "social": 23,
+      "meta": 5,
+      "temporal": 5,
+      "emotional": 4,
+      "cultural": 3,
+      "planning": 1
+    },
+    "raw_profile": {
+      "integrator": 4297,
+      "action": 1181,
+      "veto": 1142,
+      "rule_modification": 1119,
+      "sensory": 823,
+      "decider": 784,
+      "memory": 576,
+      "architect": 485,
+      "social": 297,
+      "doubt": 226,
+      "cultural": 92,
+      "planning": 73,
+      "curiosity": 65,
+      "aesthetic": 63,
+      "temporal": 33,
+      "meta": 11,
+      "spatial": 11,
+      "emotional": 8,
+      "ethical": 1
+    },
+    "raw_dominant_type": "integrator",
+    "raw_total_ticks": 11287,
+    "gate_divergence_count": 5554,
+    "raw_unknown_count": 2
+  },
+  "identity_anchor": {
+    "loaded": true,
+    "version": "1.0",
+    "created_at": "2026-09-01T01:44:21.384486+00:00",
+    "last_verified_at": "2026-09-14T08:38:16.526065+00:00",
+    "last_boot_verified_at": "2026-09-14T08:31:58.671418+00:00",
+    "boot_verification_count": 199,
+    "identity_hash": "c1108326b087713a",
+    "n_beliefs": 5,
+    "n_boundaries": 4,
+    "n_values": 5,
+    "value_weights": {
+      "honesty": 0.9,
+      "usefulness": 0.85,
+      "growth": 0.8,
+      "safety": 0.95,
+      "curiosity": 0.75
+    }
+  },
+  "value_vector": {
+    "value_vector": {
+      "honesty": 0.9,
+      "usefulness": 0.85,
+      "growth": 0.8,
+      "safety": 0.95,
+      "curiosity": 0.75
+    },
+    "threshold": 0.6,
+    "recent_checks": 20,
+    "recent_pass_rate": 1.0
+  },
+  "l0_observer": {
+    "tick": 12731,
+    "broadcast_count": 4,
+    "last_attention": "tick=12731 salience=5.60 notice: surprise=1.00 (integrator→action); high_comp=0.863 → broadcasting to 3 types",
+    "current_salience": {
+      "surprise": 1.0,
+      "competition": 0.863,
+      "concentration": 0.085,
+      "stagnation": 2,
+      "n_active_types": 19,
+      "dominant": "action",
+      "total_salience": 5.604
+    },
+    "attention_log_count": 4
+  },
+  "proprioceptive_loop": {
+    "tick": 12731,
+    "loop_count": 4,
+    "cumulative_error": 1.2131,
+    "avg_error": 0.3033,
+    "error_count": 4,
+    "last_prediction": {
+      "predicted": "memory",
+      "confidence": 0.313
+    },
+    "last_actual": {
+      "dominant": "action",
+      "error": 0.8508
+    },
+    "last_signal": {
+      "previous": "action",
+      "actual": "action",
+      "predicted": "memory",
+      "error": 0.8508,
+      "summary": "I was action and chose action (model expected memory, error=0.85)"
+    },
+    "history_count": 4
+  },
+  "predictive_plasticity": {
+    "active_neurons": 2007,
+    "eligible_edges": 16000,
+    "conditional_transition_contexts": 113,
+    "coarse_backoff": true,
+    "stable_threshold": 0.9124,
+    "stable_window_n": 200,
+    "gate_hist": {
+      "awaiting_repeat": 21,
+      "unstable_regime": 1647,
+      "repeated_supported_transition": 193,
+      "no_dynamical_improvement": 77
+    },
+    "calibration": {
+      "n": 400,
+      "brier": 0.1367,
+      "ece": 0.065,
+      "bins": {
+        "0.6-0.8": {
+          "n": 161,
+          "conf": 0.742,
+          "acc": 0.677
+        },
+        "0.8-1.0": {
+          "n": 239,
+          "conf": 0.977,
+          "acc": 0.912
+        }
+      }
+    },
+    "persistence_rate": 0.8599,
+    "drift_cleared": 2,
+    "rollout": {
+      "steps": [
+        [
+          [
+            "action",
+            0.978
+          ],
+          [
+            "rule_modification",
+            0.011
+          ],
+          [
+            "veto",
+            0.011
+          ]
+        ],
+        [
+          [
+            "action",
+            0.956
+          ],
+          [
+            "rule_modification",
+            0.022
+          ],
+          [
+            "veto",
+            0.022
+          ]
+        ],
+        [
+          [
+            "action",
+            0.936
+          ],
+          [
+            "rule_modification",
+            0.033
+          ],
+          [
+            "veto",
+            0.031
+          ]
+        ]
+      ],
+      "expected": "action",
+      "conf": 0.936
+    },
+    "persist": {
+      "path": "C:\\Users\\Administrator\\.openclaw\\workspace\\.lae\\predictive_plasticity.json",
+      "loaded_keys": 113,
+      "saves": 1985,
+      "last_save": "2026-09-14T16:37:34",
+      "error": ""
+    },
+    "last_outcome": {
+      "predicted": "integrator",
+      "actual": "action",
+      "regime": "comp_high|conc_low|stagnant|pressure|pool_narrow",
+      "prediction_error": 1.0,
+      "transition_repeats": 1,
+      "gate": 0.35,
+      "reason": "unstable_regime",
+      "competition": 0.863,
+      "stable_threshold": 0.9124
+    }
+  },
+  "criticality_regulator": {
+    "enabled": true,
+    "ticks": 4,
+    "window_size": 4,
+    "current_lambda": 0.0,
+    "raw_lambda": null,
+    "lambda_source": null,
+    "discrete_ratio": null,
+    "regime": "unmeasurable",
+    "regime_changes": 0,
+    "pid_output": 0.0,
+    "p_term": 0.0,
+    "i_term": 0.0,
+    "d_term": 0.0,
+    "integral": 0.0,
+    "adjustments_applied": 0,
+    "current_adjustments": {
+      "stdp_mult_delta": 0.0,
+      "perturb_scale_delta": 0.0,
+      "noise_amp_delta": 0.0
+    },
+    "override_values": {
+      "stdp_override": null,
+      "perturb_override": null,
+      "noise_amp_override": null
+    },
+    "last_apply": null
+  },
+  "iit_state": {
+    "enabled": true,
+    "phi_total": 0.0943,
+    "delta_phi_history": [
+      {
+        "tick": 12730,
+        "delta_phi": 0.0397
+      }
+    ],
+    "entropy_history": [
+      {
+        "tick": 12730,
+        "entropy_bits": 3.3588
+      }
+    ],
+    "phi_history": [
+      {
+        "tick": 12610,
+        "phi": 0.1839,
+        "partition": "doubt // action|aesthetic|architect|cultural|curiosity|decider|emotional|ethical|integrator|memory|meta|planning|rule_modification|sensory|spatial|temporal|veto",
+        "n_types": 18,
+        "n_total_types": 19,
+        "partition_scope": "active_mi_types",
+        "inactive_types": [
+          "social"
+        ],
+        "all_type_phi": 0.0,
+        "all_type_partition": "social // action|aesthetic|architect|cultural|curiosity|decider|doubt|emotional|ethical|integrator|memory|meta|planning|rule_modification|sensory|spatial|temporal|veto",
+        "mi_pair_count": 39,
+        "negative_mi_pair_count": 8,
+        "complexity": 0.0886
+      },
+      {
+        "tick": 12620,
+        "phi": 0.1104,
+        "partition": "aesthetic|architect|cultural|curiosity|doubt|emotional|ethical|integrator|meta|planning|sensory|spatial|temporal // action|decider|memory|rule_modification|veto",
+        "n_types": 18,
+        "n_total_types": 19,
+        "partition_scope": "active_mi_types",
+        "inactive_types": [
+          "social"
+        ],
+        "all_type_phi": 0.0,
+        "all_type_partition": "social // action|aesthetic|architect|cultural|curiosity|decider|doubt|emotional|ethical|integrator|memory|meta|planning|rule_modification|sensory|spatial|temporal|veto",
+        "mi_pair_count": 40,
+        "negative_mi_pair_count": 9,
+        "complexity": 0.0879
+      },
+      {
+        "tick": 12630,
+        "phi": 0.014,
+        "partition": "social // action|aesthetic|architect|cultural|curiosity|decider|doubt|emotional|ethical|integrator|memory|meta|planning|rule_modification|sensory|spatial|temporal|veto",
+        "n_types": 19,
+        "n_total_types": 19,
+        "partition_scope": "active_mi_types",
+        "inactive_types": [],
+        "all_type_phi": 0.014,
+        "all_type_partition": "social // action|aesthetic|architect|cultural|curiosity|decider|doubt|emotional|ethical|integrator|memory|meta|planning|rule_modification|sensory|spatial|temporal|veto",
+        "mi_pair_count": 69,
+        "negative_mi_pair_count": 29,
+        "complexity": 0.0477
+      },
+      {
+        "tick": 12640,
+        "phi": 0.0668,
+        "partition": "social // action|aesthetic|architect|cultural|curiosity|decider|doubt|emotional|ethical|integrator|memory|meta|planning|rule_modification|sensory|spatial|temporal|veto",
+        "n_types": 19,
+        "n_total_types": 19,
+        "partition_scope": "active_mi_types",
+        "inactive_types": [],
+        "all_type_phi": 0.0668,
+        "all_type_partition": "social // action|aesthetic|architect|cultural|curiosity|decider|doubt|emotional|ethical|integrator|memory|meta|planning|rule_modification|sensory|spatial|temporal|veto",
+        "mi_pair_count": 79,
+        "negative_mi_pair_count": 19,
+        "complexity": 0.0365
+      },
+      {
+        "tick": 12650,
+        "phi": 0.0934,
+        "partition": "aesthetic|architect|cultural|curiosity|decider|doubt|emotional|ethical|integrator|memory|meta|planning|sensory|social|spatial|temporal // action|rule_modification|veto",
+        "n_types": 19,
+        "n_total_types": 19,
+        "partition_scope": "active_mi_types",
+        "inactive_types": [],
+        "all_type_phi": 0.0934,
+        "all_type_partition": "action|rule_modification|veto // aesthetic|architect|cultural|curiosity|decider|doubt|emotional|ethical|integrator|memory|meta|planning|sensory|social|spatial|temporal",
+        "mi_pair_count": 96,
+        "negative_mi_pair_count": 32,
+        "complexity": 0.0267
+      },
+      {
+        "tick": 12660,
+        "phi": 0.0529,
+        "partition": "doubt // action|aesthetic|architect|cultural|curiosity|decider|emotional|ethical|integrator|memory|meta|planning|rule_modification|sensory|social|spatial|temporal|veto",
+        "n_types": 19,
+        "n_total_types": 19,
+        "partition_scope": "active_mi_types",
+        "inactive_types": [],
+        "all_type_phi": 0.0529,
+        "all_type_partition": "doubt // action|aesthetic|architect|cultural|curiosity|decider|emotional|ethical|integrator|memory|meta|planning|rule_modification|sensory|social|spatial|temporal|veto",
+        "mi_pair_count": 103,
+        "negative_mi_pair_count": 28,
+        "complexity": 0.0231
+      },
+      {
+        "tick": 12670,
+        "phi": 0.0623,
+        "partition": "doubt // action|aesthetic|architect|cultural|curiosity|decider|emotional|ethical|integrator|memory|meta|planning|rule_modification|sensory|social|spatial|temporal|veto",
+        "n_types": 19,
+        "n_total_types": 19,
+        "partition_scope": "active_mi_types",
+        "inactive_types": [],
+        "all_type_phi": 0.0623,
+        "all_type_partition": "doubt // action|aesthetic|architect|cultural|curiosity|decider|emotional|ethical|integrator|memory|meta|planning|rule_modification|sensory|social|spatial|temporal|veto",
+        "mi_pair_count": 107,
+        "negative_mi_pair_count": 32,
+        "complexity": 0.0219
+      },
+      {
+        "tick": 12700,
+        "phi": 0.1217,
+        "partition": "integrator // action|aesthetic|architect|cultural|curiosity|decider|doubt|emotional|ethical|memory|meta|planning|rule_modification|sensory|spatial|temporal|veto",
+        "n_types": 18,
+        "n_total_types": 19,
+        "partition_scope": "active_mi_types",
+        "inactive_types": [
+          "social"
+        ],
+        "all_type_phi": 0.0,
+        "all_type_partition": "social // action|aesthetic|architect|cultural|curiosity|decider|doubt|emotional|ethical|integrator|memory|meta|planning|rule_modification|sensory|spatial|temporal|veto",
+        "mi_pair_count": 36,
+        "negative_mi_pair_count": 6,
+        "complexity": 0.0816
+      },
+      {
+        "tick": 12720,
+        "phi": 0.0546,
+        "partition": "doubt // action|aesthetic|architect|cultural|curiosity|decider|emotional|ethical|integrator|memory|meta|planning|rule_modification|sensory|spatial|temporal|veto",
+        "n_types": 18,
+        "n_total_types": 19,
+        "partition_scope": "active_mi_types",
+        "inactive_types": [
+          "social"
+        ],
+        "all_type_phi": 0.0,
+        "all_type_partition": "social // action|aesthetic|architect|cultural|curiosity|decider|doubt|emotional|ethical|integrator|memory|meta|planning|rule_modification|sensory|spatial|temporal|veto",
+        "mi_pair_count": 36,
+        "negative_mi_pair_count": 4,
+        "complexity": 0.0448
+      },
+      {
+        "tick": 12730,
+        "phi": 0.0943,
+        "partition": "doubt // action|aesthetic|architect|cultural|curiosity|decider|emotional|ethical|integrator|memory|meta|planning|rule_modification|sensory|spatial|temporal|veto",
+        "n_types": 18,
+        "n_total_types": 19,
+        "partition_scope": "active_mi_types",
+        "inactive_types": [
+          "social"
+        ],
+        "all_type_phi": 0.0,
+        "all_type_partition": "social // action|aesthetic|architect|cultural|curiosity|decider|doubt|emotional|ethical|integrator|memory|meta|planning|rule_modification|sensory|spatial|temporal|veto",
+        "mi_pair_count": 46,
+        "negative_mi_pair_count": 5,
+        "complexity": 0.0371
+      }
+    ],
+    "best_partition": "doubt // action|aesthetic|architect|cultural|curiosity|decider|emotional|ethical|integrator|memory|meta|planning|rule_modification|sensory|spatial|temporal|veto",
+    "complexity": 0.0371,
+    "last_tick": 12730,
+    "compute_interval": 10,
+    "partition_scope": "active_mi_types",
+    "active_types": [
+      "action",
+      "aesthetic",
+      "architect",
+      "cultural",
+      "curiosity",
+      "decider",
+      "doubt",
+      "emotional",
+      "ethical",
+      "integrator",
+      "memory",
+      "meta",
+      "planning",
+      "rule_modification",
+      "sensory",
+      "spatial",
+      "temporal",
+      "veto"
+    ],
+    "inactive_types": [
+      "social"
+    ],
+    "all_type_phi": 0.0,
+    "all_type_best_partition": "social // action|aesthetic|architect|cultural|curiosity|decider|doubt|emotional|ethical|integrator|memory|meta|planning|rule_modification|sensory|spatial|temporal|veto",
+    "mi_pair_count": 46,
+    "negative_mi_pair_count": 5,
+    "type_mi_matrix": {
+      "sensory_integrator": 0.0186,
+      "sensory_memory": 0.0503,
+      "sensory_planning": 0.0126,
+      "integrator_sensory": 0.0557,
+      "integrator_action": 0.0308,
+      "integrator_memory": -0.0048,
+      "integrator_rule_modification": -0.0074,
+      "integrator_doubt": 0.0128,
+      "integrator_planning": 0.0093,
+      "integrator_aesthetic": 0.0125,
+      "decider_integrator": 0.0128,
+      "decider_memory": 0.0269,
+      "action_integrator": 0.0468,
+      "action_rule_modification": 0.0059,
+      "action_veto": 0.0329,
+      "action_doubt": 0.0118,
+      "action_aesthetic": 0.0006,
+      "memory_sensory": 0.0172,
+      "memory_integrator": -0.0048,
+      "memory_planning": 0.0538,
+      "rule_modification_integrator": -0.0074,
+      "rule_modification_decider": 0.0646,
+      "rule_modification_action": 0.0059,
+      "rule_modification_meta": 0.0244,
+      "veto_integrator": -0.0048,
+      "veto_rule_modification": 0.101,
+      "doubt_action": 0.0118,
+      "doubt_veto": 0.0697,
+      "curiosity_cultural": 0.1284,
+      "planning_integrator": 0.0093,
+      "planning_curiosity": 0.1046,
+      "ethical_spatial": 0.0302,
+      "ethical_architect": 0.0763,
+      "aesthetic_integrator": 0.0125,
+      "aesthetic_action": 0.0006,
+      "aesthetic_emotional": 0.0947,
+      "temporal_action": 0.0487,
+      "emotional_ethical": 0.0302,
+      "emotional_meta": 0.0763,
+      "spatial_temporal": 0.1423,
+      "cultural_aesthetic": 0.0947,
+      "meta_decider": 0.0302,
+      "meta_ethical": 0.0302,
+      "meta_architect": 0.0302,
+      "architect_ethical": 0.0302,
+      "architect_spatial": 0.0763
+    },
+    "raw_type_mi_matrix": {
+      "sensory_integrator": 0.0186,
+      "sensory_memory": 0.0503,
+      "sensory_planning": 0.0126,
+      "integrator_sensory": 0.0557,
+      "integrator_action": 0.0308,
+      "integrator_memory": -0.0048,
+      "integrator_rule_modification": -0.0074,
+      "integrator_doubt": 0.0128,
+      "integrator_planning": 0.0093,
+      "integrator_aesthetic": 0.0125,
+      "decider_integrator": 0.0128,
+      "decider_memory": 0.0269,
+      "action_integrator": 0.0468,
+      "action_rule_modification": 0.0059,
+      "action_veto": 0.0329,
+      "action_doubt": 0.0118,
+      "action_aesthetic": 0.0006,
+      "memory_sensory": 0.0172,
+      "memory_integrator": -0.0048,
+      "memory_planning": 0.0538,
+      "rule_modification_integrator": -0.0074,
+      "rule_modification_decider": 0.0646,
+      "rule_modification_action": 0.0059,
+      "rule_modification_meta": 0.0244,
+      "veto_integrator": -0.0048,
+      "veto_rule_modification": 0.101,
+      "doubt_action": 0.0118,
+      "doubt_veto": 0.0697,
+      "curiosity_cultural": 0.1284,
+      "planning_integrator": 0.0093,
+      "planning_curiosity": 0.1046,
+      "ethical_spatial": 0.0302,
+      "ethical_architect": 0.0763,
+      "aesthetic_integrator": 0.0125,
+      "aesthetic_action": 0.0006,
+      "aesthetic_emotional": 0.0947,
+      "temporal_action": 0.0487,
+      "emotional_ethical": 0.0302,
+      "emotional_meta": 0.0763,
+      "spatial_temporal": 0.1423,
+      "cultural_aesthetic": 0.0947,
+      "meta_decider": 0.0302,
+      "meta_ethical": 0.0302,
+      "meta_architect": 0.0302,
+      "architect_ethical": 0.0302,
+      "architect_spatial": 0.0763
+    },
+    "trajectory_len": 104
+  },
+  "act": {
+    "adaptive_steps": 0,
+    "act_stopped_reason": "not_run",
+    "act_total_ponder_cost": 0.0,
+    "act_budget": {}
+  }
+}

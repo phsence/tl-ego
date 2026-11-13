@@ -1,0 +1,75 @@
+minant_dwell", 0) or 0)
+    _md_hold = False
+    _md_reason = "same"
+    _int_press_ctr = RESTING_STATE.get("_int_press_counter", 0) or 0
+    _md_margin = None
+    _md_int_press_triggered = False
+    _md_conc = float(result.get("concentration", 0.0) or 0.0)
+    _md_comp = float(result.get("competition", 0.0) or 0.0)
+    if _md_prev and _md_cand != _md_prev:
+        _scores = result.get("activation_scores") or {}
+        if _scores:
+            _ta = defaultdict(float)
+            for _nid, _act in _scores.items():
+                try:
+                    _ta[parse_type(_nid)] += float(_act)
+                except Exception:
+                    pass
+            _tot = sum(_ta.values()) or 1.0
+            _md_margin = (_ta.get(_md_cand, 0.0) - _ta.get(_md_prev, 0.0)) / _tot
+            # L5g-20260812-000660-FIX: normalize _md_margin by active-neuron count
+            # to remove neuron-count bias. Architect has 634 active neurons vs
+            # integrator 175: raw-sum margin is -0.267 even when per-neuron
+            # activation is near-identical (~0.00054 for both). Normalized margin
+            # = (avg_cand - avg_prev) where avg = sum(acts)/n_neurons, measures
+            # genuine per-neuron strength without count-volume distortion.
+            _nc = sum(1 for _n in _scores if parse_type(_n) == _md_cand)
+            _np = sum(1 for _n in _scores if parse_type(_n) == _md_prev)
+            # l5g-20260814-stagnation-fix: activation_scores 来自 30 轮无归一化传播，
+            # 数值可爆炸到 1e60+（日志 margin=-3.5e61 实锤），导致 _md_margin 永远
+            # 是天文负数 → min_dwell 永远 late_hold → 吸引子健康轮换但 gate 后
+            # dominant 恒定 → stagnation 虚高（122 tick 全是 doubt，raw 却只有 55）。
+            # 此处对类型激活总量做 max 归一化后再算 margin，数值回到 [-1,1]。
+            _ta_max = max(_ta.values()) if _ta else 1.0
+            if _ta_max > 0:
+                _ta = {k: v / _ta_max for k, v in _ta.items()}
+            _md_margin = _ta.get(_md_cand, 0.0) / max(_nc, 1) - _ta.get(_md_prev, 0.0) / max(_np, 1)
+        # Challenger streak: consecutive ticks proposing the same new type.
+        _md_prev_ch = RESTING_STATE.get("dwell_challenger")
+        if _md_prev_ch == _md_cand:
+            _md_ch_streak = int(RESTING_STATE.get("dwell_challenger_streak", 0) or 0) + 1
+        else:
+            _md_ch_streak = 1
+        RESTING_STATE["dwell_challenger"] = _md_cand
+        RESTING_STATE["dwell_challenger_streak"] = _md_ch_streak
+        # l5g-20260818-000063-FIX-B: relax margin threshold for selector-backed challenger.
+        # Bug: _md_margin_threshold = max(0.075, 0.15*conc) is >= 0.075 even at conc=0.10.
+        # When the autonomous selector chose _md_cand as the challenger (not the KWTA winner)
+        # and _md_cand != _md_prev, selector has already evaluated novelty+coverage+stagnation
+        # and found _md_cand worth proposing. A selector-backed challenger in low-conc
+        # (conc < 0.15) high-comp (comp > 0.70) attractor-lock regime should be allowed
+        # to proceed when margin is near-zero, not blocked by the 0.075 floor.
+        # Relax to max(0.0, 0.15*conc) so _md_int_press_escape can fire on margin >= 0.0.
+        _margin_relax = (
+            _md_cand != _md_prev
+            and isinstance(_auto_sel, dict)
+            and _auto_sel.get("candidate") == _md_cand
+            and float(result.get('concentration', 0.0) or 0.0) < 0.15
+        )
+        _md_margin_threshold = (
+            max(0.0, 0.15 * max(0.0, min(1.0, float(result.get('concentration', 0.0) or 0.0))))
+            if _margin_relax else max(0.075, 0.15 * max(0.0, min(1.0, float(result.get('concentration', 0.0) or 0.0))))
+        )
+        _md_margin_ok = (_md_margin is not None and _md_margin >= _md_margin_threshold)
+        # Strong requires real margin 閳�?never accept conc alone (architect monomodal trap).
+        _md_strong = (
+            _md_margin_ok
+            or (_md_conc >= 0.90 and _md_margin is not None and _md_margin >= 0.20)
+        )
+        _md_crisis = (
+            _md_comp >= 0.93
+            and _md_margin is not None
+            and _md_margin >= 0.15
+        )
+        # L5g-20260722-000067: integrator_escape 閳�?raw integrator is repeatedly blocked by
+        # min_dwell while

@@ -1,0 +1,81 @@
+{
+  "samples": [
+    {
+      "tick": 3,
+      "conc": 0.1304,
+      "comp": 0.7684,
+      "dom": "doubt",
+      "gate_div": true
+    },
+    {
+      "tick": 4,
+      "conc": 0.1289,
+      "comp": 0.7685,
+      "dom": "decider",
+      "gate_div": false
+    },
+    {
+      "tick": 5,
+      "conc": 0.1289,
+      "comp": 0.7687,
+      "dom": "doubt",
+      "gate_div": true
+    },
+    {
+      "tick": 6,
+      "conc": 0.1333,
+      "comp": 0.7677,
+      "dom": "memory",
+      "gate_div": false
+    },
+    {
+      "tick": 6,
+      "conc": 0.1333,
+      "comp": 0.7677,
+      "dom": "memory",
+      "gate_div": false
+    }
+  ],
+  "scores_mean": {
+    "sensory": 0.07946,
+    "integrator": 0.10668,
+    "decider": 0.07748000000000001,
+    "action": 0.12902,
+    "memory": 0.08653999999999999,
+    "rule_modification": 0.07968,
+    "veto": 0.09866,
+    "doubt": 0.09512000000000001,
+    "curiosity": 0.0,
+    "planning": 0.0,
+    "social": 0.0,
+    "ethical": 0.0,
+    "aesthetic": 0.001,
+    "temporal": 0.0,
+    "emotional": 0.0,
+    "spatial": 0.0,
+    "cultural": 0.0,
+    "meta": 0.0,
+    "architect": 0.15594000000000002
+  },
+  "scores_norm": {
+    "sensory": 0.509554957034757,
+    "integrator": 0.6841092727972296,
+    "decider": 0.4968577658073618,
+    "action": 0.8273695010901627,
+    "memory": 0.5549570347569577,
+    "rule_modification": 0.510965756060023,
+    "veto": 0.6326792356034371,
+    "doubt": 0.6099781967423368,
+    "curiosity": 0.0,
+    "planning": 0.0,
+    "social": 0.0,
+    "ethical": 0.0,
+    "aesthetic": 0.006412722842118763,
+    "temporal": 0.0,
+    "emotional": 0.0,
+    "spatial": 0.0,
+    "cultural": 0.0,
+    "meta": 0.0,
+    "architect": 1.0
+  }
+}

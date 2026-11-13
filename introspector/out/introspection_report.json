@@ -1,0 +1,53 @@
+{
+  "schema": "ego_introspector_report.v0",
+  "generated_at": "2026-08-29T07:15:18.235292+00:00",
+  "sources": {
+    "status": "ok",
+    "bdi": "ok",
+    "self_model": "ok",
+    "journal": "ok"
+  },
+  "source_errors": {},
+  "context": {
+    "tick": 4599,
+    "dominant": "action",
+    "raw_attractor": "sensory",
+    "concentration": 0.2251,
+    "competition": 0.7744,
+    "stagnation_streak": 0,
+    "journal_frames_read": 200
+  },
+  "findings": [
+    {
+      "lens": "gate_divergence",
+      "severity": "info",
+      "metric": "raw_gate_divergence_rate",
+      "value": 0.3951,
+      "threshold": "info<=0.5<warn<=0.8<alert",
+      "message": "gate divergence 39.5% over 4599 ticks (raw_gate_divergence_count=1817)"
+    },
+    {
+      "lens": "gate_divergence",
+      "severity": "info",
+      "metric": "current_gate_mismatch",
+      "value": {
+        "raw": "sensory",
+        "behavioral": "action"
+      },
+      "threshold": "raw != behavioral",
+      "message": "raw attractor=sensory but behavioral dominant=action (gate holding)"
+    },
+    {
+      "lens": "identity_bias",
+      "severity": "info",
+      "metric": "behavioral_top_share",
+      "value": {
+        "type": "action",
+        "share": 0.4921
+      },
+      "threshold": "info<=0.6<warn<=0.75<alert",
+      "message": "behavioral top type 'action' holds 49.2% (2026-08-23 incident baseline: 0.71)"
+    }
+  ],
+  "verdict": "ok"
+}

@@ -1,0 +1,11 @@
+old_text length: 1035 chars
+new_text length: 1758 chars
+old_text has \r: False
+new_text has \r: False
+
+\r positions in old_text: []
+
+new_text has NO \r: True
+
+Patched context around def line (char positions 537486 to 537586):
+'def _detect_bistable_oscillation():\n        """Return (is_oscillating, suppressed_type) if any two types show bistable o'

@@ -1,0 +1,27 @@
+{
+  "sensory": [
+    "external_stimulus",
+    "self_state_recollection"
+  ],
+  "integrator": [
+    "conceptual_synthesis",
+    "self_state_optimization",
+    "self_state_recollection",
+    "subclass_classification"
+  ],
+  "decider": [
+    "choosing",
+    "planning",
+    "postponing_decision",
+    "self_state_optimization"
+  ],
+  "action": [
+    "execute_task",
+    "executing",
+    "self_state_optimization",
+    "self_state_recollection"
+  ],
+  "memory": [
+    "self_state_recollection"
+  ]
+}

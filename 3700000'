@@ -1,0 +1,1802 @@
+3825867:[consume] autonomy_evidence: tick=? ts=2026-10-14 00:02:13 intent=autonomy_impulse
+3825868:[consume] self_evidence: tick=? ts=2026-10-14 00:02:10 intent=self_directed_shift
+3827015:[consume] autonomy_evidence: tick=? ts=2026-10-14 00:05:31 intent=autonomy_impulse
+3827016:[consume] self_evidence: tick=? ts=2026-10-14 00:05:29 intent=self_directed_shift
+3827489:[consume] self_evidence: tick=? ts=2026-10-14 00:12:27 intent=self_directed_shift
+3827878:[consume] self_evidence: tick=? ts=2026-10-14 00:15:23 intent=self_directed_shift
+3828292:[consume] autonomy_evidence: tick=? ts=2026-10-14 00:17:56 intent=autonomy_impulse
+3828293:[consume] self_evidence: tick=? ts=2026-10-14 00:17:54 intent=self_directed_shift
+3828540:[consume] autonomy_evidence: tick=? ts=2026-10-14 00:19:11 intent=autonomy_impulse
+3828541:[consume] self_evidence: tick=? ts=2026-10-14 00:19:10 intent=self_directed_shift
+3828998:[consume] autonomy_evidence: tick=? ts=2026-10-14 00:20:34 intent=autonomy_impulse
+3828999:[consume] self_evidence: tick=? ts=2026-10-14 00:20:31 intent=self_directed_shift
+3829636:[consume] autonomy_evidence: tick=? ts=2026-10-14 00:22:45 intent=autonomy_impulse
+3829637:[consume] self_evidence: tick=? ts=2026-10-14 00:22:43 intent=self_directed_shift
+3829841:[consume] self_evidence: tick=? ts=2026-10-14 00:25:58 intent=self_directed_shift
+3830229:[consume] self_evidence: tick=? ts=2026-10-14 00:26:42 intent=self_directed_shift
+3830449:[consume] self_evidence: tick=? ts=2026-10-14 00:28:13 intent=self_directed_shift
+3831212:[consume] autonomy_evidence: tick=? ts=2026-10-14 00:29:00 intent=autonomy_impulse
+3831214:[consume] self_evidence: tick=? ts=2026-10-14 00:28:56 intent=self_directed_shift
+3831216:[consume] meta_conflict: tick=? ts=2026-10-14 00:30:51 intent=meta_conflict_resolution
+3832308:[consume] autonomy_evidence: tick=? ts=2026-10-14 00:32:59 intent=autonomy_impulse
+3832309:[consume] self_evidence: tick=? ts=2026-10-14 00:32:53 intent=self_directed_shift
+3832971:[consume] autonomy_evidence: tick=? ts=2026-10-14 00:39:17 intent=autonomy_impulse
+3832972:[consume] self_evidence: tick=? ts=2026-10-14 00:39:09 intent=self_directed_shift
+3833694:[consume] autonomy_evidence: tick=? ts=2026-10-14 00:44:01 intent=autonomy_impulse
+3833695:[consume] self_evidence: tick=? ts=2026-10-14 00:43:56 intent=self_directed_shift
+3834260:[consume] self_evidence: tick=? ts=2026-10-14 00:48:36 intent=self_directed_shift
+3835260:[consume] autonomy_evidence: tick=? ts=2026-10-14 00:52:24 intent=autonomy_impulse
+3835261:[consume] self_evidence: tick=? ts=2026-10-14 00:52:20 intent=self_directed_shift
+3836101:[consume] autonomy_evidence: tick=? ts=2026-10-14 00:59:21 intent=autonomy_impulse
+3836102:[consume] self_evidence: tick=? ts=2026-10-14 00:58:42 intent=self_directed_shift
+3836728:[consume] autonomy_evidence: tick=? ts=2026-10-14 01:03:58 intent=autonomy_impulse
+3836729:[consume] self_evidence: tick=? ts=2026-10-14 01:03:54 intent=self_directed_shift
+3837789:[consume] self_evidence: tick=? ts=2026-10-14 01:08:07 intent=self_directed_shift
+3838227:[consume] self_evidence: tick=? ts=2026-10-14 01:14:32 intent=self_directed_shift
+3838254:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T00:52:34.707989+08:00
+3838255:[narrative] skip: no new fingerprints (last_fp=2026-10-14T00:30:45.187938+08:00)
+3838807:[consume] self_evidence: tick=? ts=2026-10-14 01:17:46 intent=self_directed_shift
+3839246:[consume] autonomy_evidence: tick=? ts=2026-10-14 01:22:30 intent=autonomy_impulse
+3839247:[consume] self_evidence: tick=? ts=2026-10-14 01:21:59 intent=self_directed_shift
+3839511:[consume] autonomy_evidence: tick=? ts=2026-10-14 01:23:23 intent=autonomy_impulse
+3839512:[consume] self_evidence: tick=? ts=2026-10-14 01:23:19 intent=self_directed_shift
+3839837:[consume] autonomy_evidence: tick=? ts=2026-10-14 01:24:19 intent=autonomy_impulse
+3839839:[consume] self_evidence: tick=? ts=2026-10-14 01:24:16 intent=self_directed_shift
+3840014:[consume] autonomy_evidence: tick=? ts=2026-10-14 01:25:34 intent=autonomy_impulse
+3840015:[consume] self_evidence: tick=? ts=2026-10-14 01:25:32 intent=self_directed_shift
+3840056:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T00:52:34.707989+08:00
+3840057:[narrative] skip: no new fingerprints (last_fp=2026-10-14T00:30:45.187938+08:00)
+3840525:[consume] self_evidence: tick=? ts=2026-10-14 01:26:11 intent=self_directed_shift
+3840865:[consume] self_evidence: tick=? ts=2026-10-14 01:29:21 intent=self_directed_shift
+3841043:[consume] autonomy_evidence: tick=? ts=2026-10-14 01:31:00 intent=autonomy_impulse
+3841044:[consume] self_evidence: tick=? ts=2026-10-14 01:30:55 intent=self_directed_shift
+3841755:[consume] autonomy_evidence: tick=? ts=2026-10-14 01:32:11 intent=autonomy_impulse
+3841756:[consume] self_evidence: tick=? ts=2026-10-14 01:32:08 intent=self_directed_shift
+3842358:[consume] self_evidence: tick=? ts=2026-10-14 01:38:03 intent=self_directed_shift
+3842433:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T00:52:34.707989+08:00
+3842434:[narrative] skip: no new fingerprints (last_fp=2026-10-14T00:30:45.187938+08:00)
+3842846:[consume] self_evidence: tick=? ts=2026-10-14 01:41:49 intent=self_directed_shift
+3842847:[consume] meta_conflict: tick=? ts=2026-10-14 01:43:36 intent=meta_conflict_resolution
+3843235:[consume] autonomy_evidence: tick=? ts=2026-10-14 01:44:33 intent=autonomy_impulse
+3843236:[consume] self_evidence: tick=? ts=2026-10-14 01:44:24 intent=self_directed_shift
+3843477:[consume] self_evidence: tick=? ts=2026-10-14 01:45:55 intent=self_directed_shift
+3843901:[consume] autonomy_evidence: tick=? ts=2026-10-14 01:46:59 intent=autonomy_impulse
+3843902:[consume] self_evidence: tick=? ts=2026-10-14 01:46:56 intent=self_directed_shift
+3844242:[consume] autonomy_evidence: tick=? ts=2026-10-14 01:50:11 intent=autonomy_impulse
+3844243:[consume] self_evidence: tick=? ts=2026-10-14 01:50:09 intent=self_directed_shift
+3844270:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T00:52:34.707989+08:00
+3844551:[consume] autonomy_evidence: tick=? ts=2026-10-14 01:51:30 intent=autonomy_impulse
+3844552:[consume] self_evidence: tick=? ts=2026-10-14 01:51:29 intent=self_directed_shift
+3844789:[consume] autonomy_evidence: tick=? ts=2026-10-14 01:52:32 intent=autonomy_impulse
+3844795:[consume] self_evidence: tick=? ts=2026-10-14 01:52:30 intent=self_directed_shift
+3845010:[consume] autonomy_evidence: tick=? ts=2026-10-14 01:53:39 intent=autonomy_impulse
+3845012:[consume] self_evidence: tick=? ts=2026-10-14 01:53:38 intent=self_directed_shift
+3845636:[consume] self_evidence: tick=? ts=2026-10-14 01:54:21 intent=self_directed_shift
+3845818:[consume] self_evidence: tick=? ts=2026-10-14 01:57:57 intent=self_directed_shift
+3845841:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T01:51:39.081176+08:00
+3845842:[narrative] skip: no new fingerprints (last_fp=2026-10-14T01:43:36.064817+08:00)
+3846176:[consume] self_evidence: tick=? ts=2026-10-14 01:58:42 intent=self_directed_shift
+3846452:[consume] autonomy_evidence: tick=? ts=2026-10-14 02:01:15 intent=autonomy_impulse
+3846453:[consume] self_evidence: tick=? ts=2026-10-14 02:01:12 intent=self_directed_shift
+3846812:[consume] autonomy_evidence: tick=? ts=2026-10-14 02:02:27 intent=autonomy_impulse
+3846813:[consume] self_evidence: tick=? ts=2026-10-14 02:02:27 intent=self_directed_shift
+3847035:[consume] self_evidence: tick=? ts=2026-10-14 02:04:49 intent=self_directed_shift
+3847197:[consume] self_evidence: tick=? ts=2026-10-14 02:05:58 intent=self_directed_shift
+3847209:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T01:51:39.081176+08:00
+3847210:[narrative] skip: no new fingerprints (last_fp=2026-10-14T01:43:36.064817+08:00)
+3847351:[consume] self_evidence: tick=? ts=2026-10-14 02:06:30 intent=self_directed_shift
+3847561:[consume] self_evidence: tick=? ts=2026-10-14 02:07:01 intent=self_directed_shift
+3847692:[consume] autonomy_evidence: tick=? ts=2026-10-14 02:08:03 intent=autonomy_impulse
+3847693:[consume] self_evidence: tick=? ts=2026-10-14 02:08:03 intent=self_directed_shift
+3847827:[consume] autonomy_evidence: tick=? ts=2026-10-14 02:08:45 intent=autonomy_impulse
+3847828:[consume] self_evidence: tick=? ts=2026-10-14 02:08:41 intent=self_directed_shift
+3848426:[consume] autonomy_evidence: tick=? ts=2026-10-14 02:09:24 intent=autonomy_impulse
+3848427:[consume] self_evidence: tick=? ts=2026-10-14 02:09:22 intent=self_directed_shift
+3848496:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T01:51:39.081176+08:00
+3848497:[narrative] skip: no new fingerprints (last_fp=2026-10-14T01:43:36.064817+08:00)
+3849012:[consume] autonomy_evidence: tick=? ts=2026-10-14 02:13:21 intent=autonomy_impulse
+3849013:[consume] self_evidence: tick=? ts=2026-10-14 02:13:16 intent=self_directed_shift
+3849015:[consume] meta_conflict: tick=? ts=2026-10-14 02:15:16 intent=meta_conflict_resolution
+3849306:[consume] autonomy_evidence: tick=? ts=2026-10-14 02:16:10 intent=autonomy_impulse
+3849307:[consume] self_evidence: tick=? ts=2026-10-14 02:16:06 intent=self_directed_shift
+3849530:[consume] autonomy_evidence: tick=? ts=2026-10-14 02:17:21 intent=autonomy_impulse
+3849531:[consume] self_evidence: tick=? ts=2026-10-14 02:17:20 intent=self_directed_shift
+3849827:[consume] autonomy_evidence: tick=? ts=2026-10-14 02:18:37 intent=autonomy_impulse
+3849828:[consume] self_evidence: tick=? ts=2026-10-14 02:18:35 intent=self_directed_shift
+3850123:[consume] autonomy_evidence: tick=? ts=2026-10-14 02:20:08 intent=autonomy_impulse
+3850124:[consume] self_evidence: tick=? ts=2026-10-14 02:20:08 intent=self_directed_shift
+3850154:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T01:51:39.081176+08:00
+3850441:[consume] autonomy_evidence: tick=? ts=2026-10-14 02:21:51 intent=autonomy_impulse
+3850442:[consume] self_evidence: tick=? ts=2026-10-14 02:21:49 intent=self_directed_shift
+3850899:[consume] self_evidence: tick=? ts=2026-10-14 02:23:02 intent=self_directed_shift
+3851083:[consume] self_evidence: tick=? ts=2026-10-14 02:26:10 intent=self_directed_shift
+3851237:[consume] self_evidence: tick=? ts=2026-10-14 02:26:58 intent=self_directed_shift
+3851381:[consume] autonomy_evidence: tick=? ts=2026-10-14 02:27:34 intent=autonomy_impulse
+3851382:[consume] self_evidence: tick=? ts=2026-10-14 02:27:33 intent=self_directed_shift
+3851416:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T01:51:39.081176+08:00
+3851717:[consume] autonomy_evidence: tick=? ts=2026-10-14 02:28:15 intent=autonomy_impulse
+3851718:[consume] self_evidence: tick=? ts=2026-10-14 02:28:13 intent=self_directed_shift
+3852199:[consume] autonomy_evidence: tick=? ts=2026-10-14 02:30:20 intent=autonomy_impulse
+3852200:[consume] self_evidence: tick=? ts=2026-10-14 02:30:17 intent=self_directed_shift
+3852364:[consume] self_evidence: tick=? ts=2026-10-14 02:33:24 intent=self_directed_shift
+3852507:[consume] self_evidence: tick=? ts=2026-10-14 02:34:10 intent=self_directed_shift
+3852614:[consume] self_evidence: tick=? ts=2026-10-14 02:34:47 intent=self_directed_shift
+3852663:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T02:28:26.715839+08:00
+3852664:[narrative] skip: no new fingerprints (last_fp=2026-10-14T02:15:16.866034+08:00)
+3853098:[consume] self_evidence: tick=? ts=2026-10-14 02:35:30 intent=self_directed_shift
+3853422:[consume] self_evidence: tick=? ts=2026-10-14 02:37:34 intent=self_directed_shift
+3854029:[consume] self_evidence: tick=? ts=2026-10-14 02:39:34 intent=self_directed_shift
+3854410:[consume] autonomy_evidence: tick=? ts=2026-10-14 02:43:35 intent=autonomy_impulse
+3854417:[consume] self_evidence: tick=? ts=2026-10-14 02:43:31 intent=self_directed_shift
+3854634:[consume] self_evidence: tick=? ts=2026-10-14 02:45:18 intent=self_directed_shift
+3854703:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T02:28:26.715839+08:00
+3854704:[narrative] skip: no new fingerprints (last_fp=2026-10-14T02:15:16.866034+08:00)
+3855231:[consume] self_evidence: tick=? ts=2026-10-14 02:45:56 intent=self_directed_shift
+3855232:[consume] meta_conflict: tick=? ts=2026-10-14 02:47:15 intent=meta_conflict_resolution
+3855718:[consume] autonomy_evidence: tick=? ts=2026-10-14 02:47:59 intent=autonomy_impulse
+3855719:[consume] self_evidence: tick=? ts=2026-10-14 02:47:54 intent=self_directed_shift
+3855992:[consume] autonomy_evidence: tick=? ts=2026-10-14 02:50:56 intent=autonomy_impulse
+3855993:[consume] self_evidence: tick=? ts=2026-10-14 02:50:50 intent=self_directed_shift
+3856186:[consume] autonomy_evidence: tick=? ts=2026-10-14 02:51:40 intent=autonomy_impulse
+3856187:[consume] self_evidence: tick=? ts=2026-10-14 02:51:40 intent=self_directed_shift
+3856542:[consume] autonomy_evidence: tick=? ts=2026-10-14 02:52:22 intent=autonomy_impulse
+3856543:[consume] self_evidence: tick=? ts=2026-10-14 02:52:22 intent=self_directed_shift
+3856600:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T02:28:26.715839+08:00
+3856983:[consume] autonomy_evidence: tick=? ts=2026-10-14 02:53:27 intent=autonomy_impulse
+3856984:[consume] self_evidence: tick=? ts=2026-10-14 02:53:22 intent=self_directed_shift
+3857629:[consume] self_evidence: tick=? ts=2026-10-14 02:54:52 intent=self_directed_shift
+3857927:[consume] autonomy_evidence: tick=? ts=2026-10-14 02:58:39 intent=autonomy_impulse
+3857928:[consume] self_evidence: tick=? ts=2026-10-14 02:58:37 intent=self_directed_shift
+3858360:[consume] autonomy_evidence: tick=? ts=2026-10-14 02:59:53 intent=autonomy_impulse
+3858361:[consume] self_evidence: tick=? ts=2026-10-14 02:59:52 intent=self_directed_shift
+3858615:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:01:18 intent=autonomy_impulse
+3858616:[consume] self_evidence: tick=? ts=2026-10-14 03:01:12 intent=self_directed_shift
+3858629:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T02:28:26.715839+08:00
+3859112:[consume] self_evidence: tick=? ts=2026-10-14 03:02:13 intent=self_directed_shift
+3859269:[consume] self_evidence: tick=? ts=2026-10-14 03:05:19 intent=self_directed_shift
+3859400:[consume] self_evidence: tick=? ts=2026-10-14 03:05:58 intent=self_directed_shift
+3859603:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:06:41 intent=autonomy_impulse
+3859604:[consume] self_evidence: tick=? ts=2026-10-14 03:06:39 intent=self_directed_shift
+3859812:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:07:34 intent=autonomy_impulse
+3859813:[consume] self_evidence: tick=? ts=2026-10-14 03:07:32 intent=self_directed_shift
+3859842:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T03:02:21.845048+08:00
+3859843:[narrative] skip: no new fingerprints (last_fp=2026-10-14T02:47:15.572733+08:00)
+3859983:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:08:22 intent=autonomy_impulse
+3859988:[consume] self_evidence: tick=? ts=2026-10-14 03:08:21 intent=self_directed_shift
+3860182:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:09:08 intent=autonomy_impulse
+3860183:[consume] self_evidence: tick=? ts=2026-10-14 03:09:06 intent=self_directed_shift
+3860491:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:10:04 intent=autonomy_impulse
+3860492:[consume] self_evidence: tick=? ts=2026-10-14 03:10:01 intent=self_directed_shift
+3860700:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:12:37 intent=autonomy_impulse
+3860701:[consume] self_evidence: tick=? ts=2026-10-14 03:12:34 intent=self_directed_shift
+3860831:[consume] self_evidence: tick=? ts=2026-10-14 03:13:37 intent=self_directed_shift
+3860863:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T03:02:21.845048+08:00
+3860864:[narrative] skip: no new fingerprints (last_fp=2026-10-14T02:47:15.572733+08:00)
+3861166:[consume] self_evidence: tick=? ts=2026-10-14 03:14:22 intent=self_directed_shift
+3861167:[consume] meta_conflict: tick=? ts=2026-10-14 03:15:42 intent=meta_conflict_resolution
+3861371:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:15:56 intent=autonomy_impulse
+3861372:[consume] self_evidence: tick=? ts=2026-10-14 03:15:51 intent=self_directed_shift
+3861571:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:16:44 intent=autonomy_impulse
+3861572:[consume] self_evidence: tick=? ts=2026-10-14 03:16:43 intent=self_directed_shift
+3862067:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:17:29 intent=autonomy_impulse
+3862068:[consume] self_evidence: tick=? ts=2026-10-14 03:17:28 intent=self_directed_shift
+3862281:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:21:20 intent=autonomy_impulse
+3862282:[consume] self_evidence: tick=? ts=2026-10-14 03:21:17 intent=self_directed_shift
+3862312:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T03:02:21.845048+08:00
+3862519:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:21:58 intent=autonomy_impulse
+3862520:[consume] self_evidence: tick=? ts=2026-10-14 03:21:57 intent=self_directed_shift
+3862650:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:22:49 intent=autonomy_impulse
+3862651:[consume] self_evidence: tick=? ts=2026-10-14 03:22:48 intent=self_directed_shift
+3862893:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:23:34 intent=autonomy_impulse
+3862894:[consume] self_evidence: tick=? ts=2026-10-14 03:23:32 intent=self_directed_shift
+3863160:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:24:28 intent=autonomy_impulse
+3863161:[consume] self_evidence: tick=? ts=2026-10-14 03:24:21 intent=self_directed_shift
+3863431:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:25:37 intent=autonomy_impulse
+3863432:[consume] self_evidence: tick=? ts=2026-10-14 03:25:34 intent=self_directed_shift
+3863445:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T03:22:08.411563+08:00
+3863446:[narrative] skip: no new fingerprints (last_fp=2026-10-14T03:15:36.651045+08:00)
+3863748:[consume] self_evidence: tick=? ts=2026-10-14 03:26:40 intent=self_directed_shift
+3863964:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:28:17 intent=autonomy_impulse
+3863965:[consume] self_evidence: tick=? ts=2026-10-14 03:28:15 intent=self_directed_shift
+3864177:[consume] self_evidence: tick=? ts=2026-10-14 03:29:12 intent=self_directed_shift
+3864322:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:30:13 intent=autonomy_impulse
+3864323:[consume] self_evidence: tick=? ts=2026-10-14 03:30:13 intent=self_directed_shift
+3864555:[consume] self_evidence: tick=? ts=2026-10-14 03:30:54 intent=self_directed_shift
+3864565:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T03:22:08.411563+08:00
+3864566:[narrative] skip: no new fingerprints (last_fp=2026-10-14T03:15:36.651045+08:00)
+3864979:[consume] self_evidence: tick=? ts=2026-10-14 03:32:35 intent=self_directed_shift
+3865130:[consume] self_evidence: tick=? ts=2026-10-14 03:36:15 intent=self_directed_shift
+3865435:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:37:00 intent=autonomy_impulse
+3865436:[consume] self_evidence: tick=? ts=2026-10-14 03:36:59 intent=self_directed_shift
+3865673:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:38:00 intent=autonomy_impulse
+3865674:[consume] self_evidence: tick=? ts=2026-10-14 03:37:59 intent=self_directed_shift
+3865878:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:39:02 intent=autonomy_impulse
+3865879:[consume] self_evidence: tick=? ts=2026-10-14 03:39:00 intent=self_directed_shift
+3865934:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T03:22:08.411563+08:00
+3865935:[narrative] skip: no new fingerprints (last_fp=2026-10-14T03:15:36.651045+08:00)
+3866395:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:39:47 intent=autonomy_impulse
+3866396:[consume] self_evidence: tick=? ts=2026-10-14 03:39:46 intent=self_directed_shift
+3866398:[consume] meta_conflict: tick=? ts=2026-10-14 03:42:51 intent=meta_conflict_resolution
+3866560:[consume] self_evidence: tick=? ts=2026-10-14 03:42:51 intent=self_directed_shift
+3866731:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:43:32 intent=autonomy_impulse
+3866732:[consume] self_evidence: tick=? ts=2026-10-14 03:43:30 intent=self_directed_shift
+3866961:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:44:21 intent=autonomy_impulse
+3866962:[consume] self_evidence: tick=? ts=2026-10-14 03:44:20 intent=self_directed_shift
+3867151:[consume] self_evidence: tick=? ts=2026-10-14 03:45:22 intent=self_directed_shift
+3867180:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T03:22:08.411563+08:00
+3867720:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:46:17 intent=autonomy_impulse
+3867721:[consume] self_evidence: tick=? ts=2026-10-14 03:46:16 intent=self_directed_shift
+3868049:[consume] self_evidence: tick=? ts=2026-10-14 03:51:11 intent=self_directed_shift
+3868297:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:52:29 intent=autonomy_impulse
+3868298:[consume] self_evidence: tick=? ts=2026-10-14 03:52:28 intent=self_directed_shift
+3868523:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:53:40 intent=autonomy_impulse
+3868524:[consume] self_evidence: tick=? ts=2026-10-14 03:53:38 intent=self_directed_shift
+3868769:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:54:43 intent=autonomy_impulse
+3868770:[consume] self_evidence: tick=? ts=2026-10-14 03:54:42 intent=self_directed_shift
+3868807:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T03:46:26.559800+08:00
+3868808:[narrative] skip: no new fingerprints (last_fp=2026-10-14T03:42:46.492764+08:00)
+3870246:[consume] autonomy_evidence: tick=? ts=2026-10-14 03:55:47 intent=autonomy_impulse
+3870250:[consume] self_evidence: tick=? ts=2026-10-14 03:55:44 intent=self_directed_shift
+3870725:[consume] self_evidence: tick=? ts=2026-10-14 04:04:13 intent=self_directed_shift
+3871038:[consume] autonomy_evidence: tick=? ts=2026-10-14 04:06:03 intent=autonomy_impulse
+3871040:[consume] self_evidence: tick=? ts=2026-10-14 04:06:02 intent=self_directed_shift
+3871229:[consume] autonomy_evidence: tick=? ts=2026-10-14 04:07:28 intent=autonomy_impulse
+3871230:[consume] self_evidence: tick=? ts=2026-10-14 04:07:26 intent=self_directed_shift
+3871927:[consume] self_evidence: tick=? ts=2026-10-14 04:08:22 intent=self_directed_shift
+3871977:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T03:46:26.559800+08:00
+3871978:[narrative] skip: no new fingerprints (last_fp=2026-10-14T03:42:46.492764+08:00)
+3872252:[consume] self_evidence: tick=? ts=2026-10-14 04:13:01 intent=self_directed_shift
+3872574:[consume] self_evidence: tick=? ts=2026-10-14 04:13:55 intent=self_directed_shift
+3873041:[consume] autonomy_evidence: tick=? ts=2026-10-14 04:14:40 intent=autonomy_impulse
+3873042:[consume] self_evidence: tick=? ts=2026-10-14 04:14:39 intent=self_directed_shift
+3873623:[consume] autonomy_evidence: tick=? ts=2026-10-14 04:16:50 intent=autonomy_impulse
+3873624:[consume] self_evidence: tick=? ts=2026-10-14 04:16:48 intent=self_directed_shift
+3873831:[consume] self_evidence: tick=? ts=2026-10-14 04:21:14 intent=self_directed_shift
+3873899:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T03:46:26.559800+08:00
+3873900:[narrative] skip: no new fingerprints (last_fp=2026-10-14T03:42:46.492764+08:00)
+3874083:[consume] self_evidence: tick=? ts=2026-10-14 04:22:04 intent=self_directed_shift
+3874256:[consume] self_evidence: tick=? ts=2026-10-14 04:23:01 intent=self_directed_shift
+3874458:[consume] autonomy_evidence: tick=? ts=2026-10-14 04:23:48 intent=autonomy_impulse
+3874459:[consume] self_evidence: tick=? ts=2026-10-14 04:23:43 intent=self_directed_shift
+3874461:[consume] meta_conflict: tick=? ts=2026-10-14 04:23:55 intent=meta_conflict_resolution
+3874612:[consume] autonomy_evidence: tick=? ts=2026-10-14 04:24:34 intent=autonomy_impulse
+3874613:[consume] self_evidence: tick=? ts=2026-10-14 04:24:30 intent=self_directed_shift
+3875181:[consume] autonomy_evidence: tick=? ts=2026-10-14 04:25:14 intent=autonomy_impulse
+3875182:[consume] self_evidence: tick=? ts=2026-10-14 04:25:14 intent=self_directed_shift
+3875215:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T03:46:26.559800+08:00
+3875675:[consume] autonomy_evidence: tick=? ts=2026-10-14 04:29:36 intent=autonomy_impulse
+3875676:[consume] self_evidence: tick=? ts=2026-10-14 04:29:34 intent=self_directed_shift
+3875805:[consume] autonomy_evidence: tick=? ts=2026-10-14 04:31:35 intent=autonomy_impulse
+3875806:[consume] self_evidence: tick=? ts=2026-10-14 04:31:34 intent=self_directed_shift
+3875993:[consume] self_evidence: tick=? ts=2026-10-14 04:32:14 intent=self_directed_shift
+3876114:[consume] self_evidence: tick=? ts=2026-10-14 04:33:01 intent=self_directed_shift
+3876239:[consume] autonomy_evidence: tick=? ts=2026-10-14 04:33:43 intent=autonomy_impulse
+3876240:[consume] self_evidence: tick=? ts=2026-10-14 04:33:39 intent=self_directed_shift
+3876285:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T04:29:46.637874+08:00
+3876286:[narrative] skip: no new fingerprints (last_fp=2026-10-14T04:23:55.307068+08:00)
+3876850:[consume] self_evidence: tick=? ts=2026-10-14 04:34:22 intent=self_directed_shift
+3877028:[consume] autonomy_evidence: tick=? ts=2026-10-14 04:38:52 intent=autonomy_impulse
+3877029:[consume] self_evidence: tick=? ts=2026-10-14 04:38:49 intent=self_directed_shift
+3877217:[consume] autonomy_evidence: tick=? ts=2026-10-14 04:39:38 intent=autonomy_impulse
+3877218:[consume] self_evidence: tick=? ts=2026-10-14 04:39:37 intent=self_directed_shift
+3877376:[consume] self_evidence: tick=? ts=2026-10-14 04:40:13 intent=self_directed_shift
+3877514:[consume] autonomy_evidence: tick=? ts=2026-10-14 04:40:50 intent=autonomy_impulse
+3877515:[consume] self_evidence: tick=? ts=2026-10-14 04:40:46 intent=self_directed_shift
+3877545:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T04:29:46.637874+08:00
+3877546:[narrative] skip: no new fingerprints (last_fp=2026-10-14T04:23:55.307068+08:00)
+3877757:[consume] autonomy_evidence: tick=? ts=2026-10-14 04:41:30 intent=autonomy_impulse
+3877758:[consume] self_evidence: tick=? ts=2026-10-14 04:41:27 intent=self_directed_shift
+3878276:[consume] autonomy_evidence: tick=? ts=2026-10-14 04:42:43 intent=autonomy_impulse
+3878277:[consume] self_evidence: tick=? ts=2026-10-14 04:42:42 intent=self_directed_shift
+3878444:[consume] self_evidence: tick=? ts=2026-10-14 04:45:51 intent=self_directed_shift
+3878664:[consume] self_evidence: tick=? ts=2026-10-14 04:46:45 intent=self_directed_shift
+3878924:[consume] autonomy_evidence: tick=? ts=2026-10-14 04:47:37 intent=autonomy_impulse
+3878926:[consume] self_evidence: tick=? ts=2026-10-14 04:47:36 intent=self_directed_shift
+3878985:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T04:29:46.637874+08:00
+3878986:[narrative] skip: no new fingerprints (last_fp=2026-10-14T04:23:55.307068+08:00)
+3879348:[consume] autonomy_evidence: tick=? ts=2026-10-14 04:48:48 intent=autonomy_impulse
+3879349:[consume] self_evidence: tick=? ts=2026-10-14 04:48:45 intent=self_directed_shift
+3879351:[consume] meta_conflict: tick=? ts=2026-10-14 04:50:03 intent=meta_conflict_resolution
+3879912:[consume] autonomy_evidence: tick=? ts=2026-10-14 04:50:30 intent=autonomy_impulse
+3879914:[consume] self_evidence: tick=? ts=2026-10-14 04:50:30 intent=self_directed_shift
+3880225:[consume] self_evidence: tick=? ts=2026-10-14 04:55:36 intent=self_directed_shift
+3880591:[consume] autonomy_evidence: tick=? ts=2026-10-14 04:56:40 intent=autonomy_impulse
+3880592:[consume] self_evidence: tick=? ts=2026-10-14 04:56:37 intent=self_directed_shift
+3880855:[consume] self_evidence: tick=? ts=2026-10-14 04:58:05 intent=self_directed_shift
+3880863:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T04:29:46.637874+08:00
+3881052:[consume] self_evidence: tick=? ts=2026-10-14 04:58:54 intent=self_directed_shift
+3881287:[consume] self_evidence: tick=? ts=2026-10-14 04:59:46 intent=self_directed_shift
+3881433:[consume] self_evidence: tick=? ts=2026-10-14 05:00:55 intent=self_directed_shift
+3881682:[consume] self_evidence: tick=? ts=2026-10-14 05:01:35 intent=self_directed_shift
+3882040:[consume] autonomy_evidence: tick=? ts=2026-10-14 05:02:36 intent=autonomy_impulse
+3882041:[consume] self_evidence: tick=? ts=2026-10-14 05:02:36 intent=self_directed_shift
+3882079:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T04:59:01.600459+08:00
+3882080:[narrative] skip: no new fingerprints (last_fp=2026-10-14T04:50:03.152738+08:00)
+3882429:[consume] autonomy_evidence: tick=? ts=2026-10-14 05:03:48 intent=autonomy_impulse
+3882430:[consume] self_evidence: tick=? ts=2026-10-14 05:03:46 intent=self_directed_shift
+3883084:[consume] self_evidence: tick=? ts=2026-10-14 05:05:09 intent=self_directed_shift
+3883261:[consume] autonomy_evidence: tick=? ts=2026-10-14 05:09:51 intent=autonomy_impulse
+3883262:[consume] self_evidence: tick=? ts=2026-10-14 05:09:49 intent=self_directed_shift
+3883507:[consume] self_evidence: tick=? ts=2026-10-14 05:10:28 intent=self_directed_shift
+3883641:[consume] autonomy_evidence: tick=? ts=2026-10-14 05:11:49 intent=autonomy_impulse
+3883642:[consume] self_evidence: tick=? ts=2026-10-14 05:11:45 intent=self_directed_shift
+3883670:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T04:59:01.600459+08:00
+3883671:[narrative] skip: no new fingerprints (last_fp=2026-10-14T04:50:03.152738+08:00)
+3883838:[consume] autonomy_evidence: tick=? ts=2026-10-14 05:12:32 intent=autonomy_impulse
+3883839:[consume] self_evidence: tick=? ts=2026-10-14 05:12:30 intent=self_directed_shift
+3884102:[consume] autonomy_evidence: tick=? ts=2026-10-14 05:13:16 intent=autonomy_impulse
+3884103:[consume] self_evidence: tick=? ts=2026-10-14 05:13:15 intent=self_directed_shift
+3884604:[consume] autonomy_evidence: tick=? ts=2026-10-14 05:14:25 intent=autonomy_impulse
+3884605:[consume] self_evidence: tick=? ts=2026-10-14 05:14:24 intent=self_directed_shift
+3884774:[consume] autonomy_evidence: tick=? ts=2026-10-14 05:18:31 intent=autonomy_impulse
+3884775:[consume] self_evidence: tick=? ts=2026-10-14 05:18:29 intent=self_directed_shift
+3885149:[consume] self_evidence: tick=? ts=2026-10-14 05:19:14 intent=self_directed_shift
+3885184:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T04:59:01.600459+08:00
+3885185:[narrative] skip: no new fingerprints (last_fp=2026-10-14T04:50:03.152738+08:00)
+3885540:[consume] self_evidence: tick=? ts=2026-10-14 05:21:29 intent=self_directed_shift
+3885541:[consume] meta_conflict: tick=? ts=2026-10-14 05:22:32 intent=meta_conflict_resolution
+3886034:[consume] autonomy_evidence: tick=? ts=2026-10-14 05:23:23 intent=autonomy_impulse
+3886035:[consume] self_evidence: tick=? ts=2026-10-14 05:23:22 intent=self_directed_shift
+3886230:[consume] autonomy_evidence: tick=? ts=2026-10-14 05:27:25 intent=autonomy_impulse
+3886231:[consume] self_evidence: tick=? ts=2026-10-14 05:27:22 intent=self_directed_shift
+3886505:[consume] self_evidence: tick=? ts=2026-10-14 05:28:08 intent=self_directed_shift
+3886631:[consume] self_evidence: tick=? ts=2026-10-14 05:29:28 intent=self_directed_shift
+3886660:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T04:59:01.600459+08:00
+3886831:[consume] autonomy_evidence: tick=? ts=2026-10-14 05:30:14 intent=autonomy_impulse
+3886834:[consume] self_evidence: tick=? ts=2026-10-14 05:30:06 intent=self_directed_shift
+3887028:[consume] autonomy_evidence: tick=? ts=2026-10-14 05:31:02 intent=autonomy_impulse
+3887029:[consume] self_evidence: tick=? ts=2026-10-14 05:30:57 intent=self_directed_shift
+3887602:[consume] autonomy_evidence: tick=? ts=2026-10-14 05:31:53 intent=autonomy_impulse
+3887603:[consume] self_evidence: tick=? ts=2026-10-14 05:31:43 intent=self_directed_shift
+3887830:[consume] autonomy_evidence: tick=? ts=2026-10-14 05:36:34 intent=autonomy_impulse
+3887831:[consume] self_evidence: tick=? ts=2026-10-14 05:36:25 intent=self_directed_shift
+3888095:[consume] autonomy_evidence: tick=? ts=2026-10-14 05:37:18 intent=autonomy_impulse
+3888096:[consume] self_evidence: tick=? ts=2026-10-14 05:37:17 intent=self_directed_shift
+3888127:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T05:30:24.052496+08:00
+3888129:[narrative] skip: no new fingerprints (last_fp=2026-10-14T05:22:32.134158+08:00)
+3888355:[consume] autonomy_evidence: tick=? ts=2026-10-14 05:38:48 intent=autonomy_impulse
+3888356:[consume] self_evidence: tick=? ts=2026-10-14 05:38:46 intent=self_directed_shift
+3888588:[consume] self_evidence: tick=? ts=2026-10-14 05:39:43 intent=self_directed_shift
+3889211:[consume] self_evidence: tick=? ts=2026-10-14 05:40:51 intent=self_directed_shift
+3889504:[consume] self_evidence: tick=? ts=2026-10-14 05:45:41 intent=self_directed_shift
+3889698:[consume] self_evidence: tick=? ts=2026-10-14 05:46:46 intent=self_directed_shift
+3889726:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T05:30:24.052496+08:00
+3889727:[narrative] skip: no new fingerprints (last_fp=2026-10-14T05:22:32.134158+08:00)
+3889924:[consume] autonomy_evidence: tick=? ts=2026-10-14 05:47:37 intent=autonomy_impulse
+3889925:[consume] self_evidence: tick=? ts=2026-10-14 05:47:36 intent=self_directed_shift
+3890139:[consume] autonomy_evidence: tick=? ts=2026-10-14 05:48:45 intent=autonomy_impulse
+3890140:[consume] self_evidence: tick=? ts=2026-10-14 05:48:42 intent=self_directed_shift
+3890928:[consume] autonomy_evidence: tick=? ts=2026-10-14 05:49:35 intent=autonomy_impulse
+3890929:[consume] self_evidence: tick=? ts=2026-10-14 05:49:28 intent=self_directed_shift
+3891145:[consume] autonomy_evidence: tick=? ts=2026-10-14 05:54:16 intent=autonomy_impulse
+3891146:[consume] self_evidence: tick=? ts=2026-10-14 05:54:13 intent=self_directed_shift
+3891495:[consume] autonomy_evidence: tick=? ts=2026-10-14 05:55:09 intent=autonomy_impulse
+3891496:[consume] self_evidence: tick=? ts=2026-10-14 05:54:56 intent=self_directed_shift
+3891535:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T05:30:24.052496+08:00
+3891536:[narrative] skip: no new fingerprints (last_fp=2026-10-14T05:22:32.134158+08:00)
+3891872:[consume] self_evidence: tick=? ts=2026-10-14 05:56:36 intent=self_directed_shift
+3891873:[consume] meta_conflict: tick=? ts=2026-10-14 05:57:49 intent=meta_conflict_resolution
+3892017:[consume] self_evidence: tick=? ts=2026-10-14 05:58:09 intent=self_directed_shift
+3892609:[consume] autonomy_evidence: tick=? ts=2026-10-14 05:58:56 intent=autonomy_impulse
+3892610:[consume] self_evidence: tick=? ts=2026-10-14 05:58:53 intent=self_directed_shift
+3892816:[consume] self_evidence: tick=? ts=2026-10-14 06:03:05 intent=self_directed_shift
+3893003:[consume] autonomy_evidence: tick=? ts=2026-10-14 06:04:03 intent=autonomy_impulse
+3893004:[consume] self_evidence: tick=? ts=2026-10-14 06:04:01 intent=self_directed_shift
+3893014:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T05:30:24.052496+08:00
+3893304:[consume] self_evidence: tick=? ts=2026-10-14 06:05:01 intent=self_directed_shift
+3893490:[consume] self_evidence: tick=? ts=2026-10-14 06:06:07 intent=self_directed_shift
+3893838:[consume] autonomy_evidence: tick=? ts=2026-10-14 06:06:55 intent=autonomy_impulse
+3893839:[consume] self_evidence: tick=? ts=2026-10-14 06:06:50 intent=self_directed_shift
+3894429:[consume] autonomy_evidence: tick=? ts=2026-10-14 06:08:28 intent=autonomy_impulse
+3894430:[consume] self_evidence: tick=? ts=2026-10-14 06:08:26 intent=self_directed_shift
+3894855:[consume] self_evidence: tick=? ts=2026-10-14 06:13:14 intent=self_directed_shift
+3894874:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:05:08.930469+08:00
+3894875:[narrative] skip: no new fingerprints (last_fp=2026-10-14T05:57:49.074891+08:00)
+3895128:[consume] autonomy_evidence: tick=? ts=2026-10-14 06:15:24 intent=autonomy_impulse
+3895129:[consume] self_evidence: tick=? ts=2026-10-14 06:15:22 intent=self_directed_shift
+3895298:[consume] autonomy_evidence: tick=? ts=2026-10-14 06:16:45 intent=autonomy_impulse
+3895299:[consume] self_evidence: tick=? ts=2026-10-14 06:16:44 intent=self_directed_shift
+3895479:[consume] self_evidence: tick=? ts=2026-10-14 06:17:24 intent=self_directed_shift
+3896080:[consume] self_evidence: tick=? ts=2026-10-14 06:18:15 intent=self_directed_shift
+3896347:[consume] autonomy_evidence: tick=? ts=2026-10-14 06:23:06 intent=autonomy_impulse
+3896348:[consume] self_evidence: tick=? ts=2026-10-14 06:23:04 intent=self_directed_shift
+3896358:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:05:08.930469+08:00
+3896359:[narrative] skip: no new fingerprints (last_fp=2026-10-14T05:57:49.074891+08:00)
+3896578:[consume] self_evidence: tick=? ts=2026-10-14 06:24:34 intent=self_directed_shift
+3896744:[consume] self_evidence: tick=? ts=2026-10-14 06:25:42 intent=self_directed_shift
+3896891:[consume] self_evidence: tick=? ts=2026-10-14 06:26:38 intent=self_directed_shift
+3897326:[consume] self_evidence: tick=? ts=2026-10-14 06:27:10 intent=self_directed_shift
+3897597:[consume] autonomy_evidence: tick=? ts=2026-10-14 06:30:43 intent=autonomy_impulse
+3897598:[consume] self_evidence: tick=? ts=2026-10-14 06:30:39 intent=self_directed_shift
+3897629:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:05:08.930469+08:00
+3897630:[narrative] skip: no new fingerprints (last_fp=2026-10-14T05:57:49.074891+08:00)
+3897804:[consume] self_evidence: tick=? ts=2026-10-14 06:32:07 intent=self_directed_shift
+3897964:[consume] self_evidence: tick=? ts=2026-10-14 06:32:59 intent=self_directed_shift
+3897965:[consume] meta_conflict: tick=? ts=2026-10-14 06:33:34 intent=meta_conflict_resolution
+3898150:[consume] self_evidence: tick=? ts=2026-10-14 06:33:40 intent=self_directed_shift
+3898373:[consume] autonomy_evidence: tick=? ts=2026-10-14 06:34:24 intent=autonomy_impulse
+3898374:[consume] self_evidence: tick=? ts=2026-10-14 06:34:23 intent=self_directed_shift
+3898789:[consume] autonomy_evidence: tick=? ts=2026-10-14 06:35:17 intent=autonomy_impulse
+3898790:[consume] self_evidence: tick=? ts=2026-10-14 06:35:11 intent=self_directed_shift
+3898823:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:05:08.930469+08:00
+3898946:[consume] autonomy_evidence: tick=? ts=2026-10-14 06:38:18 intent=autonomy_impulse
+3898947:[consume] self_evidence: tick=? ts=2026-10-14 06:38:12 intent=self_directed_shift
+3899636:[consume] autonomy_evidence: tick=? ts=2026-10-14 06:39:04 intent=autonomy_impulse
+3899637:[consume] self_evidence: tick=? ts=2026-10-14 06:39:03 intent=self_directed_shift
+3900419:[consume] autonomy_evidence: tick=? ts=2026-10-14 06:44:28 intent=autonomy_impulse
+3900420:[consume] self_evidence: tick=? ts=2026-10-14 06:44:17 intent=self_directed_shift
+3900701:[consume] self_evidence: tick=? ts=2026-10-14 06:51:56 intent=self_directed_shift
+3900917:[consume] autonomy_evidence: tick=? ts=2026-10-14 06:53:25 intent=autonomy_impulse
+3900918:[consume] self_evidence: tick=? ts=2026-10-14 06:53:19 intent=self_directed_shift
+3900979:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3900980:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3901156:[consume] self_evidence: tick=? ts=2026-10-14 06:54:33 intent=self_directed_shift
+3901674:[s2-consumer] boot {'path': 'C:\\Users\\Administrator\\.openclaw\\workspace\\.lae\\s2_training_samples.jsonl', 'read': 1973, 'applied': 0, 'already_consumed': 761, 'invalid': 1212, 'reindexed': 0, 'status': 'ok', 'consumed': 761, 'last_run': '2026-10-14 11:46:24'}
+3901709:[consume] self_evidence: tick=? ts=2026-10-14 06:56:05 intent=self_directed_shift
+3901872:[consume] autonomy_evidence: tick=? ts=2026-10-14 11:46:41 intent=autonomy_impulse
+3901873:[consume] self_evidence: tick=? ts=2026-10-14 11:46:35 intent=self_directed_shift
+3901988:[consume] autonomy_evidence: tick=? ts=2026-10-14 11:48:17 intent=autonomy_impulse
+3901989:[consume] self_evidence: tick=? ts=2026-10-14 11:48:15 intent=self_directed_shift
+3902103:[consume] autonomy_evidence: tick=? ts=2026-10-14 11:49:16 intent=autonomy_impulse
+3902104:[consume] self_evidence: tick=? ts=2026-10-14 11:49:13 intent=self_directed_shift
+3902113:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3902114:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3902203:[consume] self_evidence: tick=? ts=2026-10-14 11:49:46 intent=self_directed_shift
+3902298:[consume] self_evidence: tick=? ts=2026-10-14 11:50:22 intent=self_directed_shift
+3902393:[s2-consumer] boot {'path': 'C:\\Users\\Administrator\\.openclaw\\workspace\\.lae\\s2_training_samples.jsonl', 'read': 1973, 'applied': 0, 'already_consumed': 761, 'invalid': 1212, 'reindexed': 0, 'status': 'ok', 'consumed': 761, 'last_run': '2026-10-14 11:51:27'}
+3902402:[init] Restored L5 repair state: counterfactual=False observation_window=True escape_injected=False escape_count=2 saved_at=2026-10-14T11:50:53+0800
+3902440:[consume] self_evidence: tick=? ts=2026-10-14 11:50:52 intent=self_directed_shift
+3902580:[consume] autonomy_evidence: tick=? ts=2026-10-14 11:51:43 intent=autonomy_impulse
+3902581:[consume] self_evidence: tick=? ts=2026-10-14 11:51:38 intent=self_directed_shift
+3902707:[consume] autonomy_evidence: tick=? ts=2026-10-14 11:53:01 intent=autonomy_impulse
+3902708:[consume] self_evidence: tick=? ts=2026-10-14 11:52:59 intent=self_directed_shift
+3902828:[consume] autonomy_evidence: tick=? ts=2026-10-14 11:54:17 intent=autonomy_impulse
+3902829:[consume] self_evidence: tick=? ts=2026-10-14 11:54:15 intent=self_directed_shift
+3902846:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3902847:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3902948:[consume] self_evidence: tick=? ts=2026-10-14 11:54:51 intent=self_directed_shift
+3903062:[consume] self_evidence: tick=? ts=2026-10-14 11:55:22 intent=self_directed_shift
+3903176:[consume] self_evidence: tick=? ts=2026-10-14 11:56:32 intent=self_directed_shift
+3903295:[consume] self_evidence: tick=? ts=2026-10-14 11:57:05 intent=self_directed_shift
+3903412:[consume] self_evidence: tick=? ts=2026-10-14 11:57:33 intent=self_directed_shift
+3903430:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3903431:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3903523:[consume] self_evidence: tick=? ts=2026-10-14 11:58:42 intent=self_directed_shift
+3903629:[consume] self_evidence: tick=? ts=2026-10-14 11:59:16 intent=self_directed_shift
+3903745:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:00:04 intent=autonomy_impulse
+3903746:[consume] self_evidence: tick=? ts=2026-10-14 12:00:04 intent=self_directed_shift
+3903856:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:00:39 intent=autonomy_impulse
+3903857:[consume] self_evidence: tick=? ts=2026-10-14 12:00:39 intent=self_directed_shift
+3903967:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:02:03 intent=autonomy_impulse
+3903968:[consume] self_evidence: tick=? ts=2026-10-14 12:02:00 intent=self_directed_shift
+3903987:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3903988:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3904081:[consume] self_evidence: tick=? ts=2026-10-14 12:02:36 intent=self_directed_shift
+3904228:[consume] self_evidence: tick=? ts=2026-10-14 12:03:16 intent=self_directed_shift
+3904391:[consume] self_evidence: tick=? ts=2026-10-14 12:03:50 intent=self_directed_shift
+3904549:[consume] self_evidence: tick=? ts=2026-10-14 12:04:28 intent=self_directed_shift
+3904862:[consume] self_evidence: tick=? ts=2026-10-14 12:05:09 intent=self_directed_shift
+3904878:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3904879:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3904982:[consume] self_evidence: tick=? ts=2026-10-14 12:06:58 intent=self_directed_shift
+3905146:[consume] self_evidence: tick=? ts=2026-10-14 12:07:33 intent=self_directed_shift
+3905395:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:08:06 intent=autonomy_impulse
+3905396:[consume] self_evidence: tick=? ts=2026-10-14 12:08:04 intent=self_directed_shift
+3905521:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:08:51 intent=autonomy_impulse
+3905522:[consume] self_evidence: tick=? ts=2026-10-14 12:08:50 intent=self_directed_shift
+3905696:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:09:24 intent=autonomy_impulse
+3905697:[consume] self_evidence: tick=? ts=2026-10-14 12:09:22 intent=self_directed_shift
+3905716:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3905717:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3905931:[consume] self_evidence: tick=? ts=2026-10-14 12:09:57 intent=self_directed_shift
+3906034:[consume] self_evidence: tick=? ts=2026-10-14 12:10:42 intent=self_directed_shift
+3906251:[consume] self_evidence: tick=? ts=2026-10-14 12:11:18 intent=self_directed_shift
+3906556:[consume] self_evidence: tick=? ts=2026-10-14 12:12:24 intent=self_directed_shift
+3906809:[consume] self_evidence: tick=? ts=2026-10-14 12:13:45 intent=self_directed_shift
+3906826:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3906827:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3906957:[consume] self_evidence: tick=? ts=2026-10-14 12:14:18 intent=self_directed_shift
+3907125:[consume] self_evidence: tick=? ts=2026-10-14 12:14:50 intent=self_directed_shift
+3907257:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:15:25 intent=autonomy_impulse
+3907258:[consume] self_evidence: tick=? ts=2026-10-14 12:15:24 intent=self_directed_shift
+3907535:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:15:58 intent=autonomy_impulse
+3907536:[consume] self_evidence: tick=? ts=2026-10-14 12:15:57 intent=self_directed_shift
+3907748:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:16:35 intent=autonomy_impulse
+3907749:[consume] self_evidence: tick=? ts=2026-10-14 12:16:34 intent=self_directed_shift
+3907765:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3907766:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3907956:[consume] self_evidence: tick=? ts=2026-10-14 12:17:10 intent=self_directed_shift
+3908110:[consume] self_evidence: tick=? ts=2026-10-14 12:18:32 intent=self_directed_shift
+3908235:[consume] self_evidence: tick=? ts=2026-10-14 12:19:05 intent=self_directed_shift
+3908557:[consume] self_evidence: tick=? ts=2026-10-14 12:19:38 intent=self_directed_shift
+3908769:[consume] self_evidence: tick=? ts=2026-10-14 12:20:54 intent=self_directed_shift
+3908794:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3908795:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3908837:[consume] self_evidence: tick=? ts=2026-10-14 12:21:29 intent=self_directed_shift
+3908974:[consume] self_evidence: tick=? ts=2026-10-14 12:22:00 intent=self_directed_shift
+3909092:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:22:36 intent=autonomy_impulse
+3909093:[consume] self_evidence: tick=? ts=2026-10-14 12:22:34 intent=self_directed_shift
+3909278:[consume] self_evidence: tick=? ts=2026-10-14 12:23:12 intent=self_directed_shift
+3909492:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:24:56 intent=autonomy_impulse
+3909493:[consume] self_evidence: tick=? ts=2026-10-14 12:24:53 intent=self_directed_shift
+3909530:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3909531:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3909708:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:25:30 intent=autonomy_impulse
+3909709:[consume] self_evidence: tick=? ts=2026-10-14 12:25:29 intent=self_directed_shift
+3909814:[consume] self_evidence: tick=? ts=2026-10-14 12:26:16 intent=self_directed_shift
+3909927:[consume] self_evidence: tick=? ts=2026-10-14 12:26:49 intent=self_directed_shift
+3910191:[consume] self_evidence: tick=? ts=2026-10-14 12:27:23 intent=self_directed_shift
+3910327:[consume] self_evidence: tick=? ts=2026-10-14 12:27:59 intent=self_directed_shift
+3910342:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3910343:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3910450:[consume] self_evidence: tick=? ts=2026-10-14 12:28:42 intent=self_directed_shift
+3910842:[consume] self_evidence: tick=? ts=2026-10-14 12:29:17 intent=self_directed_shift
+3911139:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:30:04 intent=autonomy_impulse
+3911140:[consume] self_evidence: tick=? ts=2026-10-14 12:30:01 intent=self_directed_shift
+3911424:[consume] self_evidence: tick=? ts=2026-10-14 12:30:40 intent=self_directed_shift
+3911721:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:31:15 intent=autonomy_impulse
+3911722:[consume] self_evidence: tick=? ts=2026-10-14 12:31:14 intent=self_directed_shift
+3911757:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3911758:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3911979:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:31:53 intent=autonomy_impulse
+3911980:[consume] self_evidence: tick=? ts=2026-10-14 12:31:52 intent=self_directed_shift
+3912234:[consume] self_evidence: tick=? ts=2026-10-14 12:32:34 intent=self_directed_shift
+3912475:[consume] self_evidence: tick=? ts=2026-10-14 12:33:30 intent=self_directed_shift
+3912538:[consume] self_evidence: tick=? ts=2026-10-14 12:34:09 intent=self_directed_shift
+3912673:[consume] self_evidence: tick=? ts=2026-10-14 12:34:42 intent=self_directed_shift
+3912690:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3912691:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3912841:[consume] self_evidence: tick=? ts=2026-10-14 12:36:24 intent=self_directed_shift
+3913053:[consume] self_evidence: tick=? ts=2026-10-14 12:36:58 intent=self_directed_shift
+3913275:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:37:38 intent=autonomy_impulse
+3913276:[consume] self_evidence: tick=? ts=2026-10-14 12:37:35 intent=self_directed_shift
+3913395:[consume] self_evidence: tick=? ts=2026-10-14 12:39:01 intent=self_directed_shift
+3913574:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:39:36 intent=autonomy_impulse
+3913575:[consume] self_evidence: tick=? ts=2026-10-14 12:39:36 intent=self_directed_shift
+3913606:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3913607:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3913716:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:40:12 intent=autonomy_impulse
+3913717:[consume] self_evidence: tick=? ts=2026-10-14 12:40:11 intent=self_directed_shift
+3913979:[consume] self_evidence: tick=? ts=2026-10-14 12:40:53 intent=self_directed_shift
+3914101:[consume] self_evidence: tick=? ts=2026-10-14 12:42:09 intent=self_directed_shift
+3914199:[consume] self_evidence: tick=? ts=2026-10-14 12:42:48 intent=self_directed_shift
+3914442:[consume] self_evidence: tick=? ts=2026-10-14 12:43:19 intent=self_directed_shift
+3914453:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3914454:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3914606:[consume] self_evidence: tick=? ts=2026-10-14 12:44:01 intent=self_directed_shift
+3914768:[consume] self_evidence: tick=? ts=2026-10-14 12:44:32 intent=self_directed_shift
+3914957:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:45:31 intent=autonomy_impulse
+3914958:[consume] self_evidence: tick=? ts=2026-10-14 12:45:30 intent=self_directed_shift
+3915178:[consume] self_evidence: tick=? ts=2026-10-14 12:46:02 intent=self_directed_shift
+3915490:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:46:42 intent=autonomy_impulse
+3915491:[consume] self_evidence: tick=? ts=2026-10-14 12:46:39 intent=self_directed_shift
+3915516:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3915517:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3915666:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:47:58 intent=autonomy_impulse
+3915667:[consume] self_evidence: tick=? ts=2026-10-14 12:47:57 intent=self_directed_shift
+3915751:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:48:42 intent=autonomy_impulse
+3915752:[consume] self_evidence: tick=? ts=2026-10-14 12:48:40 intent=self_directed_shift
+3915950:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:49:16 intent=autonomy_impulse
+3915951:[consume] self_evidence: tick=? ts=2026-10-14 12:49:16 intent=self_directed_shift
+3916093:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:49:54 intent=autonomy_impulse
+3916094:[consume] self_evidence: tick=? ts=2026-10-14 12:49:53 intent=self_directed_shift
+3916249:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:50:28 intent=autonomy_impulse
+3916250:[consume] self_evidence: tick=? ts=2026-10-14 12:50:27 intent=self_directed_shift
+3916260:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3916261:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3916430:[consume] self_evidence: tick=? ts=2026-10-14 12:51:02 intent=self_directed_shift
+3916687:[consume] self_evidence: tick=? ts=2026-10-14 12:51:39 intent=self_directed_shift
+3916923:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:52:51 intent=autonomy_impulse
+3916924:[consume] self_evidence: tick=? ts=2026-10-14 12:52:49 intent=self_directed_shift
+3917096:[consume] self_evidence: tick=? ts=2026-10-14 12:54:11 intent=self_directed_shift
+3917280:[consume] self_evidence: tick=? ts=2026-10-14 12:54:49 intent=self_directed_shift
+3917291:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3917292:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3917468:[consume] self_evidence: tick=? ts=2026-10-14 12:55:25 intent=self_directed_shift
+3917696:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:56:09 intent=autonomy_impulse
+3917697:[consume] self_evidence: tick=? ts=2026-10-14 12:56:08 intent=self_directed_shift
+3917804:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:56:46 intent=autonomy_impulse
+3917805:[consume] self_evidence: tick=? ts=2026-10-14 12:56:43 intent=self_directed_shift
+3917984:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:57:18 intent=autonomy_impulse
+3917985:[consume] self_evidence: tick=? ts=2026-10-14 12:57:17 intent=self_directed_shift
+3918064:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:57:54 intent=autonomy_impulse
+3918065:[consume] self_evidence: tick=? ts=2026-10-14 12:57:52 intent=self_directed_shift
+3918086:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3918087:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3918195:[consume] autonomy_evidence: tick=? ts=2026-10-14 12:58:27 intent=autonomy_impulse
+3918196:[consume] self_evidence: tick=? ts=2026-10-14 12:58:26 intent=self_directed_shift
+3918613:[consume] self_evidence: tick=? ts=2026-10-14 12:59:00 intent=self_directed_shift
+3918733:[consume] self_evidence: tick=? ts=2026-10-14 13:02:16 intent=self_directed_shift
+3918840:[consume] self_evidence: tick=? ts=2026-10-14 13:02:51 intent=self_directed_shift
+3919005:[consume] self_evidence: tick=? ts=2026-10-14 13:03:22 intent=self_directed_shift
+3919018:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3919019:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3919179:[consume] self_evidence: tick=? ts=2026-10-14 13:03:57 intent=self_directed_shift
+3919275:[s2-consumer] boot {'path': 'C:\\Users\\Administrator\\.openclaw\\workspace\\.lae\\s2_training_samples.jsonl', 'read': 1973, 'applied': 0, 'already_consumed': 761, 'invalid': 1212, 'reindexed': 0, 'status': 'ok', 'consumed': 761, 'last_run': '2026-10-14 13:05:01'}
+3919286:[init] Restored L5 repair state: counterfactual=False observation_window=True escape_injected=False escape_count=2 saved_at=2026-10-14T11:50:53+0800
+3919380:[consume] self_evidence: tick=? ts=2026-10-14 13:04:37 intent=self_directed_shift
+3919922:[consume] self_evidence: tick=? ts=2026-10-14 13:05:12 intent=self_directed_shift
+3920139:[consume] autonomy_evidence: tick=? ts=2026-10-14 13:08:16 intent=autonomy_impulse
+3920140:[consume] self_evidence: tick=? ts=2026-10-14 13:08:13 intent=self_directed_shift
+3920466:[consume] autonomy_evidence: tick=? ts=2026-10-14 13:09:49 intent=autonomy_impulse
+3920467:[consume] self_evidence: tick=? ts=2026-10-14 13:09:48 intent=self_directed_shift
+3920637:[consume] autonomy_evidence: tick=? ts=2026-10-14 13:12:17 intent=autonomy_impulse
+3920638:[consume] self_evidence: tick=? ts=2026-10-14 13:12:15 intent=self_directed_shift
+3920662:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3920663:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3920802:[consume] self_evidence: tick=? ts=2026-10-14 13:12:53 intent=self_directed_shift
+3920984:[consume] self_evidence: tick=? ts=2026-10-14 13:14:06 intent=self_directed_shift
+3921099:[consume] self_evidence: tick=? ts=2026-10-14 13:14:42 intent=self_directed_shift
+3921271:[consume] self_evidence: tick=? ts=2026-10-14 13:15:12 intent=self_directed_shift
+3921436:[consume] self_evidence: tick=? ts=2026-10-14 13:15:42 intent=self_directed_shift
+3921455:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3921456:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3921580:[consume] self_evidence: tick=? ts=2026-10-14 13:16:13 intent=self_directed_shift
+3921978:[consume] self_evidence: tick=? ts=2026-10-14 13:17:39 intent=self_directed_shift
+3922230:[consume] autonomy_evidence: tick=? ts=2026-10-14 13:19:48 intent=autonomy_impulse
+3922231:[consume] self_evidence: tick=? ts=2026-10-14 13:19:45 intent=self_directed_shift
+3922352:[consume] autonomy_evidence: tick=? ts=2026-10-14 13:20:25 intent=autonomy_impulse
+3922353:[consume] self_evidence: tick=? ts=2026-10-14 13:20:24 intent=self_directed_shift
+3922532:[consume] autonomy_evidence: tick=? ts=2026-10-14 13:20:56 intent=autonomy_impulse
+3922533:[consume] self_evidence: tick=? ts=2026-10-14 13:20:55 intent=self_directed_shift
+3922553:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3922554:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3922725:[consume] self_evidence: tick=? ts=2026-10-14 13:21:28 intent=self_directed_shift
+3922891:[consume] self_evidence: tick=? ts=2026-10-14 13:22:02 intent=self_directed_shift
+3923020:[consume] self_evidence: tick=? ts=2026-10-14 13:22:38 intent=self_directed_shift
+3923196:[consume] self_evidence: tick=? ts=2026-10-14 13:23:09 intent=self_directed_shift
+3923312:[consume] self_evidence: tick=? ts=2026-10-14 13:23:42 intent=self_directed_shift
+3923374:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3923375:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3923749:[consume] self_evidence: tick=? ts=2026-10-14 13:24:13 intent=self_directed_shift
+3923980:[consume] self_evidence: tick=? ts=2026-10-14 13:27:07 intent=self_directed_shift
+3924166:[consume] autonomy_evidence: tick=? ts=2026-10-14 13:27:51 intent=autonomy_impulse
+3924167:[consume] self_evidence: tick=? ts=2026-10-14 13:27:48 intent=self_directed_shift
+3924323:[consume] autonomy_evidence: tick=? ts=2026-10-14 13:28:22 intent=autonomy_impulse
+3924324:[consume] self_evidence: tick=? ts=2026-10-14 13:28:21 intent=self_directed_shift
+3924452:[consume] autonomy_evidence: tick=? ts=2026-10-14 13:28:57 intent=autonomy_impulse
+3924453:[consume] self_evidence: tick=? ts=2026-10-14 13:28:56 intent=self_directed_shift
+3924469:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3924470:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3924634:[consume] self_evidence: tick=? ts=2026-10-14 13:29:27 intent=self_directed_shift
+3924789:[consume] self_evidence: tick=? ts=2026-10-14 13:30:03 intent=self_directed_shift
+3924921:[consume] self_evidence: tick=? ts=2026-10-14 13:30:36 intent=self_directed_shift
+3925071:[consume] self_evidence: tick=? ts=2026-10-14 13:31:08 intent=self_directed_shift
+3925372:[consume] self_evidence: tick=? ts=2026-10-14 13:31:40 intent=self_directed_shift
+3925384:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3925385:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3925547:[consume] self_evidence: tick=? ts=2026-10-14 13:33:43 intent=self_directed_shift
+3925728:[consume] self_evidence: tick=? ts=2026-10-14 13:34:24 intent=self_directed_shift
+3925837:[consume] autonomy_evidence: tick=? ts=2026-10-14 13:34:58 intent=autonomy_impulse
+3925838:[consume] self_evidence: tick=? ts=2026-10-14 13:34:58 intent=self_directed_shift
+3926088:[consume] autonomy_evidence: tick=? ts=2026-10-14 13:35:30 intent=autonomy_impulse
+3926089:[consume] self_evidence: tick=? ts=2026-10-14 13:35:29 intent=self_directed_shift
+3926200:[consume] autonomy_evidence: tick=? ts=2026-10-14 13:36:14 intent=autonomy_impulse
+3926201:[consume] self_evidence: tick=? ts=2026-10-14 13:36:11 intent=self_directed_shift
+3926219:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3926220:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3926404:[consume] autonomy_evidence: tick=? ts=2026-10-14 13:36:45 intent=autonomy_impulse
+3926405:[consume] self_evidence: tick=? ts=2026-10-14 13:36:44 intent=self_directed_shift
+3926631:[consume] autonomy_evidence: tick=? ts=2026-10-14 13:37:21 intent=autonomy_impulse
+3926632:[consume] self_evidence: tick=? ts=2026-10-14 13:37:20 intent=self_directed_shift
+3926752:[consume] self_evidence: tick=? ts=2026-10-14 13:37:57 intent=self_directed_shift
+3927142:[consume] self_evidence: tick=? ts=2026-10-14 13:38:29 intent=self_directed_shift
+3927284:[consume] self_evidence: tick=? ts=2026-10-14 13:41:17 intent=self_directed_shift
+3927293:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3927294:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3927449:[consume] self_evidence: tick=? ts=2026-10-14 13:41:52 intent=self_directed_shift
+3927606:[consume] self_evidence: tick=? ts=2026-10-14 13:42:30 intent=self_directed_shift
+3927806:[consume] autonomy_evidence: tick=? ts=2026-10-14 13:43:10 intent=autonomy_impulse
+3927807:[consume] self_evidence: tick=? ts=2026-10-14 13:43:07 intent=self_directed_shift
+3927985:[consume] self_evidence: tick=? ts=2026-10-14 13:44:11 intent=self_directed_shift
+3928088:[consume] self_evidence: tick=? ts=2026-10-14 13:44:47 intent=self_directed_shift
+3928118:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3928119:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3928276:[consume] autonomy_evidence: tick=? ts=2026-10-14 13:45:20 intent=autonomy_impulse
+3928277:[consume] self_evidence: tick=? ts=2026-10-14 13:45:18 intent=self_directed_shift
+3928615:[consume] autonomy_evidence: tick=? ts=2026-10-14 13:45:56 intent=autonomy_impulse
+3928616:[consume] self_evidence: tick=? ts=2026-10-14 13:45:55 intent=self_directed_shift
+3928767:[consume] autonomy_evidence: tick=? ts=2026-10-14 13:49:03 intent=autonomy_impulse
+3928768:[consume] self_evidence: tick=? ts=2026-10-14 13:48:50 intent=self_directed_shift
+3928937:[consume] autonomy_evidence: tick=? ts=2026-10-14 13:49:37 intent=autonomy_impulse
+3928938:[consume] self_evidence: tick=? ts=2026-10-14 13:49:36 intent=self_directed_shift
+3929131:[consume] autonomy_evidence: tick=? ts=2026-10-14 13:50:11 intent=autonomy_impulse
+3929132:[consume] self_evidence: tick=? ts=2026-10-14 13:50:10 intent=self_directed_shift
+3929155:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3929156:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3929264:[consume] autonomy_evidence: tick=? ts=2026-10-14 13:51:00 intent=autonomy_impulse
+3929265:[consume] self_evidence: tick=? ts=2026-10-14 13:50:57 intent=self_directed_shift
+3929392:[consume] self_evidence: tick=? ts=2026-10-14 13:51:39 intent=self_directed_shift
+3929553:[consume] self_evidence: tick=? ts=2026-10-14 13:52:14 intent=self_directed_shift
+3929712:[consume] autonomy_evidence: tick=? ts=2026-10-14 13:52:47 intent=autonomy_impulse
+3929713:[consume] self_evidence: tick=? ts=2026-10-14 13:52:46 intent=self_directed_shift
+3929967:[consume] self_evidence: tick=? ts=2026-10-14 13:53:20 intent=self_directed_shift
+3929974:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3929975:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3930145:[consume] self_evidence: tick=? ts=2026-10-14 13:55:40 intent=self_directed_shift
+3930298:[consume] self_evidence: tick=? ts=2026-10-14 13:56:17 intent=self_directed_shift
+3930411:[consume] self_evidence: tick=? ts=2026-10-14 13:56:50 intent=self_directed_shift
+3930584:[consume] autonomy_evidence: tick=? ts=2026-10-14 13:57:22 intent=autonomy_impulse
+3930585:[consume] self_evidence: tick=? ts=2026-10-14 13:57:22 intent=self_directed_shift
+3930759:[consume] autonomy_evidence: tick=? ts=2026-10-14 13:57:59 intent=autonomy_impulse
+3930760:[consume] self_evidence: tick=? ts=2026-10-14 13:57:57 intent=self_directed_shift
+3930789:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3930790:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3930913:[consume] autonomy_evidence: tick=? ts=2026-10-14 13:58:32 intent=autonomy_impulse
+3930914:[consume] self_evidence: tick=? ts=2026-10-14 13:58:31 intent=self_directed_shift
+3931203:[consume] self_evidence: tick=? ts=2026-10-14 13:59:09 intent=self_directed_shift
+3931500:[consume] autonomy_evidence: tick=? ts=2026-10-14 14:00:55 intent=autonomy_impulse
+3931501:[consume] self_evidence: tick=? ts=2026-10-14 14:00:51 intent=self_directed_shift
+3931664:[consume] self_evidence: tick=? ts=2026-10-14 14:03:29 intent=self_directed_shift
+3931812:[consume] self_evidence: tick=? ts=2026-10-14 14:04:03 intent=self_directed_shift
+3931824:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3931825:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3931940:[consume] self_evidence: tick=? ts=2026-10-14 14:04:34 intent=self_directed_shift
+3932112:[consume] self_evidence: tick=? ts=2026-10-14 14:05:10 intent=self_directed_shift
+3932214:[consume] self_evidence: tick=? ts=2026-10-14 14:05:43 intent=self_directed_shift
+3932377:[consume] self_evidence: tick=? ts=2026-10-14 14:06:16 intent=self_directed_shift
+3932497:[consume] autonomy_evidence: tick=? ts=2026-10-14 14:06:48 intent=autonomy_impulse
+3932498:[consume] self_evidence: tick=? ts=2026-10-14 14:06:47 intent=self_directed_shift
+3932523:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3932524:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3932679:[consume] autonomy_evidence: tick=? ts=2026-10-14 14:07:21 intent=autonomy_impulse
+3932680:[consume] self_evidence: tick=? ts=2026-10-14 14:07:20 intent=self_directed_shift
+3933003:[consume] self_evidence: tick=? ts=2026-10-14 14:07:59 intent=self_directed_shift
+3933247:[consume] autonomy_evidence: tick=? ts=2026-10-14 14:10:48 intent=autonomy_impulse
+3933248:[consume] self_evidence: tick=? ts=2026-10-14 14:10:46 intent=self_directed_shift
+3933347:[consume] self_evidence: tick=? ts=2026-10-14 14:11:25 intent=self_directed_shift
+3933538:[consume] self_evidence: tick=? ts=2026-10-14 14:11:56 intent=self_directed_shift
+3933554:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3933555:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3933694:[consume] self_evidence: tick=? ts=2026-10-14 14:12:30 intent=self_directed_shift
+3933886:[consume] self_evidence: tick=? ts=2026-10-14 14:13:04 intent=self_directed_shift
+3934055:[consume] self_evidence: tick=? ts=2026-10-14 14:13:40 intent=self_directed_shift
+3934172:[consume] self_evidence: tick=? ts=2026-10-14 14:14:11 intent=self_directed_shift
+3934279:[consume] autonomy_evidence: tick=? ts=2026-10-14 14:14:44 intent=autonomy_impulse
+3934280:[consume] self_evidence: tick=? ts=2026-10-14 14:14:44 intent=self_directed_shift
+3934300:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3934301:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3934642:[consume] autonomy_evidence: tick=? ts=2026-10-14 14:15:17 intent=autonomy_impulse
+3934643:[consume] self_evidence: tick=? ts=2026-10-14 14:15:15 intent=self_directed_shift
+3934820:[consume] self_evidence: tick=? ts=2026-10-14 14:17:58 intent=self_directed_shift
+3935008:[consume] autonomy_evidence: tick=? ts=2026-10-14 14:18:37 intent=autonomy_impulse
+3935009:[consume] self_evidence: tick=? ts=2026-10-14 14:18:35 intent=self_directed_shift
+3935178:[consume] self_evidence: tick=? ts=2026-10-14 14:19:10 intent=self_directed_shift
+3935309:[consume] self_evidence: tick=? ts=2026-10-14 14:19:43 intent=self_directed_shift
+3935327:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3935328:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3935547:[consume] self_evidence: tick=? ts=2026-10-14 14:20:14 intent=self_directed_shift
+3935694:[consume] self_evidence: tick=? ts=2026-10-14 14:21:01 intent=self_directed_shift
+3935800:[consume] self_evidence: tick=? ts=2026-10-14 14:21:39 intent=self_directed_shift
+3935972:[consume] self_evidence: tick=? ts=2026-10-14 14:22:14 intent=self_directed_shift
+3936412:[consume] autonomy_evidence: tick=? ts=2026-10-14 14:22:56 intent=autonomy_impulse
+3936413:[consume] self_evidence: tick=? ts=2026-10-14 14:22:54 intent=self_directed_shift
+3936437:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3936438:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3936568:[consume] self_evidence: tick=? ts=2026-10-14 14:25:40 intent=self_directed_shift
+3936734:[consume] self_evidence: tick=? ts=2026-10-14 14:26:26 intent=self_directed_shift
+3936830:[consume] self_evidence: tick=? ts=2026-10-14 14:27:00 intent=self_directed_shift
+3936965:[consume] autonomy_evidence: tick=? ts=2026-10-14 14:27:31 intent=autonomy_impulse
+3936966:[consume] self_evidence: tick=? ts=2026-10-14 14:27:30 intent=self_directed_shift
+3937122:[consume] self_evidence: tick=? ts=2026-10-14 14:28:03 intent=self_directed_shift
+3937157:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3937158:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3937333:[consume] autonomy_evidence: tick=? ts=2026-10-14 14:28:36 intent=autonomy_impulse
+3937334:[consume] self_evidence: tick=? ts=2026-10-14 14:28:36 intent=self_directed_shift
+3937504:[consume] self_evidence: tick=? ts=2026-10-14 14:29:23 intent=self_directed_shift
+3937676:[consume] self_evidence: tick=? ts=2026-10-14 14:29:55 intent=self_directed_shift
+3938030:[consume] self_evidence: tick=? ts=2026-10-14 14:30:32 intent=self_directed_shift
+3938163:[consume] autonomy_evidence: tick=? ts=2026-10-14 14:33:22 intent=autonomy_impulse
+3938164:[consume] self_evidence: tick=? ts=2026-10-14 14:33:19 intent=self_directed_shift
+3938185:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3938186:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3938476:[consume] self_evidence: tick=? ts=2026-10-14 14:33:54 intent=self_directed_shift
+3938667:[consume] self_evidence: tick=? ts=2026-10-14 14:35:18 intent=self_directed_shift
+3938858:[consume] autonomy_evidence: tick=? ts=2026-10-14 14:36:02 intent=autonomy_impulse
+3938859:[consume] self_evidence: tick=? ts=2026-10-14 14:35:58 intent=self_directed_shift
+3939035:[consume] self_evidence: tick=? ts=2026-10-14 14:36:42 intent=self_directed_shift
+3939254:[consume] self_evidence: tick=? ts=2026-10-14 14:37:28 intent=self_directed_shift
+3939294:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3939295:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3939551:[consume] autonomy_evidence: tick=? ts=2026-10-14 14:38:22 intent=autonomy_impulse
+3939552:[consume] self_evidence: tick=? ts=2026-10-14 14:38:19 intent=self_directed_shift
+3939824:[consume] autonomy_evidence: tick=? ts=2026-10-14 14:41:14 intent=autonomy_impulse
+3939825:[consume] self_evidence: tick=? ts=2026-10-14 14:40:33 intent=self_directed_shift
+3939960:[consume] autonomy_evidence: tick=? ts=2026-10-14 14:41:48 intent=autonomy_impulse
+3939961:[consume] self_evidence: tick=? ts=2026-10-14 14:41:47 intent=self_directed_shift
+3940077:[consume] self_evidence: tick=? ts=2026-10-14 14:42:19 intent=self_directed_shift
+3940259:[consume] self_evidence: tick=? ts=2026-10-14 14:42:51 intent=self_directed_shift
+3940271:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3940272:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3940418:[consume] self_evidence: tick=? ts=2026-10-14 14:43:48 intent=self_directed_shift
+3940791:[consume] autonomy_evidence: tick=? ts=2026-10-14 14:44:56 intent=autonomy_impulse
+3940792:[consume] self_evidence: tick=? ts=2026-10-14 14:44:53 intent=self_directed_shift
+3940935:[consume] autonomy_evidence: tick=? ts=2026-10-14 14:47:02 intent=autonomy_impulse
+3940936:[consume] self_evidence: tick=? ts=2026-10-14 14:46:59 intent=self_directed_shift
+3941091:[consume] self_evidence: tick=? ts=2026-10-14 14:47:35 intent=self_directed_shift
+3941255:[consume] self_evidence: tick=? ts=2026-10-14 14:48:06 intent=self_directed_shift
+3941262:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3941263:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3941555:[consume] self_evidence: tick=? ts=2026-10-14 14:48:42 intent=self_directed_shift
+3941746:[consume] self_evidence: tick=? ts=2026-10-14 14:49:30 intent=self_directed_shift
+3941972:[consume] self_evidence: tick=? ts=2026-10-14 14:50:07 intent=self_directed_shift
+3942182:[consume] autonomy_evidence: tick=? ts=2026-10-14 14:50:40 intent=autonomy_impulse
+3942183:[consume] self_evidence: tick=? ts=2026-10-14 14:50:39 intent=self_directed_shift
+3942459:[consume] autonomy_evidence: tick=? ts=2026-10-14 14:51:17 intent=autonomy_impulse
+3942460:[consume] self_evidence: tick=? ts=2026-10-14 14:51:16 intent=self_directed_shift
+3942530:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3942531:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3943082:[consume] autonomy_evidence: tick=? ts=2026-10-14 14:51:57 intent=autonomy_impulse
+3943083:[consume] self_evidence: tick=? ts=2026-10-14 14:51:54 intent=self_directed_shift
+3943227:[consume] self_evidence: tick=? ts=2026-10-14 14:54:45 intent=self_directed_shift
+3943321:[s2-consumer] boot {'path': 'C:\\Users\\Administrator\\.openclaw\\workspace\\.lae\\s2_training_samples.jsonl', 'read': 1973, 'applied': 0, 'already_consumed': 761, 'invalid': 1212, 'reindexed': 0, 'status': 'ok', 'consumed': 761, 'last_run': '2026-10-14 14:56:01'}
+3943330:[init] Restored L5 repair state: counterfactual=False observation_window=True escape_injected=False escape_count=2 saved_at=2026-10-14T11:50:53+0800
+3943357:[consume] self_evidence: tick=? ts=2026-10-14 14:55:24 intent=self_directed_shift
+3943689:[consume] self_evidence: tick=? ts=2026-10-14 14:56:11 intent=self_directed_shift
+3943984:[consume] self_evidence: tick=? ts=2026-10-14 14:58:28 intent=self_directed_shift
+3944192:[consume] self_evidence: tick=? ts=2026-10-14 14:59:57 intent=self_directed_shift
+3944213:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3944214:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3944457:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:02:01 intent=autonomy_impulse
+3944458:[consume] self_evidence: tick=? ts=2026-10-14 15:01:58 intent=self_directed_shift
+3944588:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:03:41 intent=autonomy_impulse
+3944589:[consume] self_evidence: tick=? ts=2026-10-14 15:03:40 intent=self_directed_shift
+3944764:[consume] self_evidence: tick=? ts=2026-10-14 15:04:12 intent=self_directed_shift
+3944873:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:04:47 intent=autonomy_impulse
+3944874:[consume] self_evidence: tick=? ts=2026-10-14 15:04:46 intent=self_directed_shift
+3945041:[consume] self_evidence: tick=? ts=2026-10-14 15:05:16 intent=self_directed_shift
+3945065:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3945066:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3945157:[s2-consumer] boot {'path': 'C:\\Users\\Administrator\\.openclaw\\workspace\\.lae\\s2_training_samples.jsonl', 'read': 1973, 'applied': 0, 'already_consumed': 761, 'invalid': 1212, 'reindexed': 0, 'status': 'ok', 'consumed': 761, 'last_run': '2026-10-14 15:06:23'}
+3945213:[init] Restored L5 repair state: counterfactual=False observation_window=True escape_injected=False escape_count=2 saved_at=2026-10-14T11:50:53+0800
+3945288:[consume] self_evidence: tick=? ts=2026-10-14 15:05:44 intent=self_directed_shift
+3945332:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3945333:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3945515:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:06:47 intent=autonomy_impulse
+3945516:[consume] self_evidence: tick=? ts=2026-10-14 15:06:42 intent=self_directed_shift
+3945617:[consume] self_evidence: tick=? ts=2026-10-14 15:07:38 intent=self_directed_shift
+3945791:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:08:09 intent=autonomy_impulse
+3945792:[consume] self_evidence: tick=? ts=2026-10-14 15:08:08 intent=self_directed_shift
+3945956:[consume] self_evidence: tick=? ts=2026-10-14 15:08:37 intent=self_directed_shift
+3946073:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:09:13 intent=autonomy_impulse
+3946074:[consume] self_evidence: tick=? ts=2026-10-14 15:09:10 intent=self_directed_shift
+3946099:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3946100:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3946196:[consume] self_evidence: tick=? ts=2026-10-14 15:09:43 intent=self_directed_shift
+3946367:[consume] self_evidence: tick=? ts=2026-10-14 15:10:13 intent=self_directed_shift
+3946462:[consume] self_evidence: tick=? ts=2026-10-14 15:10:43 intent=self_directed_shift
+3946625:[consume] self_evidence: tick=? ts=2026-10-14 15:11:11 intent=self_directed_shift
+3946785:[consume] self_evidence: tick=? ts=2026-10-14 15:11:43 intent=self_directed_shift
+3946836:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3946837:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3946950:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:12:16 intent=autonomy_impulse
+3946951:[consume] self_evidence: tick=? ts=2026-10-14 15:12:15 intent=self_directed_shift
+3947188:[consume] self_evidence: tick=? ts=2026-10-14 15:12:54 intent=self_directed_shift
+3947330:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:14:12 intent=autonomy_impulse
+3947331:[consume] self_evidence: tick=? ts=2026-10-14 15:14:09 intent=self_directed_shift
+3947495:[consume] self_evidence: tick=? ts=2026-10-14 15:14:44 intent=self_directed_shift
+3947760:[consume] self_evidence: tick=? ts=2026-10-14 15:15:14 intent=self_directed_shift
+3947806:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3947807:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3948046:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:15:46 intent=autonomy_impulse
+3948047:[consume] self_evidence: tick=? ts=2026-10-14 15:15:46 intent=self_directed_shift
+3948269:[consume] self_evidence: tick=? ts=2026-10-14 15:16:37 intent=self_directed_shift
+3948392:[consume] self_evidence: tick=? ts=2026-10-14 15:17:31 intent=self_directed_shift
+3948578:[consume] self_evidence: tick=? ts=2026-10-14 15:18:01 intent=self_directed_shift
+3948755:[consume] self_evidence: tick=? ts=2026-10-14 15:18:34 intent=self_directed_shift
+3948783:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3948784:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3948918:[consume] self_evidence: tick=? ts=2026-10-14 15:19:05 intent=self_directed_shift
+3949107:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:19:51 intent=autonomy_impulse
+3949108:[consume] self_evidence: tick=? ts=2026-10-14 15:19:51 intent=self_directed_shift
+3949220:[consume] self_evidence: tick=? ts=2026-10-14 15:20:23 intent=self_directed_shift
+3949496:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:20:54 intent=autonomy_impulse
+3949497:[consume] self_evidence: tick=? ts=2026-10-14 15:20:53 intent=self_directed_shift
+3949688:[consume] self_evidence: tick=? ts=2026-10-14 15:21:38 intent=self_directed_shift
+3949730:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3949731:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3949842:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:22:11 intent=autonomy_impulse
+3949843:[consume] self_evidence: tick=? ts=2026-10-14 15:22:10 intent=self_directed_shift
+3949952:[consume] self_evidence: tick=? ts=2026-10-14 15:22:46 intent=self_directed_shift
+3950208:[consume] self_evidence: tick=? ts=2026-10-14 15:23:16 intent=self_directed_shift
+3950364:[consume] self_evidence: tick=? ts=2026-10-14 15:24:14 intent=self_directed_shift
+3950567:[consume] self_evidence: tick=? ts=2026-10-14 15:24:48 intent=self_directed_shift
+3950604:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3950605:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3950723:[consume] self_evidence: tick=? ts=2026-10-14 15:25:33 intent=self_directed_shift
+3950907:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:26:17 intent=autonomy_impulse
+3950908:[consume] self_evidence: tick=? ts=2026-10-14 15:26:14 intent=self_directed_shift
+3951115:[consume] self_evidence: tick=? ts=2026-10-14 15:26:51 intent=self_directed_shift
+3951239:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:27:52 intent=autonomy_impulse
+3951240:[consume] self_evidence: tick=? ts=2026-10-14 15:27:51 intent=self_directed_shift
+3951411:[consume] self_evidence: tick=? ts=2026-10-14 15:28:24 intent=self_directed_shift
+3951443:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3951444:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3951626:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:28:57 intent=autonomy_impulse
+3951627:[consume] self_evidence: tick=? ts=2026-10-14 15:28:56 intent=self_directed_shift
+3951731:[consume] self_evidence: tick=? ts=2026-10-14 15:29:51 intent=self_directed_shift
+3951900:[consume] self_evidence: tick=? ts=2026-10-14 15:30:22 intent=self_directed_shift
+3952057:[consume] self_evidence: tick=? ts=2026-10-14 15:30:54 intent=self_directed_shift
+3952174:[consume] self_evidence: tick=? ts=2026-10-14 15:31:27 intent=self_directed_shift
+3952194:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3952195:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3952298:[consume] self_evidence: tick=? ts=2026-10-14 15:31:59 intent=self_directed_shift
+3952457:[consume] self_evidence: tick=? ts=2026-10-14 15:32:42 intent=self_directed_shift
+3952572:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:33:19 intent=autonomy_impulse
+3952573:[consume] self_evidence: tick=? ts=2026-10-14 15:33:16 intent=self_directed_shift
+3952745:[consume] self_evidence: tick=? ts=2026-10-14 15:33:50 intent=self_directed_shift
+3952961:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:34:23 intent=autonomy_impulse
+3952962:[consume] self_evidence: tick=? ts=2026-10-14 15:34:22 intent=self_directed_shift
+3952980:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3952981:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3953087:[consume] self_evidence: tick=? ts=2026-10-14 15:35:15 intent=self_directed_shift
+3953279:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:35:52 intent=autonomy_impulse
+3953280:[consume] self_evidence: tick=? ts=2026-10-14 15:35:49 intent=self_directed_shift
+3953394:[consume] self_evidence: tick=? ts=2026-10-14 15:36:22 intent=self_directed_shift
+3953500:[consume] self_evidence: tick=? ts=2026-10-14 15:36:57 intent=self_directed_shift
+3953677:[consume] self_evidence: tick=? ts=2026-10-14 15:37:28 intent=self_directed_shift
+3953702:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3953703:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3953874:[consume] self_evidence: tick=? ts=2026-10-14 15:38:00 intent=self_directed_shift
+3954035:[consume] self_evidence: tick=? ts=2026-10-14 15:38:50 intent=self_directed_shift
+3954189:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:39:24 intent=autonomy_impulse
+3954190:[consume] self_evidence: tick=? ts=2026-10-14 15:39:23 intent=self_directed_shift
+3954370:[consume] self_evidence: tick=? ts=2026-10-14 15:39:54 intent=self_directed_shift
+3954506:[consume] self_evidence: tick=? ts=2026-10-14 15:40:27 intent=self_directed_shift
+3954535:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3954536:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3954703:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:41:05 intent=autonomy_impulse
+3954704:[consume] self_evidence: tick=? ts=2026-10-14 15:41:05 intent=self_directed_shift
+3954893:[consume] self_evidence: tick=? ts=2026-10-14 15:41:40 intent=self_directed_shift
+3955030:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:42:21 intent=autonomy_impulse
+3955031:[consume] self_evidence: tick=? ts=2026-10-14 15:42:20 intent=self_directed_shift
+3955212:[consume] self_evidence: tick=? ts=2026-10-14 15:42:53 intent=self_directed_shift
+3955342:[consume] self_evidence: tick=? ts=2026-10-14 15:43:25 intent=self_directed_shift
+3955360:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3955361:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3955595:[consume] self_evidence: tick=? ts=2026-10-14 15:43:57 intent=self_directed_shift
+3955709:[consume] self_evidence: tick=? ts=2026-10-14 15:44:39 intent=self_directed_shift
+3955903:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:45:15 intent=autonomy_impulse
+3955904:[consume] self_evidence: tick=? ts=2026-10-14 15:45:13 intent=self_directed_shift
+3956144:[consume] self_evidence: tick=? ts=2026-10-14 15:45:46 intent=self_directed_shift
+3956277:[consume] self_evidence: tick=? ts=2026-10-14 15:46:26 intent=self_directed_shift
+3956302:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3956303:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3956582:[consume] self_evidence: tick=? ts=2026-10-14 15:47:05 intent=self_directed_shift
+3956772:[consume] self_evidence: tick=? ts=2026-10-14 15:48:15 intent=self_directed_shift
+3956897:[consume] self_evidence: tick=? ts=2026-10-14 15:48:55 intent=self_directed_shift
+3957100:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:49:26 intent=autonomy_impulse
+3957101:[consume] self_evidence: tick=? ts=2026-10-14 15:49:26 intent=self_directed_shift
+3957220:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:50:03 intent=autonomy_impulse
+3957221:[consume] self_evidence: tick=? ts=2026-10-14 15:50:02 intent=self_directed_shift
+3957256:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3957257:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3957432:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:50:36 intent=autonomy_impulse
+3957433:[consume] self_evidence: tick=? ts=2026-10-14 15:50:34 intent=self_directed_shift
+3957611:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:51:37 intent=autonomy_impulse
+3957612:[consume] self_evidence: tick=? ts=2026-10-14 15:51:36 intent=self_directed_shift
+3957769:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:52:12 intent=autonomy_impulse
+3957770:[consume] self_evidence: tick=? ts=2026-10-14 15:52:11 intent=self_directed_shift
+3958020:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:53:02 intent=autonomy_impulse
+3958021:[consume] self_evidence: tick=? ts=2026-10-14 15:53:00 intent=self_directed_shift
+3958166:[consume] self_evidence: tick=? ts=2026-10-14 15:53:56 intent=self_directed_shift
+3958221:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3958222:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3958389:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:54:28 intent=autonomy_impulse
+3958390:[consume] self_evidence: tick=? ts=2026-10-14 15:54:27 intent=self_directed_shift
+3958586:[consume] self_evidence: tick=? ts=2026-10-14 15:55:03 intent=self_directed_shift
+3958701:[consume] self_evidence: tick=? ts=2026-10-14 15:55:40 intent=self_directed_shift
+3958889:[consume] self_evidence: tick=? ts=2026-10-14 15:56:13 intent=self_directed_shift
+3959076:[consume] self_evidence: tick=? ts=2026-10-14 15:56:45 intent=self_directed_shift
+3959102:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3959103:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3959272:[consume] self_evidence: tick=? ts=2026-10-14 15:57:19 intent=self_directed_shift
+3959423:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:58:06 intent=autonomy_impulse
+3959424:[consume] self_evidence: tick=? ts=2026-10-14 15:58:04 intent=self_directed_shift
+3959535:[consume] self_evidence: tick=? ts=2026-10-14 15:58:39 intent=self_directed_shift
+3959663:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:59:12 intent=autonomy_impulse
+3959664:[consume] self_evidence: tick=? ts=2026-10-14 15:59:11 intent=self_directed_shift
+3959849:[consume] autonomy_evidence: tick=? ts=2026-10-14 15:59:47 intent=autonomy_impulse
+3959850:[consume] self_evidence: tick=? ts=2026-10-14 15:59:45 intent=self_directed_shift
+3959882:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3959883:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3960111:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:00:19 intent=autonomy_impulse
+3960112:[consume] self_evidence: tick=? ts=2026-10-14 16:00:18 intent=self_directed_shift
+3960248:[consume] self_evidence: tick=? ts=2026-10-14 16:00:58 intent=self_directed_shift
+3960379:[consume] self_evidence: tick=? ts=2026-10-14 16:01:34 intent=self_directed_shift
+3960545:[consume] self_evidence: tick=? ts=2026-10-14 16:02:07 intent=self_directed_shift
+3960663:[consume] self_evidence: tick=? ts=2026-10-14 16:02:41 intent=self_directed_shift
+3960682:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3960683:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3960860:[consume] self_evidence: tick=? ts=2026-10-14 16:03:15 intent=self_directed_shift
+3961049:[consume] self_evidence: tick=? ts=2026-10-14 16:04:08 intent=self_directed_shift
+3961285:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:04:55 intent=autonomy_impulse
+3961286:[consume] self_evidence: tick=? ts=2026-10-14 16:04:54 intent=self_directed_shift
+3961462:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:05:31 intent=autonomy_impulse
+3961463:[consume] self_evidence: tick=? ts=2026-10-14 16:05:30 intent=self_directed_shift
+3961680:[consume] self_evidence: tick=? ts=2026-10-14 16:06:03 intent=self_directed_shift
+3961730:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3961731:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3961841:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:06:45 intent=autonomy_impulse
+3961842:[consume] self_evidence: tick=? ts=2026-10-14 16:06:42 intent=self_directed_shift
+3962019:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:07:20 intent=autonomy_impulse
+3962020:[consume] self_evidence: tick=? ts=2026-10-14 16:07:20 intent=self_directed_shift
+3962195:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:07:52 intent=autonomy_impulse
+3962196:[consume] self_evidence: tick=? ts=2026-10-14 16:07:51 intent=self_directed_shift
+3962307:[consume] self_evidence: tick=? ts=2026-10-14 16:08:25 intent=self_directed_shift
+3962481:[consume] self_evidence: tick=? ts=2026-10-14 16:08:56 intent=self_directed_shift
+3962498:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3962499:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3962607:[consume] self_evidence: tick=? ts=2026-10-14 16:09:30 intent=self_directed_shift
+3962760:[consume] self_evidence: tick=? ts=2026-10-14 16:10:14 intent=self_directed_shift
+3962879:[consume] self_evidence: tick=? ts=2026-10-14 16:10:50 intent=self_directed_shift
+3963069:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:11:24 intent=autonomy_impulse
+3963070:[consume] self_evidence: tick=? ts=2026-10-14 16:11:21 intent=self_directed_shift
+3963167:[consume] self_evidence: tick=? ts=2026-10-14 16:11:57 intent=self_directed_shift
+3963249:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3963250:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3963381:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:12:29 intent=autonomy_impulse
+3963382:[consume] self_evidence: tick=? ts=2026-10-14 16:12:28 intent=self_directed_shift
+3963542:[consume] self_evidence: tick=? ts=2026-10-14 16:13:04 intent=self_directed_shift
+3963724:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:13:38 intent=autonomy_impulse
+3963725:[consume] self_evidence: tick=? ts=2026-10-14 16:13:36 intent=self_directed_shift
+3963831:[consume] self_evidence: tick=? ts=2026-10-14 16:14:17 intent=self_directed_shift
+3963952:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:14:49 intent=autonomy_impulse
+3963953:[consume] self_evidence: tick=? ts=2026-10-14 16:14:48 intent=self_directed_shift
+3963970:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3963971:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3964170:[consume] self_evidence: tick=? ts=2026-10-14 16:15:21 intent=self_directed_shift
+3964329:[consume] self_evidence: tick=? ts=2026-10-14 16:16:07 intent=self_directed_shift
+3964449:[consume] self_evidence: tick=? ts=2026-10-14 16:16:42 intent=self_directed_shift
+3964642:[consume] self_evidence: tick=? ts=2026-10-14 16:17:13 intent=self_directed_shift
+3964814:[consume] self_evidence: tick=? ts=2026-10-14 16:18:02 intent=self_directed_shift
+3964828:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3964829:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3964984:[consume] self_evidence: tick=? ts=2026-10-14 16:18:39 intent=self_directed_shift
+3965124:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:19:17 intent=autonomy_impulse
+3965125:[consume] self_evidence: tick=? ts=2026-10-14 16:19:16 intent=self_directed_shift
+3965302:[consume] self_evidence: tick=? ts=2026-10-14 16:19:48 intent=self_directed_shift
+3965441:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:20:28 intent=autonomy_impulse
+3965442:[consume] self_evidence: tick=? ts=2026-10-14 16:20:27 intent=self_directed_shift
+3965689:[consume] self_evidence: tick=? ts=2026-10-14 16:20:59 intent=self_directed_shift
+3965706:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3965707:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3965868:[consume] self_evidence: tick=? ts=2026-10-14 16:21:35 intent=self_directed_shift
+3966070:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:22:19 intent=autonomy_impulse
+3966071:[consume] self_evidence: tick=? ts=2026-10-14 16:22:17 intent=self_directed_shift
+3966252:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:22:55 intent=autonomy_impulse
+3966253:[consume] self_evidence: tick=? ts=2026-10-14 16:22:54 intent=self_directed_shift
+3966406:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:23:30 intent=autonomy_impulse
+3966407:[consume] self_evidence: tick=? ts=2026-10-14 16:23:27 intent=self_directed_shift
+3966574:[consume] self_evidence: tick=? ts=2026-10-14 16:24:03 intent=self_directed_shift
+3966588:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3966589:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3966740:[consume] self_evidence: tick=? ts=2026-10-14 16:24:34 intent=self_directed_shift
+3966894:[consume] self_evidence: tick=? ts=2026-10-14 16:25:09 intent=self_directed_shift
+3967006:[consume] self_evidence: tick=? ts=2026-10-14 16:25:45 intent=self_directed_shift
+3967245:[consume] self_evidence: tick=? ts=2026-10-14 16:26:20 intent=self_directed_shift
+3967352:[consume] self_evidence: tick=? ts=2026-10-14 16:26:59 intent=self_directed_shift
+3967421:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3967422:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3967547:[consume] self_evidence: tick=? ts=2026-10-14 16:27:32 intent=self_directed_shift
+3967724:[consume] self_evidence: tick=? ts=2026-10-14 16:28:12 intent=self_directed_shift
+3967890:[consume] self_evidence: tick=? ts=2026-10-14 16:28:46 intent=self_directed_shift
+3968120:[consume] self_evidence: tick=? ts=2026-10-14 16:29:18 intent=self_directed_shift
+3968257:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:30:39 intent=autonomy_impulse
+3968258:[consume] self_evidence: tick=? ts=2026-10-14 16:30:37 intent=self_directed_shift
+3968290:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3968291:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3968451:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:31:13 intent=autonomy_impulse
+3968452:[consume] self_evidence: tick=? ts=2026-10-14 16:31:12 intent=self_directed_shift
+3968640:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:31:47 intent=autonomy_impulse
+3968641:[consume] self_evidence: tick=? ts=2026-10-14 16:31:46 intent=self_directed_shift
+3968758:[consume] self_evidence: tick=? ts=2026-10-14 16:32:19 intent=self_directed_shift
+3968951:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:32:53 intent=autonomy_impulse
+3968952:[consume] self_evidence: tick=? ts=2026-10-14 16:32:50 intent=self_directed_shift
+3969076:[consume] self_evidence: tick=? ts=2026-10-14 16:33:26 intent=self_directed_shift
+3969096:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3969097:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3969349:[consume] self_evidence: tick=? ts=2026-10-14 16:33:58 intent=self_directed_shift
+3969561:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:35:11 intent=autonomy_impulse
+3969562:[consume] self_evidence: tick=? ts=2026-10-14 16:35:08 intent=self_directed_shift
+3969756:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:35:54 intent=autonomy_impulse
+3969757:[consume] self_evidence: tick=? ts=2026-10-14 16:35:53 intent=self_directed_shift
+3969888:[consume] self_evidence: tick=? ts=2026-10-14 16:36:25 intent=self_directed_shift
+3970061:[consume] self_evidence: tick=? ts=2026-10-14 16:36:58 intent=self_directed_shift
+3970104:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3970105:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3970256:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:37:34 intent=autonomy_impulse
+3970257:[consume] self_evidence: tick=? ts=2026-10-14 16:37:31 intent=self_directed_shift
+3970381:[consume] self_evidence: tick=? ts=2026-10-14 16:38:09 intent=self_directed_shift
+3970574:[consume] self_evidence: tick=? ts=2026-10-14 16:38:40 intent=self_directed_shift
+3970749:[consume] self_evidence: tick=? ts=2026-10-14 16:39:23 intent=self_directed_shift
+3970925:[consume] self_evidence: tick=? ts=2026-10-14 16:39:55 intent=self_directed_shift
+3970950:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3970951:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3971075:[consume] self_evidence: tick=? ts=2026-10-14 16:40:31 intent=self_directed_shift
+3971195:[consume] self_evidence: tick=? ts=2026-10-14 16:41:12 intent=self_directed_shift
+3971385:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:41:46 intent=autonomy_impulse
+3971386:[consume] self_evidence: tick=? ts=2026-10-14 16:41:45 intent=self_directed_shift
+3971569:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:42:21 intent=autonomy_impulse
+3971570:[consume] self_evidence: tick=? ts=2026-10-14 16:42:19 intent=self_directed_shift
+3971747:[consume] self_evidence: tick=? ts=2026-10-14 16:42:55 intent=self_directed_shift
+3971789:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3971790:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3971913:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:43:28 intent=autonomy_impulse
+3971914:[consume] self_evidence: tick=? ts=2026-10-14 16:43:27 intent=self_directed_shift
+3972095:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:44:03 intent=autonomy_impulse
+3972096:[consume] self_evidence: tick=? ts=2026-10-14 16:44:02 intent=self_directed_shift
+3972261:[consume] self_evidence: tick=? ts=2026-10-14 16:44:35 intent=self_directed_shift
+3972471:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:45:10 intent=autonomy_impulse
+3972472:[consume] self_evidence: tick=? ts=2026-10-14 16:45:09 intent=self_directed_shift
+3972608:[consume] self_evidence: tick=? ts=2026-10-14 16:46:08 intent=self_directed_shift
+3972637:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3972638:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3972825:[consume] self_evidence: tick=? ts=2026-10-14 16:46:39 intent=self_directed_shift
+3972994:[consume] self_evidence: tick=? ts=2026-10-14 16:47:24 intent=self_directed_shift
+3973127:[consume] self_evidence: tick=? ts=2026-10-14 16:48:01 intent=self_directed_shift
+3973308:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:48:33 intent=autonomy_impulse
+3973309:[consume] self_evidence: tick=? ts=2026-10-14 16:48:32 intent=self_directed_shift
+3973491:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:49:09 intent=autonomy_impulse
+3973492:[consume] self_evidence: tick=? ts=2026-10-14 16:49:06 intent=self_directed_shift
+3973540:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3973541:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3973712:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:49:41 intent=autonomy_impulse
+3973713:[consume] self_evidence: tick=? ts=2026-10-14 16:49:40 intent=self_directed_shift
+3973897:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:50:17 intent=autonomy_impulse
+3973898:[consume] self_evidence: tick=? ts=2026-10-14 16:50:16 intent=self_directed_shift
+3974144:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:50:48 intent=autonomy_impulse
+3974145:[consume] self_evidence: tick=? ts=2026-10-14 16:50:48 intent=self_directed_shift
+3974319:[consume] self_evidence: tick=? ts=2026-10-14 16:52:09 intent=self_directed_shift
+3974508:[consume] self_evidence: tick=? ts=2026-10-14 16:52:43 intent=self_directed_shift
+3974528:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3974529:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3974661:[consume] self_evidence: tick=? ts=2026-10-14 16:53:14 intent=self_directed_shift
+3974840:[consume] self_evidence: tick=? ts=2026-10-14 16:53:58 intent=self_directed_shift
+3974955:[consume] self_evidence: tick=? ts=2026-10-14 16:54:31 intent=self_directed_shift
+3975152:[consume] self_evidence: tick=? ts=2026-10-14 16:55:04 intent=self_directed_shift
+3975262:[consume] self_evidence: tick=? ts=2026-10-14 16:56:09 intent=self_directed_shift
+3975333:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3975334:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3975460:[consume] self_evidence: tick=? ts=2026-10-14 16:56:42 intent=self_directed_shift
+3975685:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:57:19 intent=autonomy_impulse
+3975686:[consume] self_evidence: tick=? ts=2026-10-14 16:57:18 intent=self_directed_shift
+3975807:[consume] self_evidence: tick=? ts=2026-10-14 16:58:01 intent=self_directed_shift
+3975995:[consume] autonomy_evidence: tick=? ts=2026-10-14 16:58:34 intent=autonomy_impulse
+3975996:[consume] self_evidence: tick=? ts=2026-10-14 16:58:33 intent=self_directed_shift
+3976181:[consume] self_evidence: tick=? ts=2026-10-14 16:59:08 intent=self_directed_shift
+3976206:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3976207:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3976389:[consume] self_evidence: tick=? ts=2026-10-14 16:59:47 intent=self_directed_shift
+3976595:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:00:41 intent=autonomy_impulse
+3976596:[consume] self_evidence: tick=? ts=2026-10-14 17:00:39 intent=self_directed_shift
+3976739:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:01:18 intent=autonomy_impulse
+3976740:[consume] self_evidence: tick=? ts=2026-10-14 17:01:16 intent=self_directed_shift
+3977008:[consume] self_evidence: tick=? ts=2026-10-14 17:01:50 intent=self_directed_shift
+3977202:[consume] self_evidence: tick=? ts=2026-10-14 17:03:04 intent=self_directed_shift
+3977227:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3977228:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3977378:[consume] self_evidence: tick=? ts=2026-10-14 17:03:43 intent=self_directed_shift
+3977587:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:04:20 intent=autonomy_impulse
+3977588:[consume] self_evidence: tick=? ts=2026-10-14 17:04:19 intent=self_directed_shift
+3977749:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:04:56 intent=autonomy_impulse
+3977750:[consume] self_evidence: tick=? ts=2026-10-14 17:04:55 intent=self_directed_shift
+3977943:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:05:27 intent=autonomy_impulse
+3977944:[consume] self_evidence: tick=? ts=2026-10-14 17:05:26 intent=self_directed_shift
+3978052:[consume] self_evidence: tick=? ts=2026-10-14 17:06:02 intent=self_directed_shift
+3978122:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3978123:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3978312:[consume] self_evidence: tick=? ts=2026-10-14 17:06:34 intent=self_directed_shift
+3978484:[consume] self_evidence: tick=? ts=2026-10-14 17:07:18 intent=self_directed_shift
+3978643:[consume] self_evidence: tick=? ts=2026-10-14 17:07:52 intent=self_directed_shift
+3978835:[consume] self_evidence: tick=? ts=2026-10-14 17:08:23 intent=self_directed_shift
+3979004:[consume] self_evidence: tick=? ts=2026-10-14 17:08:58 intent=self_directed_shift
+3979020:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3979021:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3979135:[consume] self_evidence: tick=? ts=2026-10-14 17:09:31 intent=self_directed_shift
+3979321:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:10:06 intent=autonomy_impulse
+3979322:[consume] self_evidence: tick=? ts=2026-10-14 17:10:05 intent=self_directed_shift
+3979496:[consume] self_evidence: tick=? ts=2026-10-14 17:10:37 intent=self_directed_shift
+3979683:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:11:15 intent=autonomy_impulse
+3979684:[consume] self_evidence: tick=? ts=2026-10-14 17:11:14 intent=self_directed_shift
+3979818:[consume] self_evidence: tick=? ts=2026-10-14 17:11:46 intent=self_directed_shift
+3979848:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3979849:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3980037:[consume] self_evidence: tick=? ts=2026-10-14 17:12:19 intent=self_directed_shift
+3980217:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:13:14 intent=autonomy_impulse
+3980218:[consume] self_evidence: tick=? ts=2026-10-14 17:13:10 intent=self_directed_shift
+3980352:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:13:49 intent=autonomy_impulse
+3980353:[consume] self_evidence: tick=? ts=2026-10-14 17:13:49 intent=self_directed_shift
+3980549:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:14:21 intent=autonomy_impulse
+3980550:[consume] self_evidence: tick=? ts=2026-10-14 17:14:20 intent=self_directed_shift
+3980671:[consume] self_evidence: tick=? ts=2026-10-14 17:15:00 intent=self_directed_shift
+3980698:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3980699:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3980805:[consume] self_evidence: tick=? ts=2026-10-14 17:15:31 intent=self_directed_shift
+3980988:[consume] self_evidence: tick=? ts=2026-10-14 17:16:08 intent=self_directed_shift
+3981156:[consume] self_evidence: tick=? ts=2026-10-14 17:16:39 intent=self_directed_shift
+3981384:[consume] self_evidence: tick=? ts=2026-10-14 17:17:12 intent=self_directed_shift
+3981634:[consume] self_evidence: tick=? ts=2026-10-14 17:18:25 intent=self_directed_shift
+3981654:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3981655:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3981792:[consume] self_evidence: tick=? ts=2026-10-14 17:19:34 intent=self_directed_shift
+3982039:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:20:17 intent=autonomy_impulse
+3982040:[consume] self_evidence: tick=? ts=2026-10-14 17:20:17 intent=self_directed_shift
+3982210:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:20:57 intent=autonomy_impulse
+3982211:[consume] self_evidence: tick=? ts=2026-10-14 17:20:55 intent=self_directed_shift
+3982358:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:21:29 intent=autonomy_impulse
+3982359:[consume] self_evidence: tick=? ts=2026-10-14 17:21:29 intent=self_directed_shift
+3982522:[consume] self_evidence: tick=? ts=2026-10-14 17:22:03 intent=self_directed_shift
+3982542:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3982543:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3982662:[consume] self_evidence: tick=? ts=2026-10-14 17:22:34 intent=self_directed_shift
+3982787:[consume] self_evidence: tick=? ts=2026-10-14 17:23:10 intent=self_directed_shift
+3983010:[consume] self_evidence: tick=? ts=2026-10-14 17:23:44 intent=self_directed_shift
+3983135:[consume] self_evidence: tick=? ts=2026-10-14 17:24:30 intent=self_directed_shift
+3983254:[consume] self_evidence: tick=? ts=2026-10-14 17:25:01 intent=self_directed_shift
+3983271:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3983272:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3983444:[consume] self_evidence: tick=? ts=2026-10-14 17:25:35 intent=self_directed_shift
+3983639:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:26:24 intent=autonomy_impulse
+3983640:[consume] self_evidence: tick=? ts=2026-10-14 17:26:21 intent=self_directed_shift
+3983806:[consume] self_evidence: tick=? ts=2026-10-14 17:27:03 intent=self_directed_shift
+3983955:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:27:38 intent=autonomy_impulse
+3983956:[consume] self_evidence: tick=? ts=2026-10-14 17:27:35 intent=self_directed_shift
+3984143:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:28:12 intent=autonomy_impulse
+3984144:[consume] self_evidence: tick=? ts=2026-10-14 17:28:12 intent=self_directed_shift
+3984161:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3984162:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3984322:[consume] self_evidence: tick=? ts=2026-10-14 17:28:44 intent=self_directed_shift
+3984446:[consume] self_evidence: tick=? ts=2026-10-14 17:29:20 intent=self_directed_shift
+3984559:[consume] self_evidence: tick=? ts=2026-10-14 17:29:51 intent=self_directed_shift
+3984798:[consume] self_evidence: tick=? ts=2026-10-14 17:30:27 intent=self_directed_shift
+3984939:[consume] self_evidence: tick=? ts=2026-10-14 17:31:12 intent=self_directed_shift
+3984967:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3984968:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3985156:[consume] self_evidence: tick=? ts=2026-10-14 17:31:45 intent=self_directed_shift
+3985322:[consume] self_evidence: tick=? ts=2026-10-14 17:32:33 intent=self_directed_shift
+3985524:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:33:09 intent=autonomy_impulse
+3985525:[consume] self_evidence: tick=? ts=2026-10-14 17:33:08 intent=self_directed_shift
+3985713:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:33:41 intent=autonomy_impulse
+3985714:[consume] self_evidence: tick=? ts=2026-10-14 17:33:40 intent=self_directed_shift
+3985866:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:34:16 intent=autonomy_impulse
+3985867:[consume] self_evidence: tick=? ts=2026-10-14 17:34:15 intent=self_directed_shift
+3985898:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3985899:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3986083:[consume] self_evidence: tick=? ts=2026-10-14 17:34:47 intent=self_directed_shift
+3986249:[consume] self_evidence: tick=? ts=2026-10-14 17:35:26 intent=self_directed_shift
+3986416:[consume] self_evidence: tick=? ts=2026-10-14 17:35:57 intent=self_directed_shift
+3986566:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:36:31 intent=autonomy_impulse
+3986567:[consume] self_evidence: tick=? ts=2026-10-14 17:36:31 intent=self_directed_shift
+3986688:[consume] self_evidence: tick=? ts=2026-10-14 17:37:03 intent=self_directed_shift
+3986703:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3986704:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3986899:[consume] self_evidence: tick=? ts=2026-10-14 17:37:38 intent=self_directed_shift
+3987081:[consume] self_evidence: tick=? ts=2026-10-14 17:38:38 intent=self_directed_shift
+3987224:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:39:17 intent=autonomy_impulse
+3987225:[consume] self_evidence: tick=? ts=2026-10-14 17:39:13 intent=self_directed_shift
+3987398:[consume] self_evidence: tick=? ts=2026-10-14 17:39:49 intent=self_directed_shift
+3987578:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:40:24 intent=autonomy_impulse
+3987579:[consume] self_evidence: tick=? ts=2026-10-14 17:40:23 intent=self_directed_shift
+3987616:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3987617:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3987750:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:40:56 intent=autonomy_impulse
+3987751:[consume] self_evidence: tick=? ts=2026-10-14 17:40:55 intent=self_directed_shift
+3987977:[consume] self_evidence: tick=? ts=2026-10-14 17:41:34 intent=self_directed_shift
+3988092:[consume] self_evidence: tick=? ts=2026-10-14 17:42:11 intent=self_directed_shift
+3988261:[consume] self_evidence: tick=? ts=2026-10-14 17:42:44 intent=self_directed_shift
+3988432:[consume] self_evidence: tick=? ts=2026-10-14 17:43:16 intent=self_directed_shift
+3988449:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3988450:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3988640:[consume] self_evidence: tick=? ts=2026-10-14 17:43:49 intent=self_directed_shift
+3988752:[consume] self_evidence: tick=? ts=2026-10-14 17:44:42 intent=self_directed_shift
+3988928:[consume] self_evidence: tick=? ts=2026-10-14 17:45:14 intent=self_directed_shift
+3989145:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:45:47 intent=autonomy_impulse
+3989146:[consume] self_evidence: tick=? ts=2026-10-14 17:45:46 intent=self_directed_shift
+3989465:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:46:57 intent=autonomy_impulse
+3989466:[consume] self_evidence: tick=? ts=2026-10-14 17:46:54 intent=self_directed_shift
+3989513:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3989514:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3989750:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:47:51 intent=autonomy_impulse
+3989751:[consume] self_evidence: tick=? ts=2026-10-14 17:47:50 intent=self_directed_shift
+3989958:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:48:39 intent=autonomy_impulse
+3989959:[consume] self_evidence: tick=? ts=2026-10-14 17:48:38 intent=self_directed_shift
+3990160:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:49:15 intent=autonomy_impulse
+3990161:[consume] self_evidence: tick=? ts=2026-10-14 17:49:12 intent=self_directed_shift
+3990415:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:49:47 intent=autonomy_impulse
+3990416:[consume] self_evidence: tick=? ts=2026-10-14 17:49:46 intent=self_directed_shift
+3990697:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:50:26 intent=autonomy_impulse
+3990698:[consume] self_evidence: tick=? ts=2026-10-14 17:50:26 intent=self_directed_shift
+3990734:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3990735:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3990968:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:50:58 intent=autonomy_impulse
+3990969:[consume] self_evidence: tick=? ts=2026-10-14 17:50:57 intent=self_directed_shift
+3991206:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:51:47 intent=autonomy_impulse
+3991207:[consume] self_evidence: tick=? ts=2026-10-14 17:51:44 intent=self_directed_shift
+3991390:[consume] self_evidence: tick=? ts=2026-10-14 17:52:21 intent=self_directed_shift
+3991804:[consume] self_evidence: tick=? ts=2026-10-14 17:52:53 intent=self_directed_shift
+3991999:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:54:24 intent=autonomy_impulse
+3992000:[consume] self_evidence: tick=? ts=2026-10-14 17:54:20 intent=self_directed_shift
+3992018:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3992019:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3992249:[consume] self_evidence: tick=? ts=2026-10-14 17:54:57 intent=self_directed_shift
+3992509:[consume] self_evidence: tick=? ts=2026-10-14 17:55:30 intent=self_directed_shift
+3992634:[consume] self_evidence: tick=? ts=2026-10-14 17:56:38 intent=self_directed_shift
+3992870:[consume] self_evidence: tick=? ts=2026-10-14 17:57:12 intent=self_directed_shift
+3993105:[consume] self_evidence: tick=? ts=2026-10-14 17:57:57 intent=self_directed_shift
+3993148:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3993149:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3993422:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:58:42 intent=autonomy_impulse
+3993423:[consume] self_evidence: tick=? ts=2026-10-14 17:58:40 intent=self_directed_shift
+3993599:[consume] autonomy_evidence: tick=? ts=2026-10-14 17:59:29 intent=autonomy_impulse
+3993600:[consume] self_evidence: tick=? ts=2026-10-14 17:59:29 intent=self_directed_shift
+3993727:[consume] self_evidence: tick=? ts=2026-10-14 18:00:04 intent=self_directed_shift
+3993829:[consume] self_evidence: tick=? ts=2026-10-14 18:00:40 intent=self_directed_shift
+3993967:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:01:16 intent=autonomy_impulse
+3993968:[consume] self_evidence: tick=? ts=2026-10-14 18:01:13 intent=self_directed_shift
+3993985:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3993986:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3994209:[consume] self_evidence: tick=? ts=2026-10-14 18:01:49 intent=self_directed_shift
+3994337:[consume] self_evidence: tick=? ts=2026-10-14 18:02:26 intent=self_directed_shift
+3994514:[consume] self_evidence: tick=? ts=2026-10-14 18:02:58 intent=self_directed_shift
+3994669:[consume] self_evidence: tick=? ts=2026-10-14 18:03:35 intent=self_directed_shift
+3994801:[consume] self_evidence: tick=? ts=2026-10-14 18:04:08 intent=self_directed_shift
+3994838:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3994839:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3995019:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:04:43 intent=autonomy_impulse
+3995020:[consume] self_evidence: tick=? ts=2026-10-14 18:04:42 intent=self_directed_shift
+3995081:[consume] self_evidence: tick=? ts=2026-10-14 18:05:29 intent=self_directed_shift
+3995180:[consume] self_evidence: tick=? ts=2026-10-14 18:06:02 intent=self_directed_shift
+3995298:[consume] self_evidence: tick=? ts=2026-10-14 18:06:35 intent=self_directed_shift
+3995519:[consume] self_evidence: tick=? ts=2026-10-14 18:07:10 intent=self_directed_shift
+3995556:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3995557:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3995740:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:07:47 intent=autonomy_impulse
+3995741:[consume] self_evidence: tick=? ts=2026-10-14 18:07:45 intent=self_directed_shift
+3995935:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:08:27 intent=autonomy_impulse
+3995936:[consume] self_evidence: tick=? ts=2026-10-14 18:08:25 intent=self_directed_shift
+3996097:[consume] self_evidence: tick=? ts=2026-10-14 18:08:59 intent=self_directed_shift
+3996168:[consume] self_evidence: tick=? ts=2026-10-14 18:09:32 intent=self_directed_shift
+3996229:[consume] self_evidence: tick=? ts=2026-10-14 18:10:03 intent=self_directed_shift
+3996266:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3996267:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3996441:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:10:40 intent=autonomy_impulse
+3996442:[consume] self_evidence: tick=? ts=2026-10-14 18:10:38 intent=self_directed_shift
+3996540:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:11:26 intent=autonomy_impulse
+3996541:[consume] self_evidence: tick=? ts=2026-10-14 18:11:26 intent=self_directed_shift
+3996614:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:12:01 intent=autonomy_impulse
+3996615:[consume] self_evidence: tick=? ts=2026-10-14 18:12:00 intent=self_directed_shift
+3996787:[consume] self_evidence: tick=? ts=2026-10-14 18:12:33 intent=self_directed_shift
+3996953:[consume] self_evidence: tick=? ts=2026-10-14 18:13:09 intent=self_directed_shift
+3997001:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3997002:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3997180:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:13:43 intent=autonomy_impulse
+3997181:[consume] self_evidence: tick=? ts=2026-10-14 18:13:42 intent=self_directed_shift
+3997309:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:14:19 intent=autonomy_impulse
+3997310:[consume] self_evidence: tick=? ts=2026-10-14 18:14:18 intent=self_directed_shift
+3997522:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:14:51 intent=autonomy_impulse
+3997523:[consume] self_evidence: tick=? ts=2026-10-14 18:14:50 intent=self_directed_shift
+3997652:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:15:27 intent=autonomy_impulse
+3997653:[consume] self_evidence: tick=? ts=2026-10-14 18:15:25 intent=self_directed_shift
+3997790:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:15:59 intent=autonomy_impulse
+3997791:[consume] self_evidence: tick=? ts=2026-10-14 18:15:59 intent=self_directed_shift
+3997833:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3997834:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3998024:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:16:36 intent=autonomy_impulse
+3998025:[consume] self_evidence: tick=? ts=2026-10-14 18:16:35 intent=self_directed_shift
+3998130:[consume] self_evidence: tick=? ts=2026-10-14 18:17:21 intent=self_directed_shift
+3998273:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:17:57 intent=autonomy_impulse
+3998274:[consume] self_evidence: tick=? ts=2026-10-14 18:17:54 intent=self_directed_shift
+3998484:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:18:30 intent=autonomy_impulse
+3998485:[consume] self_evidence: tick=? ts=2026-10-14 18:18:30 intent=self_directed_shift
+3998686:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:19:14 intent=autonomy_impulse
+3998687:[consume] self_evidence: tick=? ts=2026-10-14 18:19:13 intent=self_directed_shift
+3998724:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3998725:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3998854:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:19:52 intent=autonomy_impulse
+3998855:[consume] self_evidence: tick=? ts=2026-10-14 18:19:50 intent=self_directed_shift
+3999054:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:20:30 intent=autonomy_impulse
+3999055:[consume] self_evidence: tick=? ts=2026-10-14 18:20:27 intent=self_directed_shift
+3999120:[consume] self_evidence: tick=? ts=2026-10-14 18:21:02 intent=self_directed_shift
+3999248:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:21:36 intent=autonomy_impulse
+3999249:[consume] self_evidence: tick=? ts=2026-10-14 18:21:36 intent=self_directed_shift
+3999375:[consume] self_evidence: tick=? ts=2026-10-14 18:22:10 intent=self_directed_shift
+3999394:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+3999395:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+3999458:[consume] self_evidence: tick=? ts=2026-10-14 18:22:43 intent=self_directed_shift
+3999608:[consume] self_evidence: tick=? ts=2026-10-14 18:23:28 intent=self_directed_shift
+3999715:[consume] self_evidence: tick=? ts=2026-10-14 18:24:03 intent=self_directed_shift
+3999830:[consume] self_evidence: tick=? ts=2026-10-14 18:24:35 intent=self_directed_shift
+4000062:[consume] self_evidence: tick=? ts=2026-10-14 18:25:09 intent=self_directed_shift
+4000096:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4000097:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4000273:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:25:57 intent=autonomy_impulse
+4000274:[consume] self_evidence: tick=? ts=2026-10-14 18:25:56 intent=self_directed_shift
+4000388:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:26:36 intent=autonomy_impulse
+4000389:[consume] self_evidence: tick=? ts=2026-10-14 18:26:36 intent=self_directed_shift
+4000508:[consume] self_evidence: tick=? ts=2026-10-14 18:27:08 intent=self_directed_shift
+4000639:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:27:46 intent=autonomy_impulse
+4000640:[consume] self_evidence: tick=? ts=2026-10-14 18:27:43 intent=self_directed_shift
+4000758:[consume] self_evidence: tick=? ts=2026-10-14 18:28:17 intent=self_directed_shift
+4000777:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4000778:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4000911:[consume] self_evidence: tick=? ts=2026-10-14 18:28:51 intent=self_directed_shift
+4001027:[consume] self_evidence: tick=? ts=2026-10-14 18:29:37 intent=self_directed_shift
+4001195:[consume] self_evidence: tick=? ts=2026-10-14 18:30:10 intent=self_directed_shift
+4001365:[consume] self_evidence: tick=? ts=2026-10-14 18:30:44 intent=self_directed_shift
+4001606:[consume] self_evidence: tick=? ts=2026-10-14 18:31:18 intent=self_directed_shift
+4001643:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4001644:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4001700:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:31:59 intent=autonomy_impulse
+4001701:[consume] self_evidence: tick=? ts=2026-10-14 18:31:57 intent=self_directed_shift
+4001895:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:32:37 intent=autonomy_impulse
+4001896:[consume] self_evidence: tick=? ts=2026-10-14 18:32:34 intent=self_directed_shift
+4002020:[consume] self_evidence: tick=? ts=2026-10-14 18:33:10 intent=self_directed_shift
+4002158:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:33:46 intent=autonomy_impulse
+4002159:[consume] self_evidence: tick=? ts=2026-10-14 18:33:45 intent=self_directed_shift
+4002273:[consume] self_evidence: tick=? ts=2026-10-14 18:34:24 intent=self_directed_shift
+4002292:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4002293:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4002457:[consume] self_evidence: tick=? ts=2026-10-14 18:34:59 intent=self_directed_shift
+4002696:[consume] self_evidence: tick=? ts=2026-10-14 18:35:44 intent=self_directed_shift
+4002808:[consume] self_evidence: tick=? ts=2026-10-14 18:36:25 intent=self_directed_shift
+4002993:[consume] self_evidence: tick=? ts=2026-10-14 18:36:57 intent=self_directed_shift
+4003184:[consume] self_evidence: tick=? ts=2026-10-14 18:37:46 intent=self_directed_shift
+4003214:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4003215:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4003372:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:38:28 intent=autonomy_impulse
+4003373:[consume] self_evidence: tick=? ts=2026-10-14 18:38:28 intent=self_directed_shift
+4003527:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:39:07 intent=autonomy_impulse
+4003528:[consume] self_evidence: tick=? ts=2026-10-14 18:39:06 intent=self_directed_shift
+4003648:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:39:49 intent=autonomy_impulse
+4003649:[consume] self_evidence: tick=? ts=2026-10-14 18:39:47 intent=self_directed_shift
+4003785:[consume] self_evidence: tick=? ts=2026-10-14 18:40:22 intent=self_directed_shift
+4003970:[consume] self_evidence: tick=? ts=2026-10-14 18:41:00 intent=self_directed_shift
+4004013:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4004014:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4004135:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:41:41 intent=autonomy_impulse
+4004136:[consume] self_evidence: tick=? ts=2026-10-14 18:41:40 intent=self_directed_shift
+4004310:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:42:27 intent=autonomy_impulse
+4004312:[consume] self_evidence: tick=? ts=2026-10-14 18:42:25 intent=self_directed_shift
+4004461:[consume] self_evidence: tick=? ts=2026-10-14 18:43:01 intent=self_directed_shift
+4004692:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:43:36 intent=autonomy_impulse
+4004693:[consume] self_evidence: tick=? ts=2026-10-14 18:43:35 intent=self_directed_shift
+4004867:[consume] self_evidence: tick=? ts=2026-10-14 18:45:04 intent=self_directed_shift
+4004900:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4004901:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4005003:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:45:46 intent=autonomy_impulse
+4005004:[consume] self_evidence: tick=? ts=2026-10-14 18:45:44 intent=self_directed_shift
+4005156:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:46:20 intent=autonomy_impulse
+4005157:[consume] self_evidence: tick=? ts=2026-10-14 18:46:20 intent=self_directed_shift
+4005333:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:46:55 intent=autonomy_impulse
+4005334:[consume] self_evidence: tick=? ts=2026-10-14 18:46:54 intent=self_directed_shift
+4005485:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:47:31 intent=autonomy_impulse
+4005486:[consume] self_evidence: tick=? ts=2026-10-14 18:47:28 intent=self_directed_shift
+4005738:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:48:06 intent=autonomy_impulse
+4005739:[consume] self_evidence: tick=? ts=2026-10-14 18:48:05 intent=self_directed_shift
+4005758:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4005759:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4005926:[consume] self_evidence: tick=? ts=2026-10-14 18:49:09 intent=self_directed_shift
+4006144:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:49:57 intent=autonomy_impulse
+4006145:[consume] self_evidence: tick=? ts=2026-10-14 18:49:54 intent=self_directed_shift
+4006301:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:50:31 intent=autonomy_impulse
+4006302:[consume] self_evidence: tick=? ts=2026-10-14 18:50:30 intent=self_directed_shift
+4006486:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:51:03 intent=autonomy_impulse
+4006487:[consume] self_evidence: tick=? ts=2026-10-14 18:51:03 intent=self_directed_shift
+4006555:[consume] self_evidence: tick=? ts=2026-10-14 18:51:39 intent=self_directed_shift
+4006591:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4006592:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4006707:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:52:14 intent=autonomy_impulse
+4006708:[consume] self_evidence: tick=? ts=2026-10-14 18:52:11 intent=self_directed_shift
+4006839:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:52:50 intent=autonomy_impulse
+4006840:[consume] self_evidence: tick=? ts=2026-10-14 18:52:50 intent=self_directed_shift
+4006962:[consume] self_evidence: tick=? ts=2026-10-14 18:53:24 intent=self_directed_shift
+4007135:[consume] self_evidence: tick=? ts=2026-10-14 18:53:57 intent=self_directed_shift
+4007259:[consume] self_evidence: tick=? ts=2026-10-14 18:54:28 intent=self_directed_shift
+4007277:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4007278:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4007470:[consume] self_evidence: tick=? ts=2026-10-14 18:55:04 intent=self_directed_shift
+4007598:[consume] self_evidence: tick=? ts=2026-10-14 18:55:46 intent=self_directed_shift
+4007796:[consume] self_evidence: tick=? ts=2026-10-14 18:56:19 intent=self_directed_shift
+4007990:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:57:05 intent=autonomy_impulse
+4007991:[consume] self_evidence: tick=? ts=2026-10-14 18:57:03 intent=self_directed_shift
+4008141:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:57:40 intent=autonomy_impulse
+4008142:[consume] self_evidence: tick=? ts=2026-10-14 18:57:39 intent=self_directed_shift
+4008170:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4008171:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4008387:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:58:14 intent=autonomy_impulse
+4008388:[consume] self_evidence: tick=? ts=2026-10-14 18:58:11 intent=self_directed_shift
+4008531:[consume] autonomy_evidence: tick=? ts=2026-10-14 18:58:51 intent=autonomy_impulse
+4008532:[consume] self_evidence: tick=? ts=2026-10-14 18:58:50 intent=self_directed_shift
+4008654:[consume] self_evidence: tick=? ts=2026-10-14 18:59:22 intent=self_directed_shift
+4008789:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:00:01 intent=autonomy_impulse
+4008790:[consume] self_evidence: tick=? ts=2026-10-14 19:00:01 intent=self_directed_shift
+4008955:[consume] self_evidence: tick=? ts=2026-10-14 19:00:33 intent=self_directed_shift
+4008980:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4008981:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4009063:[consume] self_evidence: tick=? ts=2026-10-14 19:01:09 intent=self_directed_shift
+4009178:[consume] self_evidence: tick=? ts=2026-10-14 19:01:52 intent=self_directed_shift
+4009398:[consume] self_evidence: tick=? ts=2026-10-14 19:02:27 intent=self_directed_shift
+4009547:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:03:06 intent=autonomy_impulse
+4009548:[consume] self_evidence: tick=? ts=2026-10-14 19:03:05 intent=self_directed_shift
+4009722:[consume] self_evidence: tick=? ts=2026-10-14 19:03:40 intent=self_directed_shift
+4009742:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4009743:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4009906:[consume] self_evidence: tick=? ts=2026-10-14 19:04:13 intent=self_directed_shift
+4010043:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:04:53 intent=autonomy_impulse
+4010044:[consume] self_evidence: tick=? ts=2026-10-14 19:04:52 intent=self_directed_shift
+4010245:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:05:25 intent=autonomy_impulse
+4010246:[consume] self_evidence: tick=? ts=2026-10-14 19:05:24 intent=self_directed_shift
+4010407:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:06:00 intent=autonomy_impulse
+4010408:[consume] self_evidence: tick=? ts=2026-10-14 19:05:59 intent=self_directed_shift
+4010492:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:06:36 intent=autonomy_impulse
+4010493:[consume] self_evidence: tick=? ts=2026-10-14 19:06:34 intent=self_directed_shift
+4010526:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4010527:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4010650:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:07:10 intent=autonomy_impulse
+4010651:[consume] self_evidence: tick=? ts=2026-10-14 19:07:10 intent=self_directed_shift
+4010813:[consume] self_evidence: tick=? ts=2026-10-14 19:07:59 intent=self_directed_shift
+4010950:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:08:38 intent=autonomy_impulse
+4010951:[consume] self_evidence: tick=? ts=2026-10-14 19:08:35 intent=self_directed_shift
+4011147:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:09:10 intent=autonomy_impulse
+4011148:[consume] self_evidence: tick=? ts=2026-10-14 19:09:10 intent=self_directed_shift
+4011322:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:09:45 intent=autonomy_impulse
+4011323:[consume] self_evidence: tick=? ts=2026-10-14 19:09:45 intent=self_directed_shift
+4011356:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4011357:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4011472:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:10:19 intent=autonomy_impulse
+4011473:[consume] self_evidence: tick=? ts=2026-10-14 19:10:17 intent=self_directed_shift
+4011656:[s2-consumer] boot {'path': 'C:\\Users\\Administrator\\.openclaw\\workspace\\.lae\\s2_training_samples.jsonl', 'read': 1973, 'applied': 0, 'already_consumed': 761, 'invalid': 1212, 'reindexed': 0, 'status': 'ok', 'consumed': 761, 'last_run': '2026-10-14 19:11:28'}
+4011665:[init] Restored L5 repair state: counterfactual=False observation_window=True escape_injected=False escape_count=2 saved_at=2026-10-14T11:50:53+0800
+4011722:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:10:58 intent=autonomy_impulse
+4011723:[consume] self_evidence: tick=? ts=2026-10-14 19:10:55 intent=self_directed_shift
+4011987:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:11:45 intent=autonomy_impulse
+4011988:[consume] self_evidence: tick=? ts=2026-10-14 19:11:40 intent=self_directed_shift
+4012286:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:13:28 intent=autonomy_impulse
+4012287:[consume] self_evidence: tick=? ts=2026-10-14 19:13:27 intent=self_directed_shift
+4012519:[consume] self_evidence: tick=? ts=2026-10-14 19:15:33 intent=self_directed_shift
+4012853:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:17:40 intent=autonomy_impulse
+4012854:[consume] self_evidence: tick=? ts=2026-10-14 19:17:37 intent=self_directed_shift
+4012911:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4012912:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4013035:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:18:21 intent=autonomy_impulse
+4013036:[consume] self_evidence: tick=? ts=2026-10-14 19:18:20 intent=self_directed_shift
+4013287:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:18:54 intent=autonomy_impulse
+4013288:[consume] self_evidence: tick=? ts=2026-10-14 19:18:53 intent=self_directed_shift
+4013427:[consume] self_evidence: tick=? ts=2026-10-14 19:19:30 intent=self_directed_shift
+4013621:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:20:01 intent=autonomy_impulse
+4013622:[consume] self_evidence: tick=? ts=2026-10-14 19:19:59 intent=self_directed_shift
+4013747:[consume] self_evidence: tick=? ts=2026-10-14 19:20:31 intent=self_directed_shift
+4013771:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4013772:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4013942:[consume] self_evidence: tick=? ts=2026-10-14 19:21:02 intent=self_directed_shift
+4014180:[consume] self_evidence: tick=? ts=2026-10-14 19:21:35 intent=self_directed_shift
+4014318:[consume] self_evidence: tick=? ts=2026-10-14 19:22:17 intent=self_directed_shift
+4014602:[consume] self_evidence: tick=? ts=2026-10-14 19:22:52 intent=self_directed_shift
+4014775:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:24:47 intent=autonomy_impulse
+4014776:[consume] self_evidence: tick=? ts=2026-10-14 19:24:45 intent=self_directed_shift
+4014806:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4014807:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4014923:[consume] self_evidence: tick=? ts=2026-10-14 19:25:20 intent=self_directed_shift
+4015118:[consume] self_evidence: tick=? ts=2026-10-14 19:25:59 intent=self_directed_shift
+4015387:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:26:39 intent=autonomy_impulse
+4015388:[consume] self_evidence: tick=? ts=2026-10-14 19:26:39 intent=self_directed_shift
+4015479:[s2-consumer] boot {'path': 'C:\\Users\\Administrator\\.openclaw\\workspace\\.lae\\s2_training_samples.jsonl', 'read': 1973, 'applied': 0, 'already_consumed': 761, 'invalid': 1212, 'reindexed': 0, 'status': 'ok', 'consumed': 761, 'last_run': '2026-10-14 19:27:33'}
+4015488:[init] Restored L5 repair state: counterfactual=False observation_window=True escape_injected=False escape_count=2 saved_at=2026-10-14T11:50:53+0800
+4015527:[consume] self_evidence: tick=? ts=2026-10-14 19:27:16 intent=self_directed_shift
+4015883:[consume] self_evidence: tick=? ts=2026-10-14 19:27:45 intent=self_directed_shift
+4016241:[consume] self_evidence: tick=? ts=2026-10-14 19:29:24 intent=self_directed_shift
+4016252:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4016253:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4016568:[consume] self_evidence: tick=? ts=2026-10-14 19:31:27 intent=self_directed_shift
+4016722:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:33:13 intent=autonomy_impulse
+4016723:[consume] self_evidence: tick=? ts=2026-10-14 19:33:12 intent=self_directed_shift
+4016892:[consume] self_evidence: tick=? ts=2026-10-14 19:33:44 intent=self_directed_shift
+4017030:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:34:15 intent=autonomy_impulse
+4017031:[consume] self_evidence: tick=? ts=2026-10-14 19:34:14 intent=self_directed_shift
+4017206:[consume] self_evidence: tick=? ts=2026-10-14 19:34:46 intent=self_directed_shift
+4017253:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4017254:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4017404:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:35:15 intent=autonomy_impulse
+4017405:[consume] self_evidence: tick=? ts=2026-10-14 19:35:14 intent=self_directed_shift
+4017543:[consume] self_evidence: tick=? ts=2026-10-14 19:35:43 intent=self_directed_shift
+4017796:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:36:18 intent=autonomy_impulse
+4017797:[consume] self_evidence: tick=? ts=2026-10-14 19:36:15 intent=self_directed_shift
+4017942:[consume] self_evidence: tick=? ts=2026-10-14 19:36:50 intent=self_directed_shift
+4018138:[consume] self_evidence: tick=? ts=2026-10-14 19:37:23 intent=self_directed_shift
+4018161:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4018162:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4018319:[consume] self_evidence: tick=? ts=2026-10-14 19:38:04 intent=self_directed_shift
+4018628:[consume] self_evidence: tick=? ts=2026-10-14 19:38:39 intent=self_directed_shift
+4018856:[consume] self_evidence: tick=? ts=2026-10-14 19:40:44 intent=self_directed_shift
+4019015:[consume] self_evidence: tick=? ts=2026-10-14 19:41:20 intent=self_directed_shift
+4019160:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:41:54 intent=autonomy_impulse
+4019161:[consume] self_evidence: tick=? ts=2026-10-14 19:41:53 intent=self_directed_shift
+4019171:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4019172:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4019340:[consume] self_evidence: tick=? ts=2026-10-14 19:42:26 intent=self_directed_shift
+4019535:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:43:03 intent=autonomy_impulse
+4019536:[consume] self_evidence: tick=? ts=2026-10-14 19:43:00 intent=self_directed_shift
+4019691:[consume] self_evidence: tick=? ts=2026-10-14 19:43:36 intent=self_directed_shift
+4019813:[consume] self_evidence: tick=? ts=2026-10-14 19:44:11 intent=self_directed_shift
+4019926:[consume] self_evidence: tick=? ts=2026-10-14 19:44:49 intent=self_directed_shift
+4019932:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4019933:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4020340:[consume] self_evidence: tick=? ts=2026-10-14 19:45:20 intent=self_directed_shift
+4020476:[consume] self_evidence: tick=? ts=2026-10-14 19:47:48 intent=self_directed_shift
+4020586:[consume] self_evidence: tick=? ts=2026-10-14 19:48:23 intent=self_directed_shift
+4020794:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:48:55 intent=autonomy_impulse
+4020795:[consume] self_evidence: tick=? ts=2026-10-14 19:48:54 intent=self_directed_shift
+4021009:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:49:33 intent=autonomy_impulse
+4021010:[consume] self_evidence: tick=? ts=2026-10-14 19:49:32 intent=self_directed_shift
+4021101:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4021102:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4021231:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:50:08 intent=autonomy_impulse
+4021232:[consume] self_evidence: tick=? ts=2026-10-14 19:50:05 intent=self_directed_shift
+4021413:[consume] self_evidence: tick=? ts=2026-10-14 19:50:46 intent=self_directed_shift
+4021549:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:51:27 intent=autonomy_impulse
+4021550:[consume] self_evidence: tick=? ts=2026-10-14 19:51:26 intent=self_directed_shift
+4021732:[consume] self_evidence: tick=? ts=2026-10-14 19:51:57 intent=self_directed_shift
+4022143:[consume] self_evidence: tick=? ts=2026-10-14 19:52:32 intent=self_directed_shift
+4022152:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4022153:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4022340:[consume] self_evidence: tick=? ts=2026-10-14 19:54:23 intent=self_directed_shift
+4022512:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:54:59 intent=autonomy_impulse
+4022513:[consume] self_evidence: tick=? ts=2026-10-14 19:54:56 intent=self_directed_shift
+4022658:[consume] self_evidence: tick=? ts=2026-10-14 19:55:28 intent=self_directed_shift
+4022852:[consume] self_evidence: tick=? ts=2026-10-14 19:55:59 intent=self_directed_shift
+4022980:[consume] self_evidence: tick=? ts=2026-10-14 19:56:39 intent=self_directed_shift
+4023008:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4023009:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4023121:[consume] self_evidence: tick=? ts=2026-10-14 19:57:09 intent=self_directed_shift
+4023293:[consume] self_evidence: tick=? ts=2026-10-14 19:57:45 intent=self_directed_shift
+4023416:[consume] self_evidence: tick=? ts=2026-10-14 19:58:16 intent=self_directed_shift
+4023599:[consume] autonomy_evidence: tick=? ts=2026-10-14 19:58:48 intent=autonomy_impulse
+4023600:[consume] self_evidence: tick=? ts=2026-10-14 19:58:46 intent=self_directed_shift
+4023881:[consume] self_evidence: tick=? ts=2026-10-14 19:59:31 intent=self_directed_shift
+4023936:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4023937:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4024119:[consume] autonomy_evidence: tick=? ts=2026-10-14 20:01:38 intent=autonomy_impulse
+4024120:[consume] self_evidence: tick=? ts=2026-10-14 20:01:35 intent=self_directed_shift
+4024328:[consume] self_evidence: tick=? ts=2026-10-14 20:02:13 intent=self_directed_shift
+4024442:[consume] self_evidence: tick=? ts=2026-10-14 20:03:24 intent=self_directed_shift
+4024590:[consume] autonomy_evidence: tick=? ts=2026-10-14 20:03:58 intent=autonomy_impulse
+4024591:[consume] self_evidence: tick=? ts=2026-10-14 20:03:55 intent=self_directed_shift
+4024744:[consume] autonomy_evidence: tick=? ts=2026-10-14 20:04:32 intent=autonomy_impulse
+4024745:[consume] self_evidence: tick=? ts=2026-10-14 20:04:31 intent=self_directed_shift
+4024772:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4024773:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4025055:[consume] autonomy_evidence: tick=? ts=2026-10-14 20:05:03 intent=autonomy_impulse
+4025056:[consume] self_evidence: tick=? ts=2026-10-14 20:05:03 intent=self_directed_shift
+4025501:[consume] self_evidence: tick=? ts=2026-10-14 20:06:15 intent=self_directed_shift
+4025615:[consume] self_evidence: tick=? ts=2026-10-14 20:09:02 intent=self_directed_shift
+4025807:[consume] self_evidence: tick=? ts=2026-10-14 20:09:35 intent=self_directed_shift
+4026018:[consume] self_evidence: tick=? ts=2026-10-14 20:10:06 intent=self_directed_shift
+4026084:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4026085:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4026213:[consume] self_evidence: tick=? ts=2026-10-14 20:11:17 intent=self_directed_shift
+4026391:[consume] self_evidence: tick=? ts=2026-10-14 20:11:52 intent=self_directed_shift
+4026575:[consume] self_evidence: tick=? ts=2026-10-14 20:12:29 intent=self_directed_shift
+4026757:[consume] self_evidence: tick=? ts=2026-10-14 20:13:00 intent=self_directed_shift
+4027173:[consume] self_evidence: tick=? ts=2026-10-14 20:13:37 intent=self_directed_shift
+4027209:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4027210:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4027324:[consume] self_evidence: tick=? ts=2026-10-14 20:16:30 intent=self_directed_shift
+4027509:[consume] self_evidence: tick=? ts=2026-10-14 20:17:30 intent=self_directed_shift
+4027635:[consume] self_evidence: tick=? ts=2026-10-14 20:18:02 intent=self_directed_shift
+4027847:[consume] autonomy_evidence: tick=? ts=2026-10-14 20:18:35 intent=autonomy_impulse
+4027848:[consume] self_evidence: tick=? ts=2026-10-14 20:18:31 intent=self_directed_shift
+4028040:[consume] self_evidence: tick=? ts=2026-10-14 20:19:09 intent=self_directed_shift
+4028086:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4028087:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4028206:[consume] autonomy_evidence: tick=? ts=2026-10-14 20:20:19 intent=autonomy_impulse
+4028207:[consume] self_evidence: tick=? ts=2026-10-14 20:20:18 intent=self_directed_shift
+4028442:[consume] self_evidence: tick=? ts=2026-10-14 20:20:52 intent=self_directed_shift
+4028614:[consume] self_evidence: tick=? ts=2026-10-14 20:21:35 intent=self_directed_shift
+4028757:[consume] autonomy_evidence: tick=? ts=2026-10-14 20:22:06 intent=autonomy_impulse
+4028758:[consume] self_evidence: tick=? ts=2026-10-14 20:22:06 intent=self_directed_shift
+4028899:[consume] autonomy_evidence: tick=? ts=2026-10-14 20:22:40 intent=autonomy_impulse
+4028900:[consume] self_evidence: tick=? ts=2026-10-14 20:22:39 intent=self_directed_shift
+4028929:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4028930:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4029147:[consume] self_evidence: tick=? ts=2026-10-14 20:23:10 intent=self_directed_shift
+4029294:[consume] self_evidence: tick=? ts=2026-10-14 20:23:45 intent=self_directed_shift
+4029452:[consume] self_evidence: tick=? ts=2026-10-14 20:24:17 intent=self_directed_shift
+4029665:[consume] self_evidence: tick=? ts=2026-10-14 20:24:46 intent=self_directed_shift
+4029794:[consume] self_evidence: tick=? ts=2026-10-14 20:25:19 intent=self_directed_shift
+4029825:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4029826:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4029944:[consume] autonomy_evidence: tick=? ts=2026-10-14 20:25:50 intent=autonomy_impulse
+4029945:[consume] self_evidence: tick=? ts=2026-10-14 20:25:50 intent=self_directed_shift
+4030404:[consume] autonomy_evidence: tick=? ts=2026-10-14 20:26:24 intent=autonomy_impulse
+4030405:[consume] self_evidence: tick=? ts=2026-10-14 20:26:23 intent=self_directed_shift
+4030629:[consume] autonomy_evidence: tick=? ts=2026-10-14 20:28:56 intent=autonomy_impulse
+4030630:[consume] self_evidence: tick=? ts=2026-10-14 20:28:53 intent=self_directed_shift
+4030782:[consume] autonomy_evidence: tick=? ts=2026-10-14 20:29:30 intent=autonomy_impulse
+4030783:[consume] self_evidence: tick=? ts=2026-10-14 20:29:29 intent=self_directed_shift
+4030999:[consume] self_evidence: tick=? ts=2026-10-14 20:30:01 intent=self_directed_shift
+4031048:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4031049:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4031176:[consume] autonomy_evidence: tick=? ts=2026-10-14 20:31:16 intent=autonomy_impulse
+4031177:[consume] self_evidence: tick=? ts=2026-10-14 20:31:13 intent=self_directed_shift
+4031338:[consume] self_evidence: tick=? ts=2026-10-14 20:31:53 intent=self_directed_shift
+4031458:[consume] self_evidence: tick=? ts=2026-10-14 20:32:24 intent=self_directed_shift
+4031641:[consume] self_evidence: tick=? ts=2026-10-14 20:32:55 intent=self_directed_shift
+4031996:[consume] self_evidence: tick=? ts=2026-10-14 20:33:29 intent=self_directed_shift
+4032003:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4032004:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4032179:[consume] self_evidence: tick=? ts=2026-10-14 20:35:37 intent=self_directed_shift
+4032413:[consume] self_evidence: tick=? ts=2026-10-14 20:36:12 intent=self_directed_shift
+4032549:[consume] self_evidence: tick=? ts=2026-10-14 20:36:42 intent=self_directed_shift
+4032836:[consume] self_evidence: tick=? ts=2026-10-14 20:37:14 intent=self_directed_shift
+4033044:[consume] autonomy_evidence: tick=? ts=2026-10-14 20:38:07 intent=autonomy_impulse
+4033045:[consume] self_evidence: tick=? ts=2026-10-14 20:38:04 intent=self_directed_shift
+4033077:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4033078:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4033188:[consume] self_evidence: tick=? ts=2026-10-14 20:38:38 intent=self_directed_shift
+4033398:[consume] autonomy_evidence: tick=? ts=2026-10-14 20:39:14 intent=autonomy_impulse
+4033399:[consume] self_evidence: tick=? ts=2026-10-14 20:39:13 intent=self_directed_shift
+4033582:[consume] self_evidence: tick=? ts=2026-10-14 20:39:45 intent=self_directed_shift
+4033944:[consume] autonomy_evidence: tick=? ts=2026-10-14 20:40:23 intent=autonomy_impulse
+4033945:[consume] self_evidence: tick=? ts=2026-10-14 20:40:20 intent=self_directed_shift
+4034136:[consume] self_evidence: tick=? ts=2026-10-14 20:42:53 intent=self_directed_shift
+4034188:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4034189:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4034318:[consume] autonomy_evidence: tick=? ts=2026-10-14 20:43:27 intent=autonomy_impulse
+4034319:[consume] self_evidence: tick=? ts=2026-10-14 20:43:26 intent=self_directed_shift
+4034457:[consume] self_evidence: tick=? ts=2026-10-14 20:43:59 intent=self_directed_shift
+4034567:[consume] self_evidence: tick=? ts=2026-10-14 20:44:34 intent=self_directed_shift
+4034798:[consume] autonomy_evidence: tick=? ts=2026-10-14 20:45:06 intent=autonomy_impulse
+4034799:[consume] self_evidence: tick=? ts=2026-10-14 20:45:04 intent=self_directed_shift
+4034983:[consume] autonomy_evidence: tick=? ts=2026-10-14 20:45:42 intent=autonomy_impulse
+4034984:[consume] self_evidence: tick=? ts=2026-10-14 20:45:41 intent=self_directed_shift
+4035019:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4035020:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4035285:[consume] self_evidence: tick=? ts=2026-10-14 20:46:11 intent=self_directed_shift
+4035425:[consume] self_evidence: tick=? ts=2026-10-14 20:47:05 intent=self_directed_shift
+4035723:[s2-consumer] boot {'path': 'C:\\Users\\Administrator\\.openclaw\\workspace\\.lae\\s2_training_samples.jsonl', 'read': 1973, 'applied': 0, 'already_consumed': 761, 'invalid': 1212, 'reindexed': 0, 'status': 'ok', 'consumed': 761, 'last_run': '2026-10-14 20:49:23'}
+4035732:[init] Restored L5 repair state: counterfactual=False observation_window=True escape_injected=False escape_count=2 saved_at=2026-10-14T11:50:53+0800
+4035822:[consume] autonomy_evidence: tick=? ts=2026-10-14 20:47:39 intent=autonomy_impulse
+4035823:[consume] self_evidence: tick=? ts=2026-10-14 20:47:39 intent=self_directed_shift
+4036051:[consume] self_evidence: tick=? ts=2026-10-14 20:49:31 intent=self_directed_shift
+4036421:[consume] self_evidence: tick=? ts=2026-10-14 20:51:04 intent=self_directed_shift
+4036441:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4036442:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4036649:[consume] self_evidence: tick=? ts=2026-10-14 20:53:25 intent=self_directed_shift
+4036792:[consume] autonomy_evidence: tick=? ts=2026-10-14 20:55:06 intent=autonomy_impulse
+4036793:[consume] self_evidence: tick=? ts=2026-10-14 20:55:05 intent=self_directed_shift
+4037051:[consume] self_evidence: tick=? ts=2026-10-14 20:55:38 intent=self_directed_shift
+4037238:[consume] autonomy_evidence: tick=? ts=2026-10-14 20:56:13 intent=autonomy_impulse
+4037239:[consume] self_evidence: tick=? ts=2026-10-14 20:56:12 intent=self_directed_shift
+4037406:[consume] self_evidence: tick=? ts=2026-10-14 20:56:43 intent=self_directed_shift
+4037443:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4037444:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4037549:[consume] autonomy_evidence: tick=? ts=2026-10-14 20:57:09 intent=autonomy_impulse
+4037550:[consume] self_evidence: tick=? ts=2026-10-14 20:57:09 intent=self_directed_shift
+4037728:[consume] self_evidence: tick=? ts=2026-10-14 20:57:36 intent=self_directed_shift
+4037861:[consume] self_evidence: tick=? ts=2026-10-14 20:58:06 intent=self_directed_shift
+4038079:[consume] autonomy_evidence: tick=? ts=2026-10-14 20:58:37 intent=autonomy_impulse
+4038080:[consume] self_evidence: tick=? ts=2026-10-14 20:58:36 intent=self_directed_shift
+4038238:[consume] autonomy_evidence: tick=? ts=2026-10-14 20:59:10 intent=autonomy_impulse
+4038239:[consume] self_evidence: tick=? ts=2026-10-14 20:59:09 intent=self_directed_shift
+4038272:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4038273:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4038449:[consume] self_evidence: tick=? ts=2026-10-14 20:59:39 intent=self_directed_shift
+4038651:[consume] self_evidence: tick=? ts=2026-10-14 21:00:12 intent=self_directed_shift
+4038790:[consume] self_evidence: tick=? ts=2026-10-14 21:01:53 intent=self_directed_shift
+4038998:[consume] autonomy_evidence: tick=? ts=2026-10-14 21:02:31 intent=autonomy_impulse
+4038999:[consume] self_evidence: tick=? ts=2026-10-14 21:02:28 intent=self_directed_shift
+4039153:[consume] self_evidence: tick=? ts=2026-10-14 21:03:01 intent=self_directed_shift
+4039210:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4039211:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4039392:[consume] autonomy_evidence: tick=? ts=2026-10-14 21:03:32 intent=autonomy_impulse
+4039393:[consume] self_evidence: tick=? ts=2026-10-14 21:03:31 intent=self_directed_shift
+4039510:[consume] self_evidence: tick=? ts=2026-10-14 21:04:12 intent=self_directed_shift
+4039701:[consume] autonomy_evidence: tick=? ts=2026-10-14 21:04:45 intent=autonomy_impulse
+4039702:[consume] self_evidence: tick=? ts=2026-10-14 21:04:43 intent=self_directed_shift
+4039920:[consume] self_evidence: tick=? ts=2026-10-14 21:05:13 intent=self_directed_shift
+4040056:[consume] autonomy_evidence: tick=? ts=2026-10-14 21:05:50 intent=autonomy_impulse
+4040057:[consume] self_evidence: tick=? ts=2026-10-14 21:05:49 intent=self_directed_shift
+4040064:[narrative-debug] fps=500, last_count=500, ts=2026-10-14T06:38:25.724375+08:00
+4040065:[narrative] skip: no new fingerprints (last_fp=2026-10-14T06:33:33.827587+08:00)
+4040246:[consume] self_evidence: tick=? ts=2026-10-14 21:06:18 intent=self_directed_shift

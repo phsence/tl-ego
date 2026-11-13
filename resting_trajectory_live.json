@@ -1,0 +1,1021 @@
+{
+  "trajectory": [
+    {
+      "tick": 919,
+      "timestamp": "22:08:19",
+      "dominant": "memory",
+      "concentration": 0.6333,
+      "competition": 0.691,
+      "n_activated": 30,
+      "type_counts": {
+        "memory": 19,
+        "action": 5,
+        "integrator": 1,
+        "decider": 2,
+        "sensory": 3
+      },
+      "noise_mode": "pink",
+      "noise_amp": 0.5193,
+      "phase": "explore",
+      "stagnation_streak": 1,
+      "diversity_n": 8,
+      "burst": false
+    },
+    {
+      "tick": 920,
+      "timestamp": "22:08:23",
+      "dominant": "memory",
+      "concentration": 0.6667,
+      "competition": 0.686,
+      "n_activated": 30,
+      "type_counts": {
+        "decider": 4,
+        "memory": 20,
+        "action": 5,
+        "integrator": 1
+      },
+      "noise_mode": "pink",
+      "noise_amp": 0.0687,
+      "phase": "consolidate",
+      "stagnation_streak": 2,
+      "diversity_n": 4,
+      "burst": false
+    },
+    {
+      "tick": 921,
+      "timestamp": "22:08:30",
+      "dominant": "memory",
+      "concentration": 0.3667,
+      "competition": 0.8955,
+      "n_activated": 30,
+      "type_counts": {
+        "memory": 11,
+        "sensory": 6,
+        "decider": 7,
+        "action": 5,
+        "integrator": 1
+      },
+      "noise_mode": "sparse",
+      "noise_amp": 1.3806,
+      "phase": "burst",
+      "stagnation_streak": 3,
+      "diversity_n": 15,
+      "burst": false
+    },
+    {
+      "tick": 922,
+      "timestamp": "22:08:34",
+      "dominant": "action",
+      "concentration": 0.4667,
+      "competition": 0.8311,
+      "n_activated": 30,
+      "type_counts": {
+        "action": 14,
+        "decider": 6,
+        "sensory": 9,
+        "memory": 1
+      },
+      "noise_mode": "none",
+      "noise_amp": 0.5052,
+      "phase": "explore",
+      "stagnation_streak": 0,
+      "diversity_n": 12,
+      "burst": false
+    },
+    {
+      "tick": 923,
+      "timestamp": "22:08:38",
+      "dominant": "action",
+      "concentration": 0.6,
+      "competition": 0.7161,
+      "n_activated": 30,
+      "type_counts": {
+        "action": 18,
+        "decider": 6,
+        "memory": 2,
+        "integrator": 1,
+        "sensory": 3
+      },
+      "noise_mode": "white",
+      "noise_amp": 0.6517,
+      "phase": "explore",
+      "stagnation_streak": 1,
+      "diversity_n": 8,
+      "burst": false
+    },
+    {
+      "tick": 924,
+      "timestamp": "22:08:42",
+      "dominant": "action",
+      "concentration": 0.6667,
+      "competition": 0.6751,
+      "n_activated": 30,
+      "type_counts": {
+        "action": 20,
+        "integrator": 1,
+        "decider": 6,
+        "sensory": 3
+      },
+      "noise_mode": "pink",
+      "noise_amp": 0.7138,
+      "phase": "explore",
+      "stagnation_streak": 2,
+      "diversity_n": 8,
+      "burst": false
+    },
+    {
+      "tick": 925,
+      "timestamp": "22:08:46",
+      "dominant": "action",
+      "concentration": 0.6,
+      "competition": 0.7326,
+      "n_activated": 30,
+      "type_counts": {
+        "integrator": 1,
+        "memory": 3,
+        "action": 18,
+        "sensory": 3,
+        "decider": 5
+      },
+      "noise_mode": "pink",
+      "noise_amp": 0.6908,
+      "phase": "explore",
+      "stagnation_streak": 3,
+      "diversity_n": 8,
+      "burst": false
+    },
+    {
+      "tick": 926,
+      "timestamp": "22:08:51",
+      "dominant": "memory",
+      "concentration": 0.6,
+      "competition": 0.6625,
+      "n_activated": 30,
+      "type_counts": {
+        "sensory": 8,
+        "integrator": 2,
+        "memory": 18,
+        "action": 1,
+        "decider": 1
+      },
+      "noise_mode": "pink",
+      "noise_amp": 0.1181,
+      "phase": "consolidate",
+      "stagnation_streak": 0,
+      "diversity_n": 12,
+      "burst": false
+    },
+    {
+      "tick": 927,
+      "timestamp": "22:08:55",
+      "dominant": "memory",
+      "concentration": 0.7,
+      "competition": 0.5937,
+      "n_activated": 30,
+      "type_counts": {
+        "sensory": 5,
+        "integrator": 2,
+        "memory": 21,
+        "decider": 1,
+        "action": 1
+      },
+      "noise_mode": "sparse",
+      "noise_amp": 0.117,
+      "phase": "consolidate",
+      "stagnation_streak": 1,
+      "diversity_n": 4,
+      "burst": false
+    },
+    {
+      "tick": 928,
+      "timestamp": "22:09:02",
+      "dominant": "memory",
+      "concentration": 0.5667,
+      "competition": 0.8011,
+      "n_activated": 30,
+      "type_counts": {
+        "sensory": 7,
+        "integrator": 4,
+        "action": 2,
+        "memory": 17
+      },
+      "noise_mode": "none",
+      "noise_amp": 0.6702,
+      "phase": "explore",
+      "stagnation_streak": 2,
+      "diversity_n": 8,
+      "burst": false
+    },
+    {
+      "tick": 929,
+      "timestamp": "22:09:11",
+      "dominant": "memory",
+      "concentration": 0.6333,
+      "competition": 0.6438,
+      "n_activated": 30,
+      "type_counts": {
+        "memory": 19,
+        "sensory": 7,
+        "integrator": 2,
+        "decider": 1,
+        "action": 1
+      },
+      "noise_mode": "white",
+      "noise_amp": 0.4118,
+      "phase": "explore",
+      "stagnation_streak": 3,
+      "diversity_n": 8,
+      "burst": false
+    },
+    {
+      "tick": 930,
+      "timestamp": "22:09:16",
+      "dominant": "memory",
+      "concentration": 0.6667,
+      "competition": 0.6375,
+      "n_activated": 30,
+      "type_counts": {
+        "memory": 20,
+        "sensory": 3,
+        "decider": 5,
+        "action": 1,
+        "integrator": 1
+      },
+      "noise_mode": "pink",
+      "noise_amp": 0.509,
+      "phase": "explore",
+      "stagnation_streak": 4,
+      "diversity_n": 12,
+      "burst": false
+    },
+    {
+      "tick": 931,
+      "timestamp": "22:09:20",
+      "dominant": "sensory",
+      "concentration": 0.6333,
+      "competition": 0.7624,
+      "n_activated": 30,
+      "type_counts": {
+        "sensory": 19,
+        "decider": 4,
+        "memory": 4,
+        "action": 3
+      },
+      "noise_mode": "pink",
+      "noise_amp": 0.6905,
+      "phase": "explore",
+      "stagnation_streak": 0,
+      "diversity_n": 12,
+      "burst": false
+    },
+    {
+      "tick": 932,
+      "timestamp": "22:09:24",
+      "dominant": "sensory",
+      "concentration": 0.4333,
+      "competition": 0.9249,
+      "n_activated": 30,
+      "type_counts": {
+        "memory": 4,
+        "sensory": 13,
+        "decider": 5,
+        "action": 8
+      },
+      "noise_mode": "pink",
+      "noise_amp": 0.1265,
+      "phase": "consolidate",
+      "stagnation_streak": 1,
+      "diversity_n": 4,
+      "burst": false
+    },
+    {
+      "tick": 933,
+      "timestamp": "22:09:28",
+      "dominant": "action",
+      "concentration": 0.6,
+      "competition": 0.7821,
+      "n_activated": 30,
+      "type_counts": {
+        "decider": 5,
+        "action": 18,
+        "memory": 5,
+        "sensory": 2
+      },
+      "noise_mode": "sparse",
+      "noise_amp": 1.1155,
+      "phase": "burst",
+      "stagnation_streak": 0,
+      "diversity_n": 15,
+      "burst": false
+    },
+    {
+      "tick": 934,
+      "timestamp": "22:09:33",
+      "dominant": "memory",
+      "concentration": 0.5667,
+      "competition": 0.6775,
+      "n_activated": 30,
+      "type_counts": {
+        "sensory": 9,
+        "integrator": 2,
+        "memory": 17,
+        "action": 1,
+        "decider": 1
+      },
+      "noise_mode": "none",
+      "noise_amp": 0.7534,
+      "phase": "explore",
+      "stagnation_streak": 0,
+      "diversity_n": 8,
+      "burst": false
+    },
+    {
+      "tick": 935,
+      "timestamp": "22:09:36",
+      "dominant": "memory",
+      "concentration": 0.5667,
+      "competition": 0.81,
+      "n_activated": 30,
+      "type_counts": {
+        "integrator": 5,
+        "memory": 17,
+        "sensory": 6,
+        "action": 2
+      },
+      "noise_mode": "white",
+      "noise_amp": 0.7432,
+      "phase": "explore",
+      "stagnation_streak": 1,
+      "diversity_n": 8,
+      "burst": false
+    },
+    {
+      "tick": 936,
+      "timestamp": "22:09:41",
+      "dominant": "integrator",
+      "concentration": 0.7333,
+      "competition": 0.6193,
+      "n_activated": 30,
+      "type_counts": {
+        "memory": 7,
+        "integrator": 22,
+        "decider": 1
+      },
+      "noise_mode": "pink",
+      "noise_amp": 0.58,
+      "phase": "explore",
+      "stagnation_streak": 0,
+      "diversity_n": 8,
+      "burst": false
+    },
+    {
+      "tick": 937,
+      "timestamp": "22:09:44",
+      "dominant": "integrator",
+      "concentration": 0.5333,
+      "competition": 0.6482,
+      "n_activated": 30,
+      "type_counts": {
+        "sensory": 1,
+        "memory": 11,
+        "integrator": 16,
+        "decider": 1,
+        "action": 1
+      },
+      "noise_mode": "pink",
+      "noise_amp": 0.6204,
+      "phase": "explore",
+      "stagnation_streak": 1,
+      "diversity_n": 8,
+      "burst": false
+    },
+    {
+      "tick": 938,
+      "timestamp": "22:09:48",
+      "dominant": "integrator",
+      "concentration": 0.7333,
+      "competition": 0.5598,
+      "n_activated": 30,
+      "type_counts": {
+        "memory": 6,
+        "action": 1,
+        "integrator": 22,
+        "decider": 1
+      },
+      "noise_mode": "pink",
+      "noise_amp": 0.136,
+      "phase": "consolidate",
+      "stagnation_streak": 2,
+      "diversity_n": 4,
+      "burst": false
+    },
+    {
+      "tick": 939,
+      "timestamp": "22:09:52",
+      "dominant": "integrator",
+      "concentration": 0.7333,
+      "competition": 0.5598,
+      "n_activated": 30,
+      "type_counts": {
+        "memory": 6,
+        "action": 1,
+        "integrator": 22,
+        "decider": 1
+      },
+      "noise_mode": "sparse",
+      "noise_amp": 0.1146,
+      "phase": "consolidate",
+      "stagnation_streak": 3,
+      "diversity_n": 4,
+      "burst": false
+    },
+    {
+      "tick": 940,
+      "timestamp": "22:09:56",
+      "dominant": "integrator",
+      "concentration": 0.6,
+      "competition": 0.717,
+      "n_activated": 30,
+      "type_counts": {
+        "memory": 11,
+        "integrator": 18,
+        "decider": 1
+      },
+      "noise_mode": "none",
+      "noise_amp": 0.5151,
+      "phase": "explore",
+      "stagnation_streak": 4,
+      "diversity_n": 12,
+      "burst": false
+    },
+    {
+      "tick": 941,
+      "timestamp": "22:10:04",
+      "dominant": "integrator",
+      "concentration": 0.7667,
+      "competition": 0.5816,
+      "n_activated": 30,
+      "type_counts": {
+        "integrator": 23,
+        "memory": 6,
+        "action": 1
+      },
+      "noise_mode": "white",
+      "noise_amp": 0.4662,
+      "phase": "explore",
+      "stagnation_streak": 5,
+      "diversity_n": 12,
+      "burst": false
+    },
+    {
+      "tick": 942,
+      "timestamp": "22:10:08",
+      "dominant": "integrator",
+      "concentration": 0.5,
+      "competition": 0.7476,
+      "n_activated": 30,
+      "type_counts": {
+        "decider": 4,
+        "integrator": 15,
+        "sensory": 9,
+        "action": 1,
+        "memory": 1
+      },
+      "noise_mode": "pink",
+      "noise_amp": 0.4698,
+      "phase": "explore",
+      "stagnation_streak": 6,
+      "diversity_n": 12,
+      "burst": false
+    },
+    {
+      "tick": 943,
+      "timestamp": "22:10:12",
+      "dominant": "action",
+      "concentration": 0.6333,
+      "competition": 0.8281,
+      "n_activated": 30,
+      "type_counts": {
+        "sensory": 5,
+        "action": 19,
+        "decider": 6
+      },
+      "noise_mode": "pink",
+      "noise_amp": 1.1848,
+      "phase": "burst",
+      "stagnation_streak": 0,
+      "diversity_n": 15,
+      "burst": true
+    },
+    {
+      "tick": 944,
+      "timestamp": "22:10:17",
+      "dominant": "memory",
+      "concentration": 0.5667,
+      "competition": 0.762,
+      "n_activated": 30,
+      "type_counts": {
+        "memory": 17,
+        "sensory": 8,
+        "decider": 4,
+        "action": 1
+      },
+      "noise_mode": "pink",
+      "noise_amp": 0.7691,
+      "phase": "explore",
+      "stagnation_streak": 0,
+      "diversity_n": 8,
+      "burst": false
+    },
+    {
+      "tick": 945,
+      "timestamp": "22:10:21",
+      "dominant": "memory",
+      "concentration": 0.6,
+      "competition": 0.6936,
+      "n_activated": 30,
+      "type_counts": {
+        "sensory": 9,
+        "integrator": 2,
+        "memory": 18,
+        "action": 1
+      },
+      "noise_mode": "sparse",
+      "noise_amp": 0.7811,
+      "phase": "explore",
+      "stagnation_streak": 1,
+      "diversity_n": 8,
+      "burst": false
+    },
+    {
+      "tick": 946,
+      "timestamp": "22:10:25",
+      "dominant": "memory",
+      "concentration": 0.5667,
+      "competition": 0.762,
+      "n_activated": 30,
+      "type_counts": {
+        "memory": 17,
+        "sensory": 8,
+        "decider": 4,
+        "action": 1
+      },
+      "noise_mode": "none",
+      "noise_amp": 0.62,
+      "phase": "explore",
+      "stagnation_streak": 2,
+      "diversity_n": 8,
+      "burst": false
+    },
+    {
+      "tick": 947,
+      "timestamp": "22:10:29",
+      "dominant": "action",
+      "concentration": 0.5333,
+      "competition": 0.9058,
+      "n_activated": 30,
+      "type_counts": {
+        "sensory": 9,
+        "action": 16,
+        "decider": 5
+      },
+      "noise_mode": "white",
+      "noise_amp": 0.7545,
+      "phase": "explore",
+      "stagnation_streak": 0,
+      "diversity_n": 8,
+      "burst": false
+    },
+    {
+      "tick": 948,
+      "timestamp": "22:10:33",
+      "dominant": "action",
+      "concentration": 0.5667,
+      "competition": 0.7566,
+      "n_activated": 30,
+      "type_counts": {
+        "memory": 3,
+        "action": 17,
+        "integrator": 1,
+        "decider": 6,
+        "sensory": 3
+      },
+      "noise_mode": "pink",
+      "noise_amp": 0.1438,
+      "phase": "consolidate",
+      "stagnation_streak": 1,
+      "diversity_n": 4,
+      "burst": false
+    },
+    {
+      "tick": 949,
+      "timestamp": "22:10:36",
+      "dominant": "action",
+      "concentration": 0.6,
+      "competition": 0.7326,
+      "n_activated": 30,
+      "type_counts": {
+        "decider": 5,
+        "action": 18,
+        "memory": 3,
+        "sensory": 3,
+        "integrator": 1
+      },
+      "noise_mode": "pink",
+      "noise_amp": 0.1808,
+      "phase": "consolidate",
+      "stagnation_streak": 2,
+      "diversity_n": 4,
+      "burst": false
+    },
+    {
+      "tick": 950,
+      "timestamp": "22:10:40",
+      "dominant": "memory",
+      "concentration": 0.4667,
+      "competition": 0.8146,
+      "n_activated": 30,
+      "type_counts": {
+        "decider": 6,
+        "memory": 14,
+        "sensory": 2,
+        "integrator": 1,
+        "action": 7
+      },
+      "noise_mode": "pink",
+      "noise_amp": 0.4112,
+      "phase": "explore",
+      "stagnation_streak": 0,
+      "diversity_n": 8,
+      "burst": false
+    },
+    {
+      "tick": 951,
+      "timestamp": "22:10:44",
+      "dominant": "memory",
+      "concentration": 0.5333,
+      "competition": 0.7929,
+      "n_activated": 30,
+      "type_counts": {
+        "sensory": 3,
+        "decider": 5,
+        "memory": 16,
+        "action": 5,
+        "integrator": 1
+      },
+      "noise_mode": "sparse",
+      "noise_amp": 0.4382,
+      "phase": "explore",
+      "stagnation_streak": 1,
+      "diversity_n": 8,
+      "burst": false
+    },
+    {
+      "tick": 952,
+      "timestamp": "22:10:48",
+      "dominant": "action",
+      "concentration": 0.5,
+      "competition": 0.8068,
+      "n_activated": 30,
+      "type_counts": {
+        "decider": 4,
+        "action": 15,
+        "memory": 7,
+        "sensory": 3,
+        "integrator": 1
+      },
+      "noise_mode": "none",
+      "noise_amp": 0.5473,
+      "phase": "explore",
+      "stagnation_streak": 0,
+      "diversity_n": 8,
+      "burst": false
+    },
+    {
+      "tick": 953,
+      "timestamp": "22:10:52",
+      "dominant": "memory",
+      "concentration": 0.5333,
+      "competition": 0.7887,
+      "n_activated": 30,
+      "type_counts": {
+        "sensory": 3,
+        "action": 6,
+        "decider": 4,
+        "memory": 16,
+        "integrator": 1
+      },
+      "noise_mode": "white",
+      "noise_amp": 0.583,
+      "phase": "explore",
+      "stagnation_streak": 0,
+      "diversity_n": 8,
+      "burst": false
+    },
+    {
+      "tick": 954,
+      "timestamp": "22:10:56",
+      "dominant": "action",
+      "concentration": 0.5,
+      "competition": 0.8068,
+      "n_activated": 30,
+      "type_counts": {
+        "decider": 4,
+        "action": 15,
+        "memory": 7,
+        "sensory": 3,
+        "integrator": 1
+      },
+      "noise_mode": "pink",
+      "noise_amp": 0.0982,
+      "phase": "consolidate",
+      "stagnation_streak": 0,
+      "diversity_n": 4,
+      "burst": false
+    },
+    {
+      "tick": 955,
+      "timestamp": "22:11:00",
+      "dominant": "integrator",
+      "concentration": 0.9333,
+      "competition": 0.265,
+      "n_activated": 30,
+      "type_counts": {
+        "integrator": 28,
+        "action": 1,
+        "memory": 1
+      },
+      "noise_mode": "pink",
+      "noise_amp": 1.3516,
+      "phase": "burst",
+      "stagnation_streak": 0,
+      "diversity_n": 15,
+      "burst": false
+    },
+    {
+      "tick": 956,
+      "timestamp": "22:11:04",
+      "dominant": "integrator",
+      "concentration": 0.9,
+      "competition": 0.3538,
+      "n_activated": 30,
+      "type_counts": {
+        "action": 1,
+        "integrator": 27,
+        "decider": 2
+      },
+      "noise_mode": "pink",
+      "noise_amp": 0.6649,
+      "phase": "explore",
+      "stagnation_streak": 1,
+      "diversity_n": 8,
+      "burst": false
+    },
+    {
+      "tick": 957,
+      "timestamp": "22:11:08",
+      "dominant": "integrator",
+      "concentration": 0.9,
+      "competition": 0.3538,
+      "n_activated": 30,
+      "type_counts": {
+        "action": 1,
+        "integrator": 27,
+        "decider": 2
+      },
+      "noise_mode": "sparse",
+      "noise_amp": 0.6204,
+      "phase": "explore",
+      "stagnation_streak": 2,
+      "diversity_n": 8,
+      "burst": false
+    },
+    {
+      "tick": 958,
+      "timestamp": "22:11:12",
+      "dominant": "integrator",
+      "concentration": 0.9,
+      "competition": 0.3538,
+      "n_activated": 30,
+      "type_counts": {
+        "integrator": 27,
+        "action": 1,
+        "decider": 2
+      },
+      "noise_mode": "none",
+      "noise_amp": 0.5558,
+      "phase": "explore",
+      "stagnation_streak": 3,
+      "diversity_n": 8,
+      "burst": false
+    },
+    {
+      "tick": 959,
+      "timestamp": "22:11:16",
+      "dominant": "memory",
+      "concentration": 0.6,
+      "competition": 0.7255,
+      "n_activated": 30,
+      "type_counts": {
+        "sensory": 2,
+        "decider": 5,
+        "memory": 18,
+        "integrator": 1,
+        "action": 4
+      },
+      "noise_mode": "white",
+      "noise_amp": 0.5376,
+      "phase": "explore",
+      "stagnation_streak": 0,
+      "diversity_n": 12,
+      "burst": false
+    },
+    {
+      "tick": 960,
+      "timestamp": "22:11:20",
+      "dominant": "memory",
+      "concentration": 0.6667,
+      "competition": 0.6676,
+      "n_activated": 30,
+      "type_counts": {
+        "memory": 20,
+        "sensory": 3,
+        "decider": 3,
+        "action": 3,
+        "integrator": 1
+      },
+      "noise_mode": "pink",
+      "noise_amp": 0.1677,
+      "phase": "consolidate",
+      "stagnation_streak": 1,
+      "diversity_n": 4,
+      "burst": false
+    },
+    {
+      "tick": 961,
+      "timestamp": "22:11:23",
+      "dominant": "memory",
+      "concentration": 0.6,
+      "competition": 0.7255,
+      "n_activated": 30,
+      "type_counts": {
+        "sensory": 2,
+        "decider": 5,
+        "memory": 18,
+        "integrator": 1,
+        "action": 4
+      },
+      "noise_mode": "pink",
+      "noise_amp": 0.1575,
+      "phase": "consolidate",
+      "stagnation_streak": 2,
+      "diversity_n": 4,
+      "burst": false
+    },
+    {
+      "tick": 962,
+      "timestamp": "22:11:27",
+      "dominant": "memory",
+      "concentration": 0.4,
+      "competition": 0.8512,
+      "n_activated": 30,
+      "type_counts": {
+        "action": 9,
+        "decider": 5,
+        "memory": 12,
+        "sensory": 3,
+        "integrator": 1
+      },
+      "noise_mode": "pink",
+      "noise_amp": 0.429,
+      "phase": "explore",
+      "stagnation_streak": 3,
+      "diversity_n": 8,
+      "burst": false
+    },
+    {
+      "tick": 963,
+      "timestamp": "22:11:32",
+      "dominant": "memory",
+      "concentration": 0.6667,
+      "competition": 0.686,
+      "n_activated": 30,
+      "type_counts": {
+        "decider": 5,
+        "memory": 20,
+        "sensory": 4,
+        "action": 1
+      },
+      "noise_mode": "sparse",
+      "noise_amp": 0.6079,
+      "phase": "explore",
+      "stagnation_streak": 4,
+      "diversity_n": 12,
+      "burst": false
+    },
+    {
+      "tick": 964,
+      "timestamp": "22:11:43",
+      "dominant": "integrator",
+      "concentration": 0.8333,
+      "competition": 0.5122,
+      "n_activated": 30,
+      "type_counts": {
+        "integrator": 25,
+        "memory": 3,
+        "decider": 2
+      },
+      "noise_mode": "none",
+      "noise_amp": 0.5161,
+      "phase": "explore",
+      "stagnation_streak": 0,
+      "diversity_n": 12,
+      "burst": false
+    },
+    {
+      "tick": 965,
+      "timestamp": "22:11:55",
+      "dominant": "memory",
+      "concentration": 0.6667,
+      "competition": 0.686,
+      "n_activated": 30,
+      "type_counts": {
+        "decider": 4,
+        "memory": 20,
+        "sensory": 5,
+        "action": 1
+      },
+      "noise_mode": "white",
+      "noise_amp": 0.4628,
+      "phase": "explore",
+      "stagnation_streak": 0,
+      "diversity_n": 8,
+      "burst": false
+    },
+    {
+      "tick": 966,
+      "timestamp": "22:11:59",
+      "dominant": "memory",
+      "concentration": 0.6667,
+      "competition": 0.6375,
+      "n_activated": 30,
+      "type_counts": {
+        "sensory": 3,
+        "decider": 5,
+        "memory": 20,
+        "action": 1,
+        "integrator": 1
+      },
+      "noise_mode": "pink",
+      "noise_amp": 0.1025,
+      "phase": "consolidate",
+      "stagnation_streak": 1,
+      "diversity_n": 4,
+      "burst": false
+    },
+    {
+      "tick": 967,
+      "timestamp": "22:12:04",
+      "dominant": "action",
+      "concentration": 0.6333,
+      "competition": 0.6438,
+      "n_activated": 30,
+      "type_counts": {
+        "memory": 1,
+        "integrator": 1,
+        "action": 19,
+        "decider": 7,
+        "sensory": 2
+      },
+      "noise_mode": "pink",
+      "noise_amp": 1.3047,
+      "phase": "burst",
+      "stagnation_streak": 0,
+      "diversity_n": 15,
+      "burst": false
+    },
+    {
+      "tick": 968,
+      "timestamp": "22:12:09",
+      "dominant": "memory",
+      "concentration": 0.4,
+      "competition": 0.8696,
+      "n_activated": 30,
+      "type_counts": {
+        "memory": 12,
+        "action": 8,
+        "decider": 4,
+        "sensory": 5,
+        "integrator": 1
+      },
+      "noise_mode": "pink",
+      "noise_amp": 0.5001,
+      "phase": "explore",
+      "stagnation_streak": 0,
+      "diversity_n": 8,
+      "burst": false
+    }
+  ],
+  "tick": 969,
+  "last_dominant": "memory"
+}

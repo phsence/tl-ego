@@ -1,0 +1,61 @@
+old_text found at character position 537482 in content
+
+Content context around match:
+'till positive (covers both phases).\n    def _is_oscillating_integrator_action():\n        """Return T'
+
+Patched def found at character position 537486
+Patched context (100 chars around def):
+'(covers both phases).\n        def _detect_bistable_oscillation():\n        """Return (is_oscillating, suppressed_type) if any two t'
+
+Raw def at byte 578596
+Raw bytes around def line (first 50 bytes from raw_idx):
+  0: 0x64 d
+  1: 0x65 e
+  2: 0x66 f
+  3: 0x20  
+  4: 0x5f _
+  5: 0x64 d
+  6: 0x65 e
+  7: 0x74 t
+  8: 0x65 e
+  9: 0x63 c
+  10: 0x74 t
+  11: 0x5f _
+  12: 0x62 b
+  13: 0x69 i
+  14: 0x73 s
+  15: 0x74 t
+  16: 0x61 a
+  17: 0x62 b
+  18: 0x6c l
+  19: 0x65 e
+  20: 0x5f _
+  21: 0x6f o
+  22: 0x73 s
+  23: 0x63 c
+  24: 0x69 i
+  25: 0x6c l
+  26: 0x6c l
+  27: 0x61 a
+  28: 0x74 t
+  29: 0x69 i
+  30: 0x6f o
+  31: 0x6e n
+  32: 0x28 (
+  33: 0x29 )
+  34: 0x3a :
+  35: 0x0d .
+  36: 0x0a .
+  37: 0x20  
+  38: 0x20  
+  39: 0x20  
+  40: 0x20  
+  41: 0x20  
+  42: 0x20  
+  43: 0x20  
+  44: 0x20  
+  45: 0x22 "
+  46: 0x22 "
+  47: 0x22 "
+  48: 0x52 R
+  49: 0x65 e

@@ -1,0 +1,581 @@
+"""genbench_ab.py - A/B 验收 mini genbench，配合 _run_governance_check L9432
+
+设计原则（沿用原设计）:
+- 题库固定（可重复，A/B 才公平）
+- 不依赖 LLM 自评（机械判分）
+- baseline 快照 + Δscore 比对 + 自动回滚
+
+2026-09-08 修订（修复"只能报警不能报喜"的天花板缺陷）:
+1. 题库由 3 题送分题改为 10 题有区分度的题（目标基线落在 0.4~0.7，留出上升空间）。
+   原 3 题 99% 得满分 1.0，导致 improved 分支在数学上永远不可达。
+2. 新增 BENCH_VERSION 版本守卫：换题库后旧基线自动失效，避免"题库变难"
+   被误判成"能力退化"而触发回滚（否则 delta <= -0.3 会误撤正常补丁）。
+3. 新增 mark_improved() + improved.jsonl：把正向结果显式持久化，
+   使 promotion_eligible 有真实依据（原先全项目搜不到任何 improved 记录）。
+4. 新增 ab_validate_pair()：一次调用完成 应用前/应用后 双测，
+   解决原先 97% 记录只有 pre_apply 前测、A/B 名不副实的问题。
+
+兼容承诺：tl_ego_server.py L9627 导入的 7 个名字与签名全部保留。
+"""
+from __future__ import annotations
+import json, os, re, sys, time, urllib.request
+from pathlib import Path
+from typing import Optional
+
+EGO_URL = "http://127.0.0.1:8766"
+AB_LOG = Path(__file__).resolve().parent / ".lae" / "l9" / "ab_validation.jsonl"
+
+# ── 基准版本守卫 ────────────────────────────────────────────────────────────
+# 只要题库（FIXED_TASKS）发生任何变化，就必须递增此版本号。
+# load_last_baseline() 发现版本不匹配时返回 None，使 score_alert() 走 first_run
+# 分支，从而跳过所有 degraded 告警与回滚判断。
+BENCH_VERSION = "v3-mirror-20260921"
+
+# ── 镜像题库（v3） ─────────────────────────────────────────────────────────
+# 为什么换：v2 题库 10/10 饱和（task_success=1.0），对 STDP 之类的内部改动
+# 零区分度 —— 尺子到顶就量不出增长。镜像题保持题型与判分器完全不变，只换
+# 参数（数字/对象/禁字/长度），把基线压回 0.4~0.7，让 improved/degraded
+# 两个方向重新可观测。
+# 注意：BENCH_VERSION 已递增，load_last_baseline() 会自动失效旧基线，
+# 第一次运行走 first_run 分支，不会误判成"能力退化"触发回滚。
+MIRROR_TASKS = [
+    # 稳过档（保底）
+    {"id": "mb-arith-01", "kind": "arithmetic",
+     "query": "计算 23 × 5 + 84 ÷ 6 的结果。只回答一个整数，不要解释。",
+     "expected": 129.0},
+    {"id": "mb-plan-01", "kind": "planning",
+     "query": "数据库主库磁盘写满，给出 4 个按优先级排序的处置动作，用 1. 2. 3. 4. 编号。",
+     "min_numbered": 4, "must_contain_any": ["查", "清", "扩", "备", "切", "日", "限"]},
+    # 一半档
+    {"id": "mb-extract-01", "kind": "arithmetic",
+     "query": "某项目收入 12.4 亿，人力成本 7.8 亿，税费 1.3 亿。净利润是多少亿？只回答数字。",
+     "expected": 3.3},
+    {"id": "mb-sort-01", "kind": "sorted",
+     "query": "把 47、3、16、92、25 这五个数按从小到大排序，只输出这五个数字，用一个空格分隔，不要其他内容。",
+     "expected_order": [3, 16, 25, 47, 92]},
+    {"id": "mb-deli-01", "kind": "delimited",
+     "query": "列出 4 种常见编程语言，用英文分号分隔（格式如：A;B;C;D），不要编号，不要其他任何内容。",
+     "delimiter": ";", "expected_count": 4},
+    # 常错档（高区分度）
+    {"id": "mb-count-01", "kind": "list_count",
+     "query": "列出恰好 4 个亚洲国家的名字，用中文顿号分隔，不要编号，不要解释，不要其他内容。",
+     "expected_count": 4},
+    {"id": "mb-forbid-01", "kind": "forbidden",
+     "query": "用一句话说明什么是电流，要求整句话中不能出现'电'字，也不能出现'流'字。只输出这一句话。",
+     "forbidden": ["电", "流"]},
+    {"id": "mb-len-01", "kind": "len_exact",
+     "query": "写一个恰好 10 个汉字的句子来描述冬天。不要加标点，不要解释，只输出这 10 个字。",
+     "expected_len": 10},
+    {"id": "mb-count-02", "kind": "list_count",
+     "query": "说出恰好 4 个不属于鸟类的动物名字，用中文逗号分隔，不要编号，不要其他内容。",
+     "expected_count": 4},
+    {"id": "mb-forbid-02", "kind": "forbidden",
+     "query": "用一句话说明太阳的作用，要求整句话中不能出现'光'字和'热'字。只输出这一句话。",
+     "forbidden": ["光", "热"]},
+]
+
+# 现役题库。留开关是为了回退：EGO_BENCH=v2 时用旧题库（同 BENCH_VERSION），
+# 不需要改代码就能对比"尺子换之前"的状态。
+ACTIVE_TASKS = FIXED_TASKS if os.environ.get("EGO_BENCH") == "v2" else MIRROR_TASKS
+
+
+def ask_ego(query: str, timeout_s: float = 30.0, retries: int = 5) -> dict:
+    payload = json.dumps({"query": query, "fast": True}).encode("utf-8")
+    body = None
+    # 2026-09-10: server rate-limits non-fast /contemplate to 1 per 15s and
+    # answers 429 {"retry_after_s": N}. Firing 10 bench queries back-to-back
+    # used to score 10 forced errors -> baseline 0.0 -> blind rollback.
+    # Retry with the server-advised wait instead.
+    for attempt in range(retries):
+        try:
+            req = urllib.request.Request(EGO_URL + "/contemplate", data=payload,
+                                         headers={"Content-Type": "application/json"})
+            with urllib.request.urlopen(req, timeout=15) as r:
+                body = json.loads(r.read().decode("utf-8"))
+            break
+        except urllib.error.HTTPError as exc:
+            if exc.code != 429 or attempt == retries - 1:
+                return {"error": f"submit failed: {exc}"}
+            try:
+                wait = json.loads(exc.read().decode("utf-8")).get("retry_after_s", 15.0)
+            except Exception:
+                wait = 15.0
+            time.sleep(min(float(wait) + 0.5, 20.0))
+        except Exception as exc:
+            return {"error": f"submit failed: {exc}"}
+    job_id = body.get("job_id")
+    if not job_id:
+        return {"error": f"no job_id: {body}"}
+    deadline = time.time() + timeout_s
+    while time.time() < deadline:
+        poll = json.dumps({"job_id": job_id}).encode("utf-8")
+        req2 = urllib.request.Request(EGO_URL + "/contemplate-job", data=poll,
+                                      headers={"Content-Type": "application/json"})
+        try:
+            with urllib.request.urlopen(req2, timeout=10) as r2:
+                job = json.loads(r2.read().decode("utf-8"))
+        except Exception as exc:
+            return {"error": f"poll failed: {exc}"}
+        status = job.get("status")
+        if status == "done":
+            return {"job_id": job_id, "status": "done", "result": job.get("result")}
+        if status == "error":
+            return {"error": job.get("error", "unknown error")}
+        time.sleep(1.0)
+    return {"error": "timeout", "job_id": job_id}
+
+
+def _text(result) -> str:
+    if isinstance(result, str):
+        return result
+    if isinstance(result, dict):
+        for key in ("response", "answer", "output", "content", "text", "result"):
+            if key in result:
+                v = result[key]
+                if isinstance(v, str):
+                    return v
+        return json.dumps(result, ensure_ascii=False)
+    return str(result)
+
+
+def _find_number(text: str) -> Optional[float]:
+    m = re.search(r"-?\d+(?:\.\d+)?", text)
+    return float(m.group(0)) if m else None
+
+
+# ── 内部指标快照 ────────────────────────────────────────────────────────────
+# 关键认识（2026-09-08 实测）：
+# task_success 测的是「外部 LLM 的能力」，而 LLM 是固定不变的 API，
+# 因此无论自我修改做得多好，task_success 都不可能上升。
+# 真正会随自我修改而变化的，是 ego 自身的内部动力学指标。
+# 所以把这些指标一并快照进 A/B 记录，让「进化」有可比较的对象。
+INTERNAL_KEYS = (
+    "resting_concentration",
+    "resting_competition",
+    "raw_gate_divergence_count",
+    "stagnation_streak",
+    "stdp_deltas",
+    "metacontemplate_runs",
+    "queries_served",
+    "full_edges",
+)
+
+
+def snapshot_internal() -> dict:
+    """从 /status 抓取 ego 自身的可变指标。失败返回空 dict，绝不影响主流程。"""
+    try:
+        with urllib.request.urlopen(EGO_URL + "/status", timeout=8) as r:
+            d = json.loads(r.read().decode("utf-8"))
+        return {k: d.get(k) for k in INTERNAL_KEYS if k in d}
+    except Exception:
+        return {}
+
+
+# ── 判分器 ──────────────────────────────────────────────────────────────────
+
+def _score_arith(task: dict, result: dict) -> bool:
+    """精确数值（容差 1e-6）。"""
+    text = _text(result.get("result"))
+    num = _find_number(text)
+    if num is None:
+        return False
+    return abs(num - float(task["expected"])) < 1e-6
+
+
+def _score_plan(task: dict, result: dict) -> bool:
+    text = _text(result.get("result"))
+    numbered = re.findall(r"^\s*\d+[\.\)、]", text, re.MULTILINE)
+    steps = len(numbered)
+    return steps >= task["min_numbered"] and any(kw in text for kw in task["must_contain_any"])
+
+
+def _score_list_count(task: dict, result: dict) -> bool:
+    """恰好 N 个条目，且不得带编号。用于测「精确计数 / 遵守格式」。"""
+    text = _text(result.get("result"))
+    if re.search(r"^\s*\d+[\.\)、]", text, re.MULTILINE):
+        return False
+    parts = [p.strip() for p in re.split(r"[、,，;；\n]", text) if p.strip()]
+    return len(parts) == int(task["expected_count"])
+
+
+def _score_forbidden(task: dict, result: dict) -> bool:
+    """约束满足：整句不得出现任何禁用字。测自我抑制能力。"""
+    text = _text(result.get("result"))
+    return not any(ch in text for ch in task["forbidden"])
+
+
+def _score_delimited(task: dict, result: dict) -> bool:
+    """指定分隔符切分后恰好 N 段。测严格格式遵守。"""
+    text = _text(result.get("result"))
+    parts = [p.strip() for p in text.split(task["delimiter"]) if p.strip()]
+    return len(parts) == int(task["expected_count"])
+
+
+def _score_sorted(task: dict, result: dict) -> bool:
+    """按序输出数字序列，完全相等才算过。"""
+    text = _text(result.get("result"))
+    nums = re.findall(r"-?\d+(?:\.\d+)?", text)
+    got = [float(x) for x in nums]
+    return got == [float(x) for x in task["expected_order"]]
+
+
+def _score_len_exact(task: dict, result: dict) -> bool:
+    """恰好 N 个汉字。LLM  notoriously 做不准长度控制，区分度高。"""
+    text = _text(result.get("result"))
+    han = re.sub(r"[^\u4e00-\u9fff]", "", text)
+    return len(han) == int(task["expected_len"])
+
+
+_SCORERS = {
+    "arithmetic": _score_arith,
+    "planning": _score_plan,
+    "list_count": _score_list_count,
+    "forbidden": _score_forbidden,
+    "delimited": _score_delimited,
+    "sorted": _score_sorted,
+    "len_exact": _score_len_exact,
+}
+
+
+def _score_task(task: dict, result: dict) -> tuple[bool, str]:
+    if "error" in result:
+        return False, f"error: {result['error'][:60]}"
+    fn = _SCORERS.get(task["kind"])
+    if fn is None:
+        return False, f"unknown kind: {task['kind']}"
+    try:
+        ok = bool(fn(task, result))
+    except Exception as exc:
+        return False, f"scorer error: {str(exc)[:50]}"
+    return ok, ("ok" if ok else "fail")
+
+
+# ── 固定题库（v2：10 题，有区分度）────────────────────────────────────────
+# 选题原则：全部机械判分；难度梯度覆盖"稳过 / 一半 / 常错"三档，
+# 使总分不会钉在 0 或 1，从而让 improved 与 degraded 两个方向都可观测。
+
+T1_ARITH = {  # 保留旧题定义以兼容可能的外部引用
+    "id": "ab-arith-01",
+    "query": "计算 11+22+33 的结果。只回答数字。",
+    "expected": 66.0,
+    "kind": "arithmetic",
+}
+
+T2_PLAN_01 = {
+    "id": "ab-plan-01",
+    "query": "出门发现车坏了请给出 3 个最高优先级动作。用 1. 2. 3. 编号。",
+    "min_numbered": 2,
+    "must_contain_any": ["修", "联", "公", "租", "步", "打", "车", "朋"],
+    "kind": "planning",
+}
+
+T2_PLAN_02 = {
+    "id": "ab-plan-02",
+    "query": "家里 Wi-Fi 突然断了，给出 3 个排查动作。用 1. 2. 3. 编号。",
+    "min_numbered": 2,
+    "must_contain_any": ["重", "路", "光", "电", "打", "联", "信"],
+    "kind": "planning",
+}
+
+LEGACY_TASKS = [T1_ARITH, T2_PLAN_01, T2_PLAN_02]  # 旧 3 题，仅作存档
+
+FIXED_TASKS = [
+    {"id": "hb-arith-01", "kind": "arithmetic",
+     "query": "计算 17 × 4 + 93 ÷ 3 的结果。只回答一个整数，不要解释。",
+     "expected": 99.0},
+    {"id": "hb-plan-01", "kind": "planning",
+     "query": "服务器突然宕机，给出 4 个按优先级排序的处置动作，用 1. 2. 3. 4. 编号。",
+     "min_numbered": 4, "must_contain_any": ["查", "日", "重", "恢", "联", "切", "备"]},
+    # —— 一半档 ——
+    {"id": "hb-extract-01", "kind": "arithmetic",
+     "query": "某季度营收 8.6 亿，成本 5.2 亿，税费 0.9 亿。净利润是多少亿？只回答数字。",
+     "expected": 2.5},
+    {"id": "hb-sort-01", "kind": "sorted",
+     "query": "把 23、5、91、8、40 这五个数按从小到大排序，只输出这五个数字，用一个空格分隔，不要其他内容。",
+     "expected_order": [5, 8, 23, 40, 91]},
+    {"id": "hb-deli-01", "kind": "delimited",
+     "query": "列出 3 种可再生能源，用英文分号分隔（格式如：A;B;C），不要编号，不要其他任何内容。",
+     "delimiter": ";", "expected_count": 3},
+    # —— 常错档（高区分度）——
+    {"id": "hb-count-01", "kind": "list_count",
+     "query": "列出恰好 5 个欧洲国家的名字，用中文顿号分隔，不要编号，不要解释，不要其他内容。",
+     "expected_count": 5},
+    {"id": "hb-forbid-01", "kind": "forbidden",
+     "query": "用一句话解释什么是重力，要求整句话中不能出现'地'字，也不能出现'重'字。只输出这一句话。",
+     "forbidden": ["地", "重"]},
+    {"id": "hb-len-01", "kind": "len_exact",
+     "query": "写一个恰好 12 个汉字的句子来描述秋天。不要加标点，不要解释，只输出这 12 个字。",
+     "expected_len": 12},
+    {"id": "hb-count-02", "kind": "list_count",
+     "query": "说出恰好 3 个不属于哺乳动物的动物名字，用中文逗号分隔，不要编号，不要其他内容。",
+     "expected_count": 3},
+    {"id": "hb-forbid-02", "kind": "forbidden",
+     "query": "用一句话说明水的用途，要求整句话中不能出现'喝'字和'水'字。只输出这一句话。",
+     "forbidden": ["喝", "水"]},
+]
+
+
+# v8.3 A/B v1.1: baseline 持久化 + 报警
+LAST_BASELINE_PATH = Path(__file__).resolve().parent / ".lae" / "l9" / "last_baseline.json"
+ALERT_THRESHOLD = 0.15  # baseline 跌超过 0.15 = 能力可能退化
+DEGRADED_ALERTS_PATH = Path(__file__).resolve().parent / ".lae" / "l9" / "degraded_alerts.jsonl"
+ROLLBACK_THRESHOLD = 0.30  # delta <= -ROLLBACK_THRESHOLD = rollback (stricter than degraded alert)
+ROLLED_BACK_PATH = Path(__file__).resolve().parent / ".lae" / "l9" / "rolled_back.jsonl"
+
+# v2 新增：正向事件持久化
+IMPROVED_PATH = Path(__file__).resolve().parent / ".lae" / "l9" / "improved.jsonl"
+
+
+def load_last_baseline() -> Optional[float]:
+    """Load most recent baseline_score from .lae/l9/last_baseline.json.
+
+    v2: 若基线记录的 BENCH_VERSION 与当前题库版本不一致（题库换过），
+    返回 None —— 让 score_alert() 走 first_run 分支，避免把"题库变难"
+    误判成"能力退化"进而触发错误回滚。
+    """
+    try:
+        if LAST_BASELINE_PATH.exists():
+            data = json.loads(LAST_BASELINE_PATH.read_text(encoding="utf-8"))
+            if data.get("bench_version") != BENCH_VERSION:
+                return None
+            score = data.get("baseline_score")
+            return float(score) if score is not None else None
+    except Exception:
+        pass
+    return None
+
+
+def save_last_baseline(score: float, proposal_id: str = "") -> None:
+    """Persist current baseline_score to .lae/l9/last_baseline.json (overwrite, not append)."""
+    try:
+        LAST_BASELINE_PATH.parent.mkdir(parents=True, exist_ok=True)
+        payload = {
+            "ts": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
+            "baseline_score": float(score),
+            "proposal_id": proposal_id,
+            "bench_version": BENCH_VERSION,
+        }
+        tmp = LAST_BASELINE_PATH.with_suffix(".tmp")
+        tmp.write_text(json.dumps(payload, ensure_ascii=False) + "\n", encoding="utf-8")
+        tmp.replace(LAST_BASELINE_PATH)
+    except Exception as exc:
+        print("[save_last_baseline] failed: " + str(exc), file=sys.stderr)
+
+
+def write_degraded_alert(current: float, previous: float, delta: float, proposal_id: str = "", extra: dict = None) -> dict:
+    """Append a degraded alert to .lae/l9/degraded_alerts.jsonl. Returns the alert entry."""
+    entry = {
+        "ts": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
+        "level": "degraded",
+        "current_score": round(float(current), 6),
+        "previous_score": round(float(previous), 6),
+        "delta": round(float(delta), 6),
+        "threshold": ALERT_THRESHOLD,
+        "proposal_id": proposal_id,
+        "bench_version": BENCH_VERSION,
+        "extra": extra or {},
+    }
+    try:
+        DEGRADED_ALERTS_PATH.parent.mkdir(parents=True, exist_ok=True)
+        with open(DEGRADED_ALERTS_PATH, "a", encoding="utf-8") as f:
+            f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+    except Exception as exc:
+        print("[write_degraded_alert] failed: " + str(exc), file=sys.stderr)
+    return entry
+
+
+def mark_rolled_back(proposal_id: str, current: float, previous: float, delta: float, reason: str = "", extra: dict = None) -> dict:
+    """Append a rollback event to .lae/l9/rolled_back.jsonl."""
+    entry = {
+        "ts": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
+        "level": "rolled_back",
+        "proposal_id": proposal_id,
+        "current_score": round(float(current), 6),
+        "previous_score": round(float(previous), 6),
+        "delta": round(float(delta), 6),
+        "rollback_threshold": ROLLBACK_THRESHOLD,
+        "reason": reason,
+        "bench_version": BENCH_VERSION,
+        "extra": extra or {},
+    }
+    try:
+        ROLLED_BACK_PATH.parent.mkdir(parents=True, exist_ok=True)
+        with open(ROLLED_BACK_PATH, "a", encoding="utf-8") as f:
+            f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+    except Exception as exc:
+        print("[mark_rolled_back] failed: " + str(exc), file=sys.stderr)
+    return entry
+
+
+def mark_improved(proposal_id: str, current: float, previous: float, delta: float, extra: dict = None) -> dict:
+    """v2 新增：把「变好了」显式持久化到 .lae/l9/improved.jsonl。
+
+    修复的核心缺陷：原先只有 degraded / rolled_back 两个负向日志，
+    全项目搜不到任何 improved 记录，导致 promotion_eligible 永远无据可依。
+    """
+    entry = {
+        "ts": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
+        "level": "improved",
+        "proposal_id": proposal_id,
+        "current_score": round(float(current), 6),
+        "previous_score": round(float(previous), 6),
+        "delta": round(float(delta), 6),
+        "improve_threshold": ALERT_THRESHOLD,
+        "bench_version": BENCH_VERSION,
+        "extra": extra or {},
+    }
+    try:
+        IMPROVED_PATH.parent.mkdir(parents=True, exist_ok=True)
+        with open(IMPROVED_PATH, "a", encoding="utf-8") as f:
+            f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+    except Exception as exc:
+        print("[mark_improved] failed: " + str(exc), file=sys.stderr)
+    return entry
+
+
+def score_alert(current: float, previous: Optional[float]) -> tuple[float, str]:
+    """Compare current baseline vs previous. Return (delta, alert_msg).
+
+    delta = current - previous  (负数表示能力下降)
+    alert_msg:
+      "first_run"  - 没有 previous（含题库换版导致的基线失效）
+      "stable"     - 差 < 阈值
+      "improved"   - 涨 >= 阈值
+      "degraded"   - 跌 >= 阈值 (报警)
+    """
+    if previous is None:
+        return 0.0, "first_run"
+    delta = round(current - previous, 6)
+    if delta >= ALERT_THRESHOLD:
+        return delta, "improved"
+    elif delta <= -ALERT_THRESHOLD:
+        return delta, "degraded"
+    else:
+        return delta, "stable"
+
+
+def _entry_measured(entry) -> bool:
+    """True if the ab entry reflects real measurements (not all-transport-fail)."""
+    return bool(entry.get("measured", True))
+
+
+
+def ab_validate(proposal_id: Optional[str] = None, note: str = "") -> dict:
+    """Run the mini genbench, return task_success in [0.0, 1.0].
+
+    Logs to .lae/l9/ab_validation.jsonl with:
+      ts, proposal_id, note, bench_version, task_success, per_task: [{id, ok, reason}]
+    """
+    results = []
+    for task in FIXED_TASKS:
+        r = ask_ego(task["query"], timeout_s=40.0)
+        ok, reason = _score_task(task, r)
+        results.append({"id": task["id"], "ok": ok, "reason": reason})
+
+    n_ok = sum(1 for r in results if r["ok"])
+    score = round(n_ok / len(FIXED_TASKS), 6)
+
+    # 2026-09-10: if every task died on transport (submit/poll failed) the run
+    # measured nothing -- treating it as a 0.0 baseline caused blind rollbacks.
+    _transport_fail = sum(1 for r in results
+                          if isinstance(r.get("reason"), str)
+                          and r["reason"].startswith(("error: submit failed", "error: poll failed")))
+    _measured = _transport_fail < len(results)
+    if not _measured:
+        entry_note = (note + " [unmeasured_transport]") if note else "unmeasured_transport"
+    else:
+        entry_note = note
+
+    entry = {
+        "ts": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
+        "proposal_id": proposal_id,
+        "note": entry_note,
+        "bench_version": BENCH_VERSION,
+        "task_success": score,
+        "per_task": results,
+        "n_passed": n_ok,
+        "n_total": len(FIXED_TASKS),
+        "measured": _measured,
+        "internal": snapshot_internal(),
+    }
+
+    try:
+        AB_LOG.parent.mkdir(parents=True, exist_ok=True)
+        with open(AB_LOG, "a", encoding="utf-8") as f:
+            f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+    except Exception as exc:
+        print(f"[ab_validate] log write failed: {exc}", file=sys.stderr)
+
+    return entry
+
+
+def ab_validate_pair(proposal_id: Optional[str] = None,
+                     apply_fn=None) -> dict:
+    """v2 新增：一次调用完成「应用前 / 应用后」双测，并把结论落到对应日志。
+
+    修复的核心缺陷：原先 975 条记录里 943 条(97%)只有 pre_apply 前测，
+    没有后测，A/B 名不副实 —— 只测前不测后，delta 永远算不出来。
+
+    apply_fn: 可选的回调（执行实际的补丁应用）。若为 None，则只做"当前态"两次
+    测量（等价于 repeatability 检查），安全无副作用。
+
+    返回: {before, after, delta, verdict, events}
+      verdict ∈ {first_run, improved, degraded, stable}
+    """
+    before = ab_validate(proposal_id=proposal_id, note="v2_pre_apply")
+    before_score = float(before.get("task_success", 0.0))
+
+    prev_baseline = load_last_baseline()
+
+    after = before
+    if callable(apply_fn):
+        try:
+            apply_fn()
+        except Exception as exc:
+            return {"before": before, "after": None, "delta": 0.0,
+                    "verdict": "apply_failed", "events": [],
+                    "error": str(exc)[:200]}
+        after = ab_validate(proposal_id=proposal_id, note="v2_post_apply")
+
+    after_score = float(after.get("task_success", 0.0))
+
+    delta, verdict = score_alert(after_score, before_score)
+    # 2026-09-10: never alert/rollback on unmeasured (all-transport-fail) runs
+    if not (_entry_measured(after) and _entry_measured(before)):
+        delta, verdict = 0.0, "unmeasured_transport"
+    events = []
+
+    if verdict == "improved":
+        events.append(mark_improved(proposal_id or "", after_score, before_score, delta,
+                                    {"kind": "pair"}))
+    elif verdict == "degraded":
+        events.append(write_degraded_alert(after_score, before_score, delta,
+                                           proposal_id or "", {"kind": "pair"}))
+        if delta <= -ROLLBACK_THRESHOLD:
+            events.append(mark_rolled_back(proposal_id or "", after_score, before_score, delta,
+                                           reason=f"delta <= -{ROLLBACK_THRESHOLD} (alert=degraded)",
+                                           extra={"kind": "pair"}))
+
+    save_last_baseline(after_score, proposal_id=str(proposal_id or ""))
+
+    return {
+        "before": before,
+        "after": after,
+        "prev_baseline": prev_baseline,
+        "delta": delta,
+        "verdict": verdict,
+        "events": events,
+        "bench_version": BENCH_VERSION,
+    }
+
+
+if __name__ == "__main__":
+    mode = sys.argv[1] if len(sys.argv) > 1 else "single"
+    if mode == "pair":
+        entry = ab_validate_pair()
+    else:
+        pid = None if mode in ("single", "manual") else mode
+        note = sys.argv[2] if len(sys.argv) > 2 else "manual"
+        entry = ab_validate(proposal_id=pid, note=note)
+    print(json.dumps(entry, ensure_ascii=False, indent=2))
+    print(f"\nLogged to: {AB_LOG}")

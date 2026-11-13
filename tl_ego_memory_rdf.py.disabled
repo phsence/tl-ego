@@ -1,0 +1,194 @@
+"""TL-Ego Memory RDF Bridge
+
+Bridges TL-Ego memory stores to RDF triples for semantic querying.
+
+Primary stores:
+- ego_memory.json (structured categories: action_memories, drives_state, milestones, reasoning_neurons)
+- memory/memu.db (SQLite agent-memory with memory_items table)
+
+Output:
+- RDF graph via rdflib
+- SPARQL-like query helper
+- Serialization: turtle, n3, json-ld, xml
+"""
+
+from __future__ import annotations
+
+import json
+import os
+import sqlite3
+from pathlib import Path
+from typing import Any, Dict, List, Optional, Sequence
+
+try:
+    from rdflib import Graph, Literal, Namespace, RDF, RDFS, URIRef
+    from rdflib.plugins.sparql import prepareQuery
+except ImportError as _rdflib_import_error:
+    raise SystemExit(
+        "rdflib is required for the TL-Ego Memory RDF bridge. "
+        "Install it with: pip install rdflib"
+    ) from _rdflib_import_error
+
+
+WORKSPACE = Path(__file__).resolve().parent.parent.parent
+EGO_MEMORY_PATH = WORKSPACE / "ego_memory.json"
+MEMORY_DB_PATH = WORKSPACE.parent / "memory" / "memu.db"
+
+TL = Namespace("http://tl-ego.internal/tl#")
+MEM = Namespace("http://tl-ego.internal/memory#")
+XSD = Namespace("http://www.w3.org/2001/XMLSchema#")
+
+
+class TLMemoryRDFBridge:
+    def __init__(self, workspace: Optional[Path] = None) -> None:
+        self.workspace = Path(workspace) if workspace else WORKSPACE
+        self.ego_memory_path = self.workspace / "ego_memory.json"
+        self.memory_db_path = self.workspace.parent / "memory" / "memu.db"
+        self.graph = Graph()
+        self.graph.bind("tl", TL)
+        self.graph.bind("mem", MEM)
+        self.graph.bind("xsd", XSD)
+        self._loaded = False
+
+    def load(self, force: bool = False) -> Graph:
+        if self._loaded and not force:
+            return self.graph
+        self.graph.remove((None, None, None))
+        self._load_ego_memory_json()
+        self._load_memu_db()
+        self._loaded = True
+        return self.graph
+
+    def _safe_literal(self, value: Any):
+        if value is None:
+            return Literal("")
+        if isinstance(value, (str, int, float, bool)):
+            return Literal(value)
+        return Literal(json.dumps(value, ensure_ascii=False))
+
+    def _load_ego_memory_json(self) -> None:
+        if not self.ego_memory_path.exists():
+            return
+        try:
+            data = json.loads(self.ego_memory_path.read_text(encoding="utf-8"))
+        except Exception:
+            return
+
+        root = URIRef(str(MEM.EgoMemory))
+        self.graph.add((root, RDF.type, TL.EgoMemory))
+        self.graph.add((root, MEM.timestamp, self._safe_literal(data.get("timestamp"))))
+        self.graph.add((root, MEM.totalEntries, self._safe_literal(data.get("total_entries"))))
+
+        categories = data.get("categories") or []
+        for category in categories:
+            category_name = category.get("category") or "unknown"
+            cat_node = URIRef(f"{MEM.EgoMemoryCategory}/{category_name}")
+            self.graph.add((root, MEM.hasCategory, cat_node))
+            self.graph.add((cat_node, RDF.type, TL.EgoMemoryCategory))
+            self.graph.add((cat_node, MEM.categoryName, self._safe_literal(category_name)))
+            self.graph.add((cat_node, MEM["count"], self._safe_literal(category.get("count"))))
+
+            for item in category.get("recent") or []:
+                item_node = URIRef(f"{MEM.EgoMemoryItem}/{id(item)}")
+                self.graph.add((cat_node, MEM.hasItem, item_node))
+                self.graph.add((item_node, RDF.type, TL.EgoMemoryItem))
+                self.graph.add((item_node, MEM.category, self._safe_literal(category_name)))
+                for key, value in item.items():
+                    if isinstance(value, (str, int, float, bool)):
+                        self.graph.add((item_node, MEM[key], self._safe_literal(value)))
+                    elif isinstance(value, list):
+                        list_node = URIRef(f"{MEM.EgoMemoryItemList}/{id(value)}")
+                        self.graph.add((item_node, MEM[key], list_node))
+                        self.graph.add((list_node, RDF.type, TL.EgoMemoryList))
+                        for idx, element in enumerate(value):
+                            self.graph.add((list_node, MEM[f"item_{idx}"], self._safe_literal(element)))
+                    elif isinstance(value, dict):
+                        dict_node = URIRef(str(MEM.EgoMemoryItemDict) + '/' + str(id(value)))
+                        self.graph.add((item_node, MEM[key], dict_node))
+                        self.graph.add((dict_node, RDF.type, TL.EgoMemoryDict))
+                        for dict_key, dict_value in value.items():
+                            self.graph.add((dict_node, MEM[dict_key], self._safe_literal(dict_value)))
+
+    def _load_memu_db(self) -> None:
+        if not self.memory_db_path.exists():
+            return
+        try:
+            conn = sqlite3.connect(str(self.memory_db_path))
+            conn.row_factory = sqlite3.Row
+            cur = conn.cursor()
+            cur.execute(
+                "SELECT summary, content, memory_type, confidence, recalls, salience, created_at "
+                "FROM memory_items "
+                "ORDER BY rowid DESC "
+                "LIMIT 500"
+            )
+            rows = cur.fetchall()
+            conn.close()
+        except Exception:
+            return
+
+        root = URIRef(str(MEM.AgentMemoryDB))
+        self.graph.add((root, RDF.type, TL.AgentMemoryDB))
+        self.graph.add((root, MEM.source, self._safe_literal(str(self.memory_db_path))))
+
+        for row in rows:
+            item_node = URIRef(f"{MEM.AgentMemoryItem}/{id(row)}")
+            self.graph.add((root, MEM.hasItem, item_node))
+            self.graph.add((item_node, RDF.type, TL.AgentMemoryItem))
+            if row["summary"]:
+                self.graph.add((item_node, MEM.summary, self._safe_literal(row["summary"])))
+            if row["content"]:
+                self.graph.add((item_node, MEM.content, self._safe_literal(row["content"])))
+            if row["memory_type"]:
+                self.graph.add((item_node, MEM.memoryType, self._safe_literal(row["memory_type"])))
+            if row["confidence"] is not None:
+                self.graph.add((item_node, MEM.confidence, self._safe_literal(row["confidence"])))
+            if row["recalls"] is not None:
+                self.graph.add((item_node, MEM.recalls, self._safe_literal(row["recalls"])))
+            if row["salience"] is not None:
+                self.graph.add((item_node, MEM.salience, self._safe_literal(row["salience"])))
+            if row["created_at"]:
+                self.graph.add((item_node, MEM.createdAt, self._safe_literal(row["created_at"])))
+
+    def query(self, sparql: str, init_bindings: Optional[Dict[str, Any]] = None) -> List[Dict[str, Any]]:
+        if not self._loaded:
+            self.load()
+        try:
+            query = prepareQuery(sparql, initNs={"tl": TL, "mem": MEM, "rdf": RDF, "rdfs": RDFS})
+            results = self.graph.query(query, initBindings=init_bindings)
+            out: List[Dict[str, Any]] = []
+            for row in results:
+                if hasattr(row, "labels"):
+                    out.append({str(v): str(row[v]) for v in row.labels})
+                else:
+                    out.append({str(i): str(v) for i, v in enumerate(row)})
+            return out
+        except Exception as exc:
+            return [{"error": str(exc)}]
+
+    def serialize(self, format: str = "turtle") -> str:
+        if not self._loaded:
+            self.load()
+        return self.graph.serialize(format=format)
+
+    def summary(self) -> Dict[str, Any]:
+        if not self._loaded:
+            self.load()
+        return {
+            "triples": len(self.graph),
+            "ego_memory_path": str(self.ego_memory_path),
+            "memory_db_path": str(self.memory_db_path),
+            "memory_db_exists": self.memory_db_path.exists(),
+            "ego_memory_exists": self.ego_memory_path.exists(),
+        }
+
+
+def build_bridge(workspace: Optional[Path] = None) -> TLMemoryRDFBridge:
+    return TLMemoryRDFBridge(workspace=workspace)
+
+
+if __name__ == "__main__":
+    bridge = build_bridge()
+    bridge.load()
+    print(bridge.summary())
+    print(bridge.serialize(format="turtle")[:4000])

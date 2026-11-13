@@ -105,3 +105,46 @@ pip-delete-this-directory.txt
 tempCodeRunnerFile.py
 .streamlit/secrets.toml
 .pypirc
+
+# heavy local dirs / archives (local-only)
+pack-test/
+videos/
+avatar/
+_archive*/
+_bak*/
+.l5bak/
+ego_sandbox/
+.fabric/
+.codegraph/
+.gitnexus/
+.lae_deprecated*/
+*.zip
+*.sqlite3
+status_tmp.json
+
+# local backups / junk (extended)
+*.bak*
+*.backup*
+*.pre*
+*.srcguess
+*.l7bak*
+*.bin
+nul
+.restart_pid.txt
+
+# secrets & private runtime data (local-only)
+ego_key.txt
+memory/
+capability_suites/hidden/
+
+# debug scratch / runtime state (extended)
+_tmp_*
+_old_*
+_patched_*
+*_bak-*
+*_bak_*
+*.p0bak*
+.lae_*
+*.consumed
+tmp_patch
+tmp_new

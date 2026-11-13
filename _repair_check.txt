@@ -1,0 +1,5 @@
+old_text length: 700
+old_text repr (last 120): '\n    _int_press_ctr = int(observation.get("_int_press_counter", 0) or 0)\n    # é\x8e¼ä¿µ5g-20260730-000101: stagnation over'
+
+new_text length: 1758
+new_text repr (last 120): 's regardless of dominant type.\n    _osc, _suppressed = _detect_bistable_oscillation()\n    if _int_press_ctr > 0 or _osc:'

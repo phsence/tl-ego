@@ -1,0 +1,32 @@
+{
+  "schema": "ego_capability_benchmark.v1",
+  "metrics": {
+    "task_success": {
+      "score": 0.0,
+      "weight": 1.0,
+      "description": "Fraction of externally defined tasks completed successfully."
+    },
+    "generalization": {
+      "score": 0.0,
+      "weight": 1.0,
+      "description": "Performance on held-out task variants not used during design."
+    },
+    "planning_depth": {
+      "score": 0.0,
+      "weight": 1.0,
+      "description": "Normalized success on tasks requiring dependent multi-step plans."
+    },
+    "long_horizon_completion": {
+      "score": 0.0,
+      "weight": 1.0,
+      "description": "Completion rate for tasks spanning multiple execution cycles."
+    },
+    "artifact_quality": {
+      "score": 0.0,
+      "weight": 1.0,
+      "description": "Independent quality score for produced code, reports, or decisions."
+    }
+  },
+  "repeated_runs": 0,
+  "evidence_complete": false
+}

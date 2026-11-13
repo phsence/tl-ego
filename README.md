@@ -14,7 +14,7 @@ STDP 涌现网络的 System 1 直觉 + LLM System 2 推理 + 在线持续学习 
 │          (multi_trial_kwta)           │
 │  Step 3  GAC 知识注入 (optional)      │
 │  Step 4  System 2: LLM classify       │
-│          (llm_classify → 8001)        │
+│          (llm_classify → S2 cloud)    │
 │  Step 5  Aggregator → verdict         │
 │  Step 6  STDP 在线可塑性             │
 │          (apply_stdp)                 │
@@ -118,23 +118,17 @@ embed → S1 attractor (multi_trial_kwta) → GAC → S2 LLM (llm_classify)
 ## 文件组织
 
 ```
-tl-ego/
-├── README.md                   ← 项目文档
+projects/tl-ego/
+├── README.md                   ← 项目文档 (本文件)
 ├── tl_ego_server.py            ← 三层全链路服务端（8766端口）
-├── phase1_contemplation.py     ← 独立沉思模块（CLI/测试用）
-├── memory_bridge.py            ← 记忆桥接
-├── fno_noise_adaptor.py        ← FNO 噪声适配
-├── stage*.py                   ← Titan / S2 内部阶段模块
-├── test_*.py                   ← 轻量验证脚本
-└── core/                       ← 核心支持模块
+└── phase1_contemplation.py     ← 独立沉思模块（CLI/测试用）
+
+reports/
+├── attractor_network.html      ← 可视化 (已完成)
+└── tl_ego_phase1_report.json   ← Phase 1 验证报告
+
+skills/neural_grid/              ← 核心引擎
+├── neural_grid.py              ← 网格核心
+├── neural_grid_route.py        ← 路由层
+└── data/                       ← 100K 已训练数据
 ```
-
-## 发布说明
-
-这个仓库是从本地 OpenClaw 工作区整理出的源码发布版，只包含可审查的源码、测试脚本和文档。
-
-未随仓库发布的内容包括：运行日志、SQLite 数据库、轨迹 JSONL、模型权重、缓存、检查点、个人记忆数据和本地修复备份。完整运行通常还需要本地 embedding/LLM/GAC 服务以及对应的私有数据资产。
-
-## License
-
-Apache License 2.0. See LICENSE.

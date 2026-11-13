@@ -1,0 +1,33 @@
+    def _detect_bistable_oscillation():
+        """Return (is_oscillating, suppressed_type) if any two types show bistable oscillation.
+
+        Identifies the two most-frequent types in the last 50 ticks and counts
+        transitions between them. If they flip >= 3 times, oscillation is real.
+        The less-frequent type is returned as the suppressed type for counterfactual injection.
+        Falls back to (False, "") when window is too short or only one type is active."""
+        _traj = RESTING_STATE.get("trajectory", [])
+        if len(_traj) < 32:
+            return False, ""
+        _recent = _traj[-50:]
+        _types = [_t.get("raw_attractor_dominant", _t.get("dominant", "")) for _t in _recent]
+        from collections import Counter
+        _freq = Counter(_types)
+        if len(_freq) < 2:
+            return False, ""
+        _top_two = _freq.most_common(2)
+        _t1, _t2 = _top_two[0][0], _top_two[1][0]
+        _flips = sum(1 for _i in range(1, len(_types))
+                     if (_types[_i] == _t1 and _types[_i - 1] == _t2)
+                     or (_types[_i] == _t2 and _types[_i - 1] == _t1))
+        if _flips >= 3:
+            _suppressed = _t2 if _freq[_t1] >= _freq[_t2] else _t1
+            return True, _suppressed
+        return False, ""
+
+    _int_press_ctr = int(observation.get("_int_press_counter", 0) or 0)
+    # l5g-20260730-000101: stagnation override independence fix.
+    # Previously all 3 branches were AND-ed with 'dominant != integrator', making
+    # the stagnation override dead code when integrator IS dominant + stagnation >= 30.
+    # Fix: if-elif-elif stagnation override fires regardless of dominant type.
+    _osc, _suppressed = _detect_bistable_oscillation()
+    if _int_press_ctr > 0 or _osc:

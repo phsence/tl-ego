@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Ego Capability Suite Manifest",
+  "description": "Frozen manifest for hidden capability suites. Assets are pinned by SHA-256 so a candidate cannot silently read or alter challenge content. Schema: ego_capability_suite_manifest.v1",
+  "type": "object",
+  "required": ["schema", "suite", "assets"],
+  "properties": {
+    "schema": {
+      "const": "ego_capability_suite_manifest.v1"
+    },
+    "suite": {
+      "const": "hidden"
+    },
+    "assets": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$",
+        "description": "SHA-256 hex of the asset file, relative to asset_root"
+      }
+    }
+  }
+}

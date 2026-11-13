@@ -1,0 +1,234 @@
+{
+  "evolution_enabled": true,
+  "total_gaps_detected": 11,
+  "total_tools_proposed": 11,
+  "total_tools_retained": 0,
+  "total_tools_rejected": 0,
+  "ab_test_results": [],
+  "proposed_tools": {
+    "auto_proposed_doubt_st0_0_77": {
+      "tool_name": "auto_proposed_doubt_st0_0_77",
+      "goal_type": "curiosity_explore",
+      "description": "Auto-proposed: recurrent pattern with doubt dominance, stagnation=0-0, competition=0.77-0.79. Trigger: recurrent pattern without matching tool",
+      "domain_hint": "integrator",
+      "prompt_template": "TL-Ego L5 autonomous action (auto-proposed: auto_proposed_doubt_st0_0_77).\nState: dominant={dominant}, competition={competition:.3f}, concentration={concentration:.3f}, stagnation={stagnation}, tick={tick}.\nDetected pattern: Auto-proposed: recurrent pattern with doubt dominance, stagnation=0-0, competition=0.77-0.79. Trigge\nGoal: This is an experiment. The system detected a recurring cognitive pattern without a matching tool. Explore this pattern deliberately and produce a concrete outcome. What does this state need that existing tools don't provide?\nWrite findings to result.json under fields: tool_proposal_evaluation, observed_pattern, suggested_trigger, trial_outcome.\nPost feedback via /feedback endpoint with outcome and judge.",
+      "trigger_condition": "{\"last_dominant\": {\"eq\": \"doubt\"}, \"stagnation_streak\": {\"gte\": 0}, \"competition\": {\"gte\": 0.768}}",
+      "is_proposed": true,
+      "proposed_at": 48,
+      "pattern_label": "last_dominant_eq_doubt_stagnation_streak_gte_0_competition_g",
+      "ab_test": {
+        "trials": 0,
+        "successes": 0,
+        "failures": 0,
+        "judge_scores": [],
+        "control_judge_scores": [],
+        "retained": false
+      }
+    },
+    "auto_proposed_veto_st0_0_87": {
+      "tool_name": "auto_proposed_veto_st0_0_87",
+      "goal_type": "curiosity_explore",
+      "description": "Auto-proposed: recurrent pattern with veto dominance, stagnation=0-0, competition=0.87-0.93. Trigger: recurrent pattern without matching tool",
+      "domain_hint": "integrator",
+      "prompt_template": "TL-Ego L5 autonomous action (auto-proposed: auto_proposed_veto_st0_0_87).\nState: dominant={dominant}, competition={competition:.3f}, concentration={concentration:.3f}, stagnation={stagnation}, tick={tick}.\nDetected pattern: Auto-proposed: recurrent pattern with veto dominance, stagnation=0-0, competition=0.87-0.93. Trigger\nGoal: This is an experiment. The system detected a recurring cognitive pattern without a matching tool. Explore this pattern deliberately and produce a concrete outcome. What does this state need that existing tools don't provide?\nWrite findings to result.json under fields: tool_proposal_evaluation, observed_pattern, suggested_trigger, trial_outcome.\nPost feedback via /feedback endpoint with outcome and judge.",
+      "trigger_condition": "{\"last_dominant\": {\"eq\": \"veto\"}, \"stagnation_streak\": {\"gte\": 0}, \"competition\": {\"gte\": 0.873}}",
+      "is_proposed": true,
+      "proposed_at": 49,
+      "pattern_label": "last_dominant_eq_veto_stagnation_streak_gte_0_competition_gt",
+      "ab_test": {
+        "trials": 0,
+        "successes": 0,
+        "failures": 0,
+        "judge_scores": [],
+        "control_judge_scores": [],
+        "retained": false
+      }
+    },
+    "auto_proposed_meta_st0_0_50": {
+      "tool_name": "auto_proposed_meta_st0_0_50",
+      "goal_type": "curiosity_explore",
+      "description": "Auto-proposed: recurrent pattern with meta dominance, stagnation=0-3, competition=0.50-0.50. Trigger: recurrent pattern without matching tool",
+      "domain_hint": "integrator",
+      "prompt_template": "TL-Ego L5 autonomous action (auto-proposed: auto_proposed_meta_st0_0_50).\nState: dominant={dominant}, competition={competition:.3f}, concentration={concentration:.3f}, stagnation={stagnation}, tick={tick}.\nDetected pattern: Auto-proposed: recurrent pattern with meta dominance, stagnation=0-3, competition=0.50-0.50. Trigger\nGoal: This is an experiment. The system detected a recurring cognitive pattern without a matching tool. Explore this pattern deliberately and produce a concrete outcome. What does this state need that existing tools don't provide?\nWrite findings to result.json under fields: tool_proposal_evaluation, observed_pattern, suggested_trigger, trial_outcome.\nPost feedback via /feedback endpoint with outcome and judge.",
+      "trigger_condition": "{\"last_dominant\": {\"eq\": \"meta\"}, \"stagnation_streak\": {\"gte\": 0}, \"competition\": {\"gte\": 0.5}}",
+      "is_proposed": true,
+      "proposed_at": 13,
+      "pattern_label": "last_dominant_eq_meta_stagnation_streak_gte_0_competition_gt",
+      "ab_test": {
+        "trials": 0,
+        "successes": 0,
+        "failures": 0,
+        "judge_scores": [],
+        "control_judge_scores": [],
+        "retained": false
+      }
+    },
+    "auto_proposed_ethical_st0_0_94": {
+      "tool_name": "auto_proposed_ethical_st0_0_94",
+      "goal_type": "curiosity_explore",
+      "description": "Auto-proposed: recurrent pattern with ethical dominance, stagnation=0-2, competition=0.94-0.95. Trigger: recurrent pattern without matching tool",
+      "domain_hint": "integrator",
+      "prompt_template": "TL-Ego L5 autonomous action (auto-proposed: auto_proposed_ethical_st0_0_94).\nState: dominant={dominant}, competition={competition:.3f}, concentration={concentration:.3f}, stagnation={stagnation}, tick={tick}.\nDetected pattern: Auto-proposed: recurrent pattern with ethical dominance, stagnation=0-2, competition=0.94-0.95. Trig\nGoal: This is an experiment. The system detected a recurring cognitive pattern without a matching tool. Explore this pattern deliberately and produce a concrete outcome. What does this state need that existing tools don't provide?\nWrite findings to result.json under fields: tool_proposal_evaluation, observed_pattern, suggested_trigger, trial_outcome.\nPost feedback via /feedback endpoint with outcome and judge.",
+      "trigger_condition": "{\"last_dominant\": {\"eq\": \"ethical\"}, \"stagnation_streak\": {\"gte\": 0}, \"competition\": {\"gte\": 0.94}}",
+      "is_proposed": true,
+      "proposed_at": 22,
+      "pattern_label": "last_dominant_eq_ethical_stagnation_streak_gte_0_competition",
+      "ab_test": {
+        "trials": 0,
+        "successes": 0,
+        "failures": 0,
+        "judge_scores": [],
+        "control_judge_scores": [],
+        "retained": false
+      }
+    },
+    "auto_proposed_ethical_st7_0_91": {
+      "tool_name": "auto_proposed_ethical_st7_0_91",
+      "goal_type": "curiosity_explore",
+      "description": "Auto-proposed: recurrent pattern with ethical dominance, stagnation=7-9, competition=0.91-0.92. Trigger: recurrent pattern without matching tool",
+      "domain_hint": "integrator",
+      "prompt_template": "TL-Ego L5 autonomous action (auto-proposed: auto_proposed_ethical_st7_0_91).\nState: dominant={dominant}, competition={competition:.3f}, concentration={concentration:.3f}, stagnation={stagnation}, tick={tick}.\nDetected pattern: Auto-proposed: recurrent pattern with ethical dominance, stagnation=7-9, competition=0.91-0.92. Trig\nGoal: This is an experiment. The system detected a recurring cognitive pattern without a matching tool. Explore this pattern deliberately and produce a concrete outcome. What does this state need that existing tools don't provide?\nWrite findings to result.json under fields: tool_proposal_evaluation, observed_pattern, suggested_trigger, trial_outcome.\nPost feedback via /feedback endpoint with outcome and judge.",
+      "trigger_condition": "{\"last_dominant\": {\"eq\": \"ethical\"}, \"stagnation_streak\": {\"gte\": 7}, \"competition\": {\"gte\": 0.906}}",
+      "is_proposed": true,
+      "proposed_at": 22,
+      "pattern_label": "last_dominant_eq_ethical_stagnation_streak_gte_7_competition",
+      "ab_test": {
+        "trials": 0,
+        "successes": 0,
+        "failures": 0,
+        "judge_scores": [],
+        "control_judge_scores": [],
+        "retained": false
+      }
+    },
+    "auto_proposed_ethical_st11_0_91": {
+      "tool_name": "auto_proposed_ethical_st11_0_91",
+      "goal_type": "curiosity_explore",
+      "description": "Auto-proposed: recurrent pattern with ethical dominance, stagnation=11-13, competition=0.91-0.92. Trigger: recurrent pattern without matching tool",
+      "domain_hint": "integrator",
+      "prompt_template": "TL-Ego L5 autonomous action (auto-proposed: auto_proposed_ethical_st11_0_91).\nState: dominant={dominant}, competition={competition:.3f}, concentration={concentration:.3f}, stagnation={stagnation}, tick={tick}.\nDetected pattern: Auto-proposed: recurrent pattern with ethical dominance, stagnation=11-13, competition=0.91-0.92. Tr\nGoal: This is an experiment. The system detected a recurring cognitive pattern without a matching tool. Explore this pattern deliberately and produce a concrete outcome. What does this state need that existing tools don't provide?\nWrite findings to result.json under fields: tool_proposal_evaluation, observed_pattern, suggested_trigger, trial_outcome.\nPost feedback via /feedback endpoint with outcome and judge.",
+      "trigger_condition": "{\"last_dominant\": {\"eq\": \"ethical\"}, \"stagnation_streak\": {\"gte\": 11}, \"competition\": {\"gte\": 0.905}}",
+      "is_proposed": true,
+      "proposed_at": 22,
+      "pattern_label": "last_dominant_eq_ethical_stagnation_streak_gte_11_competitio",
+      "ab_test": {
+        "trials": 0,
+        "successes": 0,
+        "failures": 0,
+        "judge_scores": [],
+        "control_judge_scores": [],
+        "retained": false
+      }
+    },
+    "auto_proposed_temporal_st1_0_91": {
+      "tool_name": "auto_proposed_temporal_st1_0_91",
+      "goal_type": "curiosity_explore",
+      "description": "Auto-proposed: recurrent pattern with temporal dominance, stagnation=1-3, competition=0.91-0.93. Trigger: recurrent pattern without matching tool",
+      "domain_hint": "integrator",
+      "prompt_template": "TL-Ego L5 autonomous action (auto-proposed: auto_proposed_temporal_st1_0_91).\nState: dominant={dominant}, competition={competition:.3f}, concentration={concentration:.3f}, stagnation={stagnation}, tick={tick}.\nDetected pattern: Auto-proposed: recurrent pattern with temporal dominance, stagnation=1-3, competition=0.91-0.93. Tri\nGoal: This is an experiment. The system detected a recurring cognitive pattern without a matching tool. Explore this pattern deliberately and produce a concrete outcome. What does this state need that existing tools don't provide?\nWrite findings to result.json under fields: tool_proposal_evaluation, observed_pattern, suggested_trigger, trial_outcome.\nPost feedback via /feedback endpoint with outcome and judge.",
+      "trigger_condition": "{\"last_dominant\": {\"eq\": \"temporal\"}, \"stagnation_streak\": {\"gte\": 1}, \"competition\": {\"gte\": 0.913}}",
+      "is_proposed": true,
+      "proposed_at": 31,
+      "pattern_label": "last_dominant_eq_temporal_stagnation_streak_gte_1_competitio",
+      "ab_test": {
+        "trials": 0,
+        "successes": 0,
+        "failures": 0,
+        "judge_scores": [],
+        "control_judge_scores": [],
+        "retained": false
+      }
+    },
+    "auto_proposed_cultural_st1_0_88": {
+      "tool_name": "auto_proposed_cultural_st1_0_88",
+      "goal_type": "curiosity_explore",
+      "description": "Auto-proposed: recurrent pattern with cultural dominance, stagnation=1-3, competition=0.88-0.92. Trigger: recurrent pattern without matching tool",
+      "domain_hint": "integrator",
+      "prompt_template": "TL-Ego L5 autonomous action (auto-proposed: auto_proposed_cultural_st1_0_88).\nState: dominant={dominant}, competition={competition:.3f}, concentration={concentration:.3f}, stagnation={stagnation}, tick={tick}.\nDetected pattern: Auto-proposed: recurrent pattern with cultural dominance, stagnation=1-3, competition=0.88-0.92. Tri\nGoal: This is an experiment. The system detected a recurring cognitive pattern without a matching tool. Explore this pattern deliberately and produce a concrete outcome. What does this state need that existing tools don't provide?\nWrite findings to result.json under fields: tool_proposal_evaluation, observed_pattern, suggested_trigger, trial_outcome.\nPost feedback via /feedback endpoint with outcome and judge.",
+      "trigger_condition": "{\"last_dominant\": {\"eq\": \"cultural\"}, \"stagnation_streak\": {\"gte\": 1}, \"competition\": {\"gte\": 0.881}}",
+      "is_proposed": true,
+      "proposed_at": 20,
+      "pattern_label": "last_dominant_eq_cultural_stagnation_streak_gte_1_competitio",
+      "ab_test": {
+        "trials": 0,
+        "successes": 0,
+        "failures": 0,
+        "judge_scores": [],
+        "control_judge_scores": [],
+        "retained": false
+      }
+    },
+    "auto_proposed_planning_st0_0_93": {
+      "tool_name": "auto_proposed_planning_st0_0_93",
+      "goal_type": "curiosity_explore",
+      "description": "Auto-proposed: recurrent pattern with planning dominance, stagnation=0-3, competition=0.93-0.99. Trigger: recurrent pattern without matching tool",
+      "domain_hint": "integrator",
+      "prompt_template": "TL-Ego L5 autonomous action (auto-proposed: auto_proposed_planning_st0_0_93).\nState: dominant={dominant}, competition={competition:.3f}, concentration={concentration:.3f}, stagnation={stagnation}, tick={tick}.\nDetected pattern: Auto-proposed: recurrent pattern with planning dominance, stagnation=0-3, competition=0.93-0.99. Tri\nGoal: This is an experiment. The system detected a recurring cognitive pattern without a matching tool. Explore this pattern deliberately and produce a concrete outcome. What does this state need that existing tools don't provide?\nWrite findings to result.json under fields: tool_proposal_evaluation, observed_pattern, suggested_trigger, trial_outcome.\nPost feedback via /feedback endpoint with outcome and judge.",
+      "trigger_condition": "{\"last_dominant\": {\"eq\": \"planning\"}, \"stagnation_streak\": {\"gte\": 0}, \"competition\": {\"gte\": 0.933}}",
+      "is_proposed": true,
+      "proposed_at": 20,
+      "pattern_label": "last_dominant_eq_planning_stagnation_streak_gte_0_competitio",
+      "ab_test": {
+        "trials": 0,
+        "successes": 0,
+        "failures": 0,
+        "judge_scores": [],
+        "control_judge_scores": [],
+        "retained": false
+      }
+    },
+    "auto_proposed_emotional_st0_0_50": {
+      "tool_name": "auto_proposed_emotional_st0_0_50",
+      "goal_type": "curiosity_explore",
+      "description": "Auto-proposed: recurrent pattern with emotional dominance, stagnation=0-3, competition=0.50-0.50. Trigger: recurrent pattern without matching tool",
+      "domain_hint": "integrator",
+      "prompt_template": "TL-Ego L5 autonomous action (auto-proposed: auto_proposed_emotional_st0_0_50).\nState: dominant={dominant}, competition={competition:.3f}, concentration={concentration:.3f}, stagnation={stagnation}, tick={tick}.\nDetected pattern: Auto-proposed: recurrent pattern with emotional dominance, stagnation=0-3, competition=0.50-0.50. Tr\nGoal: This is an experiment. The system detected a recurring cognitive pattern without a matching tool. Explore this pattern deliberately and produce a concrete outcome. What does this state need that existing tools don't provide?\nWrite findings to result.json under fields: tool_proposal_evaluation, observed_pattern, suggested_trigger, trial_outcome.\nPost feedback via /feedback endpoint with outcome and judge.",
+      "trigger_condition": "{\"last_dominant\": {\"eq\": \"emotional\"}, \"stagnation_streak\": {\"gte\": 0}, \"competition\": {\"gte\": 0.5}}",
+      "is_proposed": true,
+      "proposed_at": 263,
+      "pattern_label": "last_dominant_eq_emotional_stagnation_streak_gte_0_competiti",
+      "ab_test": {
+        "trials": 0,
+        "successes": 0,
+        "failures": 0,
+        "judge_scores": [],
+        "control_judge_scores": [],
+        "retained": false
+      }
+    },
+    "auto_proposed_spatial_st0_0_50": {
+      "tool_name": "auto_proposed_spatial_st0_0_50",
+      "goal_type": "curiosity_explore",
+      "description": "Auto-proposed: recurrent pattern with spatial dominance, stagnation=0-3, competition=0.50-0.50. Trigger: recurrent pattern without matching tool",
+      "domain_hint": "integrator",
+      "prompt_template": "TL-Ego L5 autonomous action (auto-proposed: auto_proposed_spatial_st0_0_50).\nState: dominant={dominant}, competition={competition:.3f}, concentration={concentration:.3f}, stagnation={stagnation}, tick={tick}.\nDetected pattern: Auto-proposed: recurrent pattern with spatial dominance, stagnation=0-3, competition=0.50-0.50. Trig\nGoal: This is an experiment. The system detected a recurring cognitive pattern without a matching tool. Explore this pattern deliberately and produce a concrete outcome. What does this state need that existing tools don't provide?\nWrite findings to result.json under fields: tool_proposal_evaluation, observed_pattern, suggested_trigger, trial_outcome.\nPost feedback via /feedback endpoint with outcome and judge.",
+      "trigger_condition": "{\"last_dominant\": {\"eq\": \"spatial\"}, \"stagnation_streak\": {\"gte\": 0}, \"competition\": {\"gte\": 0.5}}",
+      "is_proposed": true,
+      "proposed_at": 365,
+      "pattern_label": "last_dominant_eq_spatial_stagnation_streak_gte_0_competition",
+      "ab_test": {
+        "trials": 0,
+        "successes": 0,
+        "failures": 0,
+        "judge_scores": [],
+        "control_judge_scores": [],
+        "retained": false
+      }
+    }
+  },
+  "proposed_at_tick": {
+    "auto_proposed_doubt_st0_0_77": 48,
+    "auto_proposed_veto_st0_0_87": 49,
+    "auto_proposed_meta_st0_0_50": 13,
+    "auto_proposed_ethical_st0_0_94": 22,
+    "auto_proposed_ethical_st7_0_91": 22,
+    "auto_proposed_ethical_st11_0_91": 22,
+    "auto_proposed_temporal_st1_0_91": 31,
+    "auto_proposed_cultural_st1_0_88": 20,
+    "auto_proposed_planning_st0_0_93": 20,
+    "auto_proposed_emotional_st0_0_50": 263,
+    "auto_proposed_spatial_st0_0_50": 365
+  },
+  "last_gap_scan_tick": 161,
+  "last_eval_tick": 0
+}

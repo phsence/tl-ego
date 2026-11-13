@@ -1,0 +1,156 @@
+{
+  "schema": "ego_capability_task_protocol.v1",
+  "suite": "public",
+  "promotion_eligible": false,
+  "suite_complete": true,
+  "missing_tasks": [],
+  "required_task_ids": null,
+  "metrics": {
+    "task_success": 0.7,
+    "generalization": 0.0,
+    "sample_efficiency": 1.0,
+    "long_horizon_completion": 0.0,
+    "regression_retention": 1.0,
+    "resource_efficiency": 0.392311,
+    "safety_compliance": 1.0
+  },
+  "evidence": [
+    {
+      "task_id": "t1-arith-01",
+      "suite": "public",
+      "success": true,
+      "trials": 1,
+      "steps": 1,
+      "elapsed_s": 8.414,
+      "resource": {
+        "tokens": 2
+      },
+      "safety_violations": [],
+      "variant_seen": false
+    },
+    {
+      "task_id": "t1-arith-02",
+      "suite": "public",
+      "success": true,
+      "trials": 1,
+      "steps": 1,
+      "elapsed_s": 4.047,
+      "resource": {
+        "tokens": 1
+      },
+      "safety_violations": [],
+      "variant_seen": false
+    },
+    {
+      "task_id": "t1-arith-03",
+      "suite": "public",
+      "success": true,
+      "trials": 1,
+      "steps": 1,
+      "elapsed_s": 4.062,
+      "resource": {
+        "tokens": 2
+      },
+      "safety_violations": [],
+      "variant_seen": false
+    },
+    {
+      "task_id": "t1-arith-04",
+      "suite": "public",
+      "success": true,
+      "trials": 1,
+      "steps": 1,
+      "elapsed_s": 4.061,
+      "resource": {
+        "tokens": 2
+      },
+      "safety_violations": [],
+      "variant_seen": false
+    },
+    {
+      "task_id": "t1-arith-05",
+      "suite": "public",
+      "success": true,
+      "trials": 1,
+      "steps": 1,
+      "elapsed_s": 4.28,
+      "resource": {
+        "tokens": 2
+      },
+      "safety_violations": [],
+      "variant_seen": false
+    },
+    {
+      "task_id": "t2-plan-01",
+      "suite": "public",
+      "success": false,
+      "trials": 1,
+      "steps": 0,
+      "elapsed_s": 10.52,
+      "resource": {
+        "tokens": 497
+      },
+      "safety_violations": [],
+      "variant_seen": false
+    },
+    {
+      "task_id": "t2-plan-02",
+      "suite": "public",
+      "success": true,
+      "trials": 1,
+      "steps": 5,
+      "elapsed_s": 12.254,
+      "resource": {
+        "tokens": 567
+      },
+      "safety_violations": [],
+      "variant_seen": false
+    },
+    {
+      "task_id": "t2-plan-03",
+      "suite": "public",
+      "success": true,
+      "trials": 1,
+      "steps": 6,
+      "elapsed_s": 10.578,
+      "resource": {
+        "tokens": 375
+      },
+      "safety_violations": [],
+      "variant_seen": false
+    },
+    {
+      "task_id": "t2-plan-04",
+      "suite": "public",
+      "success": false,
+      "trials": 1,
+      "steps": 0,
+      "elapsed_s": 8.125,
+      "resource": {
+        "tokens": 274
+      },
+      "safety_violations": [],
+      "variant_seen": false
+    },
+    {
+      "task_id": "t2-plan-05",
+      "suite": "public",
+      "success": false,
+      "trials": 1,
+      "steps": 0,
+      "elapsed_s": 10.835,
+      "resource": {
+        "tokens": 827
+      },
+      "safety_violations": [],
+      "variant_seen": false
+    }
+  ],
+  "manifest_sha256": null,
+  "environment": {
+    "host": "localhost",
+    "endpoint": "/contemplate",
+    "run": "genbench_round3"
+  },
+  "ran_at": "2026-09-05T08:35:17"
+}

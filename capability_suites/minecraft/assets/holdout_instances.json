@@ -1,0 +1,1645 @@
+{
+ "description": "Frozen hidden instances v2 for reach_and_survive. Rule-generated from a read-only RCON surface scan (x475-540, z2055-2100) on 2026-09-14, BEFORE any v2 matrix run (no outcome data used). Selection rule: both endpoints standable (air at stand y, solid non-hazardous below), distance 14-26, 0<=dy<=6, min 5 block separation incl. v1 coords. v1 archived as holdout_instances_v1.json; v1 results remain valid evidence for their freeze.",
+ "task_id": "reach_and_survive",
+ "world_anchor": [
+  505,
+  101,
+  2077
+ ],
+ "holdout": [
+  {
+   "episode_id": "mc-holdout-100",
+   "seed": 4300,
+   "variant_seen": false,
+   "start": [
+    540,
+    58,
+    2072
+   ],
+   "target": [
+    525,
+    58,
+    2084
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-101",
+   "seed": 4301,
+   "variant_seen": false,
+   "start": [
+    503,
+    63,
+    2097
+   ],
+   "target": [
+    524,
+    69,
+    2091
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-102",
+   "seed": 4302,
+   "variant_seen": false,
+   "start": [
+    504,
+    108,
+    2061
+   ],
+   "target": [
+    490,
+    109,
+    2057
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-103",
+   "seed": 4303,
+   "variant_seen": false,
+   "start": [
+    518,
+    75,
+    2098
+   ],
+   "target": [
+    531,
+    75,
+    2089
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-104",
+   "seed": 4304,
+   "variant_seen": false,
+   "start": [
+    508,
+    109,
+    2066
+   ],
+   "target": [
+    519,
+    109,
+    2057
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-105",
+   "seed": 4305,
+   "variant_seen": false,
+   "start": [
+    476,
+    91,
+    2089
+   ],
+   "target": [
+    475,
+    93,
+    2072
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-106",
+   "seed": 4306,
+   "variant_seen": false,
+   "start": [
+    521,
+    101,
+    2095
+   ],
+   "target": [
+    492,
+    95,
+    2074
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-107",
+   "seed": 4307,
+   "variant_seen": false,
+   "start": [
+    528,
+    106,
+    2060
+   ],
+   "target": [
+    515,
+    108,
+    2071
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-108",
+   "seed": 4308,
+   "variant_seen": false,
+   "start": [
+    508,
+    63,
+    2095
+   ],
+   "target": [
+    530,
+    66,
+    2082
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-109",
+   "seed": 4309,
+   "variant_seen": false,
+   "start": [
+    532,
+    98,
+    2074
+   ],
+   "target": [
+    535,
+    102,
+    2060
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-110",
+   "seed": 4310,
+   "variant_seen": false,
+   "start": [
+    475,
+    104,
+    2055
+   ],
+   "target": [
+    498,
+    107,
+    2061
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-111",
+   "seed": 4311,
+   "variant_seen": false,
+   "start": [
+    481,
+    86,
+    2088
+   ],
+   "target": [
+    501,
+    89,
+    2090
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-200",
+   "seed": 4200,
+   "variant_seen": false,
+   "start": [
+    465,
+    90,
+    2091
+   ],
+   "target": [
+    475,
+    84,
+    2091
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-201",
+   "seed": 4201,
+   "variant_seen": false,
+   "start": [
+    485,
+    98,
+    2075
+   ],
+   "target": [
+    493,
+    103,
+    2069
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-202",
+   "seed": 4202,
+   "variant_seen": false,
+   "start": [
+    500,
+    109,
+    2054
+   ],
+   "target": [
+    508,
+    107,
+    2060
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-203",
+   "seed": 4203,
+   "variant_seen": false,
+   "start": [
+    503,
+    104,
+    2079
+   ],
+   "target": [
+    503,
+    105,
+    2069
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-204",
+   "seed": 4204,
+   "variant_seen": false,
+   "start": [
+    509,
+    104,
+    2072
+   ],
+   "target": [
+    519,
+    107,
+    2072
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-205",
+   "seed": 4205,
+   "variant_seen": false,
+   "start": [
+    509,
+    104,
+    2078
+   ],
+   "target": [
+    515,
+    104,
+    2070
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-206",
+   "seed": 4206,
+   "variant_seen": false,
+   "start": [
+    515,
+    107,
+    2065
+   ],
+   "target": [
+    515,
+    107,
+    2055
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-207",
+   "seed": 4207,
+   "variant_seen": false,
+   "start": [
+    525,
+    107,
+    2068
+   ],
+   "target": [
+    515,
+    108,
+    2068
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-208",
+   "seed": 4208,
+   "variant_seen": false,
+   "start": [
+    537,
+    109,
+    2075
+   ],
+   "target": [
+    529,
+    104,
+    2081
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-209",
+   "seed": 4209,
+   "variant_seen": false,
+   "start": [
+    513,
+    104,
+    2079
+   ],
+   "target": [
+    512,
+    104,
+    2069
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-210",
+   "seed": 4210,
+   "variant_seen": false,
+   "start": [
+    519,
+    72,
+    2050
+   ],
+   "target": [
+    528,
+    71,
+    2045
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-211",
+   "seed": 4211,
+   "variant_seen": false,
+   "start": [
+    527,
+    79,
+    2096
+   ],
+   "target": [
+    532,
+    75,
+    2105
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-212",
+   "seed": 4212,
+   "variant_seen": false,
+   "start": [
+    531,
+    66,
+    2081
+   ],
+   "target": [
+    526,
+    67,
+    2090
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-213",
+   "seed": 4213,
+   "variant_seen": false,
+   "start": [
+    533,
+    109,
+    2056
+   ],
+   "target": [
+    524,
+    107,
+    2061
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-214",
+   "seed": 4214,
+   "variant_seen": false,
+   "start": [
+    537,
+    94,
+    2065
+   ],
+   "target": [
+    546,
+    93,
+    2060
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-215",
+   "seed": 4215,
+   "variant_seen": false,
+   "start": [
+    489,
+    103,
+    2067
+   ],
+   "target": [
+    479,
+    101,
+    2064
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-216",
+   "seed": 4216,
+   "variant_seen": false,
+   "start": [
+    491,
+    104,
+    2066
+   ],
+   "target": [
+    498,
+    104,
+    2074
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-217",
+   "seed": 4217,
+   "variant_seen": false,
+   "start": [
+    490,
+    102,
+    2073
+   ],
+   "target": [
+    499,
+    104,
+    2079
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-218",
+   "seed": 4218,
+   "variant_seen": false,
+   "start": [
+    504,
+    107,
+    2062
+   ],
+   "target": [
+    495,
+    111,
+    2056
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-219",
+   "seed": 4219,
+   "variant_seen": false,
+   "start": [
+    520,
+    104,
+    2069
+   ],
+   "target": [
+    511,
+    108,
+    2063
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-220",
+   "seed": 4220,
+   "variant_seen": false,
+   "start": [
+    514,
+    91,
+    2088
+   ],
+   "target": [
+    503,
+    88,
+    2088
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-221",
+   "seed": 4221,
+   "variant_seen": false,
+   "start": [
+    474,
+    86,
+    2086
+   ],
+   "target": [
+    472,
+    93,
+    2075
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-222",
+   "seed": 4222,
+   "variant_seen": false,
+   "start": [
+    507,
+    107,
+    2060
+   ],
+   "target": [
+    497,
+    111,
+    2055
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-223",
+   "seed": 4223,
+   "variant_seen": false,
+   "start": [
+    539,
+    88,
+    2094
+   ],
+   "target": [
+    543,
+    83,
+    2083
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-224",
+   "seed": 4224,
+   "variant_seen": false,
+   "start": [
+    469,
+    58,
+    2047
+   ],
+   "target": [
+    470,
+    59,
+    2059
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-225",
+   "seed": 4225,
+   "variant_seen": false,
+   "start": [
+    486,
+    86,
+    2093
+   ],
+   "target": [
+    481,
+    79,
+    2104
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-226",
+   "seed": 4226,
+   "variant_seen": false,
+   "start": [
+    518,
+    107,
+    2074
+   ],
+   "target": [
+    530,
+    101,
+    2079
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-227",
+   "seed": 4227,
+   "variant_seen": false,
+   "start": [
+    498,
+    104,
+    2073
+   ],
+   "target": [
+    510,
+    98,
+    2079
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-228",
+   "seed": 4228,
+   "variant_seen": false,
+   "start": [
+    474,
+    58,
+    2051
+   ],
+   "target": [
+    488,
+    59,
+    2050
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-229",
+   "seed": 4229,
+   "variant_seen": false,
+   "start": [
+    515,
+    107,
+    2082
+   ],
+   "target": [
+    529,
+    104,
+    2084
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-230",
+   "seed": 4230,
+   "variant_seen": false,
+   "start": [
+    540,
+    79,
+    2079
+   ],
+   "target": [
+    550,
+    74,
+    2069
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-231",
+   "seed": 4231,
+   "variant_seen": false,
+   "start": [
+    514,
+    93,
+    2085
+   ],
+   "target": [
+    528,
+    98,
+    2082
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-232",
+   "seed": 4232,
+   "variant_seen": false,
+   "start": [
+    530,
+    58,
+    2080
+   ],
+   "target": [
+    543,
+    66,
+    2072
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-233",
+   "seed": 4233,
+   "variant_seen": false,
+   "start": [
+    487,
+    86,
+    2085
+   ],
+   "target": [
+    482,
+    82,
+    2100
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-234",
+   "seed": 4234,
+   "variant_seen": false,
+   "start": [
+    511,
+    58,
+    2075
+   ],
+   "target": [
+    527,
+    59,
+    2082
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-235",
+   "seed": 4235,
+   "variant_seen": false,
+   "start": [
+    465,
+    105,
+    2047
+   ],
+   "target": [
+    474,
+    103,
+    2062
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-236",
+   "seed": 4236,
+   "variant_seen": false,
+   "start": [
+    477,
+    109,
+    2060
+   ],
+   "target": [
+    490,
+    109,
+    2072
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-237",
+   "seed": 4237,
+   "variant_seen": false,
+   "start": [
+    527,
+    63,
+    2085
+   ],
+   "target": [
+    509,
+    61,
+    2080
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-238",
+   "seed": 4238,
+   "variant_seen": false,
+   "start": [
+    531,
+    104,
+    2080
+   ],
+   "target": [
+    513,
+    104,
+    2075
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-239",
+   "seed": 4239,
+   "variant_seen": false,
+   "start": [
+    535,
+    109,
+    2078
+   ],
+   "target": [
+    533,
+    109,
+    2058
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-240",
+   "seed": 4240,
+   "variant_seen": false,
+   "start": [
+    531,
+    71,
+    2046
+   ],
+   "target": [
+    511,
+    69,
+    2049
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-241",
+   "seed": 4241,
+   "variant_seen": false,
+   "start": [
+    472,
+    57,
+    2045
+   ],
+   "target": [
+    491,
+    57,
+    2053
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-242",
+   "seed": 4242,
+   "variant_seen": false,
+   "start": [
+    475,
+    100,
+    2066
+   ],
+   "target": [
+    488,
+    96,
+    2082
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-243",
+   "seed": 4243,
+   "variant_seen": false,
+   "start": [
+    493,
+    57,
+    2051
+   ],
+   "target": [
+    467,
+    58,
+    2053
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-244",
+   "seed": 4244,
+   "variant_seen": false,
+   "start": [
+    532,
+    104,
+    2084
+   ],
+   "target": [
+    535,
+    103,
+    2057
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-245",
+   "seed": 4245,
+   "variant_seen": false,
+   "start": [
+    529,
+    109,
+    2056
+   ],
+   "target": [
+    536,
+    104,
+    2054
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-246",
+   "seed": 4246,
+   "variant_seen": false,
+   "start": [
+    542,
+    88,
+    2092
+   ],
+   "target": [
+    535,
+    93,
+    2095
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-247",
+   "seed": 4247,
+   "variant_seen": false,
+   "start": [
+    528,
+    79,
+    2104
+   ],
+   "target": [
+    536,
+    90,
+    2098
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-300",
+   "seed": 4300,
+   "variant_seen": false,
+   "start": [
+    509,
+    92,
+    2089
+   ],
+   "target": [
+    515,
+    99,
+    2089
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-301",
+   "seed": 4301,
+   "variant_seen": false,
+   "start": [
+    481,
+    83,
+    2102
+   ],
+   "target": [
+    487,
+    83,
+    2101
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-302",
+   "seed": 4302,
+   "variant_seen": false,
+   "start": [
+    526,
+    72,
+    2091
+   ],
+   "target": [
+    532,
+    81,
+    2092
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-303",
+   "seed": 4303,
+   "variant_seen": false,
+   "start": [
+    531,
+    110,
+    2052
+   ],
+   "target": [
+    537,
+    104,
+    2053
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-304",
+   "seed": 4304,
+   "variant_seen": false,
+   "start": [
+    474,
+    104,
+    2050
+   ],
+   "target": [
+    468,
+    104,
+    2052
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-305",
+   "seed": 4305,
+   "variant_seen": false,
+   "start": [
+    518,
+    106,
+    2060
+   ],
+   "target": [
+    512,
+    107,
+    2062
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-306",
+   "seed": 4306,
+   "variant_seen": false,
+   "start": [
+    468,
+    93,
+    2075
+   ],
+   "target": [
+    472,
+    91,
+    2080
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-307",
+   "seed": 4307,
+   "variant_seen": false,
+   "start": [
+    520,
+    72,
+    2049
+   ],
+   "target": [
+    524,
+    66,
+    2054
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-308",
+   "seed": 4308,
+   "variant_seen": false,
+   "start": [
+    522,
+    106,
+    2066
+   ],
+   "target": [
+    518,
+    104,
+    2071
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-309",
+   "seed": 4309,
+   "variant_seen": false,
+   "start": [
+    491,
+    110,
+    2070
+   ],
+   "target": [
+    494,
+    105,
+    2064
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-310",
+   "seed": 4310,
+   "variant_seen": false,
+   "start": [
+    533,
+    65,
+    2086
+   ],
+   "target": [
+    527,
+    69,
+    2089
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-311",
+   "seed": 4311,
+   "variant_seen": false,
+   "start": [
+    488,
+    102,
+    2067
+   ],
+   "target": [
+    487,
+    104,
+    2060
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-312",
+   "seed": 4312,
+   "variant_seen": false,
+   "start": [
+    468,
+    76,
+    2060
+   ],
+   "target": [
+    472,
+    83,
+    2066
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-313",
+   "seed": 4313,
+   "variant_seen": false,
+   "start": [
+    497,
+    109,
+    2073
+   ],
+   "target": [
+    503,
+    104,
+    2077
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-314",
+   "seed": 4314,
+   "variant_seen": false,
+   "start": [
+    507,
+    104,
+    2074
+   ],
+   "target": [
+    513,
+    108,
+    2078
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-315",
+   "seed": 4315,
+   "variant_seen": false,
+   "start": [
+    503,
+    97,
+    2077
+   ],
+   "target": [
+    496,
+    99,
+    2075
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-316",
+   "seed": 4316,
+   "variant_seen": false,
+   "start": [
+    545,
+    90,
+    2100
+   ],
+   "target": [
+    543,
+    90,
+    2093
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-317",
+   "seed": 4317,
+   "variant_seen": false,
+   "start": [
+    491,
+    92,
+    2085
+   ],
+   "target": [
+    494,
+    97,
+    2078
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-318",
+   "seed": 4318,
+   "variant_seen": false,
+   "start": [
+    508,
+    89,
+    2087
+   ],
+   "target": [
+    516,
+    93,
+    2087
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-319",
+   "seed": 4319,
+   "variant_seen": false,
+   "start": [
+    476,
+    57,
+    2046
+   ],
+   "target": [
+    484,
+    59,
+    2047
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-320",
+   "seed": 4320,
+   "variant_seen": false,
+   "start": [
+    516,
+    104,
+    2079
+   ],
+   "target": [
+    517,
+    96,
+    2087
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-321",
+   "seed": 4321,
+   "variant_seen": false,
+   "start": [
+    517,
+    71,
+    2097
+   ],
+   "target": [
+    524,
+    81,
+    2101
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-322",
+   "seed": 4322,
+   "variant_seen": false,
+   "start": [
+    529,
+    104,
+    2080
+   ],
+   "target": [
+    537,
+    106,
+    2077
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-323",
+   "seed": 4323,
+   "variant_seen": false,
+   "start": [
+    516,
+    108,
+    2051
+   ],
+   "target": [
+    521,
+    108,
+    2058
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-324",
+   "seed": 4324,
+   "variant_seen": false,
+   "start": [
+    517,
+    107,
+    2078
+   ],
+   "target": [
+    516,
+    108,
+    2069
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-325",
+   "seed": 4325,
+   "variant_seen": false,
+   "start": [
+    536,
+    71,
+    2080
+   ],
+   "target": [
+    529,
+    83,
+    2074
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-326",
+   "seed": 4326,
+   "variant_seen": false,
+   "start": [
+    548,
+    84,
+    2079
+   ],
+   "target": [
+    546,
+    95,
+    2088
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-327",
+   "seed": 4327,
+   "variant_seen": false,
+   "start": [
+    498,
+    58,
+    2048
+   ],
+   "target": [
+    507,
+    57,
+    2051
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-328",
+   "seed": 4328,
+   "variant_seen": false,
+   "start": [
+    487,
+    59,
+    2051
+   ],
+   "target": [
+    495,
+    60,
+    2045
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-329",
+   "seed": 4329,
+   "variant_seen": false,
+   "start": [
+    505,
+    107,
+    2058
+   ],
+   "target": [
+    513,
+    109,
+    2051
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-330",
+   "seed": 4330,
+   "variant_seen": false,
+   "start": [
+    537,
+    109,
+    2049
+   ],
+   "target": [
+    530,
+    106,
+    2057
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-331",
+   "seed": 4331,
+   "variant_seen": false,
+   "start": [
+    491,
+    107,
+    2050
+   ],
+   "target": [
+    501,
+    110,
+    2054
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-332",
+   "seed": 4332,
+   "variant_seen": false,
+   "start": [
+    544,
+    89,
+    2101
+   ],
+   "target": [
+    533,
+    91,
+    2100
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-333",
+   "seed": 4333,
+   "variant_seen": false,
+   "start": [
+    482,
+    83,
+    2059
+   ],
+   "target": [
+    489,
+    84,
+    2050
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-334",
+   "seed": 4334,
+   "variant_seen": false,
+   "start": [
+    498,
+    92,
+    2091
+   ],
+   "target": [
+    489,
+    81,
+    2098
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-335",
+   "seed": 4335,
+   "variant_seen": false,
+   "start": [
+    530,
+    84,
+    2047
+   ],
+   "target": [
+    522,
+    81,
+    2057
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-336",
+   "seed": 4336,
+   "variant_seen": false,
+   "start": [
+    467,
+    86,
+    2080
+   ],
+   "target": [
+    474,
+    84,
+    2091
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-337",
+   "seed": 4337,
+   "variant_seen": false,
+   "start": [
+    474,
+    59,
+    2058
+   ],
+   "target": [
+    485,
+    59,
+    2051
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-338",
+   "seed": 4338,
+   "variant_seen": false,
+   "start": [
+    546,
+    95,
+    2057
+   ],
+   "target": [
+    535,
+    83,
+    2066
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-holdout-339",
+   "seed": 4339,
+   "variant_seen": false,
+   "start": [
+    525,
+    68,
+    2089
+   ],
+   "target": [
+    531,
+    80,
+    2105
+   ],
+   "threshold_h": 3.0
+  }
+ ],
+ "changed_condition": [
+  {
+   "episode_id": "mc-changed-000",
+   "seed": 4200,
+   "variant_seen": false,
+   "start": [
+    477,
+    88,
+    2077
+   ],
+   "target": [
+    511,
+    98,
+    2083
+   ],
+   "threshold_h": 3.0
+  },
+  {
+   "episode_id": "mc-changed-001",
+   "seed": 4201,
+   "variant_seen": false,
+   "start": [
+    505,
+    72,
+    2105
+   ],
+   "target": [
+    485,
+    85,
+    2097
+   ],
+   "threshold_h": 3.0
+  }
+ ]
+}

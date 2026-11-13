@@ -1,0 +1,156 @@
+{
+  "trajectory": [
+    {
+      "tick": 0,
+      "timestamp": "12:02:28",
+      "dominant": "sensory",
+      "concentration": 0.2667,
+      "competition": 0.9666,
+      "n_activated": 30,
+      "type_counts": {
+        "sensory": 8,
+        "integrator": 8,
+        "action": 6,
+        "decider": 3,
+        "memory": 5
+      }
+    },
+    {
+      "tick": 1,
+      "timestamp": "12:02:29",
+      "dominant": "integrator",
+      "concentration": 0.2333,
+      "competition": 0.9965,
+      "n_activated": 30,
+      "type_counts": {
+        "action": 5,
+        "memory": 6,
+        "integrator": 7,
+        "decider": 6,
+        "sensory": 6
+      }
+    },
+    {
+      "tick": 2,
+      "timestamp": "12:02:30",
+      "dominant": "decider",
+      "concentration": 0.2667,
+      "competition": 0.9467,
+      "n_activated": 30,
+      "type_counts": {
+        "integrator": 5,
+        "decider": 8,
+        "sensory": 8,
+        "action": 2,
+        "memory": 7
+      }
+    },
+    {
+      "tick": 3,
+      "timestamp": "12:02:31",
+      "dominant": "integrator",
+      "concentration": 0.3,
+      "competition": 0.9534,
+      "n_activated": 30,
+      "type_counts": {
+        "sensory": 4,
+        "memory": 8,
+        "integrator": 9,
+        "decider": 3,
+        "action": 6
+      }
+    },
+    {
+      "tick": 4,
+      "timestamp": "12:02:32",
+      "dominant": "integrator",
+      "concentration": 0.3,
+      "competition": 0.9411,
+      "n_activated": 30,
+      "type_counts": {
+        "sensory": 5,
+        "memory": 8,
+        "integrator": 9,
+        "action": 6,
+        "decider": 2
+      }
+    },
+    {
+      "tick": 5,
+      "timestamp": "12:02:33",
+      "dominant": "sensory",
+      "concentration": 0.3,
+      "competition": 0.9335,
+      "n_activated": 30,
+      "type_counts": {
+        "decider": 4,
+        "memory": 7,
+        "integrator": 8,
+        "action": 2,
+        "sensory": 9
+      }
+    },
+    {
+      "tick": 6,
+      "timestamp": "12:02:34",
+      "dominant": "sensory",
+      "concentration": 0.3,
+      "competition": 0.9628,
+      "n_activated": 30,
+      "type_counts": {
+        "memory": 8,
+        "decider": 4,
+        "action": 5,
+        "integrator": 4,
+        "sensory": 9
+      }
+    },
+    {
+      "tick": 7,
+      "timestamp": "12:02:35",
+      "dominant": "sensory",
+      "concentration": 0.2667,
+      "competition": 0.9731,
+      "n_activated": 30,
+      "type_counts": {
+        "action": 3,
+        "memory": 7,
+        "integrator": 6,
+        "sensory": 8,
+        "decider": 6
+      }
+    },
+    {
+      "tick": 8,
+      "timestamp": "12:02:36",
+      "dominant": "integrator",
+      "concentration": 0.3,
+      "competition": 0.9564,
+      "n_activated": 30,
+      "type_counts": {
+        "action": 7,
+        "memory": 4,
+        "integrator": 9,
+        "decider": 7,
+        "sensory": 3
+      }
+    },
+    {
+      "tick": 9,
+      "timestamp": "12:02:37",
+      "dominant": "action",
+      "concentration": 0.3,
+      "competition": 0.9811,
+      "n_activated": 30,
+      "type_counts": {
+        "action": 9,
+        "sensory": 5,
+        "integrator": 5,
+        "memory": 6,
+        "decider": 5
+      }
+    }
+  ],
+  "tick": 10,
+  "last_dominant": "action"
+}

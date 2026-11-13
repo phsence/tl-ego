@@ -1,0 +1,6 @@
+9: b''
+10: b'    _int_press_ctr = int(observation.get("_int_press_counter", 0) or 0)'
+11: b'    # \xe9\x8e\xbc\xe4\xbf\xb55g-20260730-000101: stagnation override independence fix.'
+12: b"    # Previously all 3 branches were AND-ed with 'dominant != integrator', making"
+13: b'    # the stagnation override dead code when integrator IS dominant + stagnation >= 30.'
+14: b'    # F'

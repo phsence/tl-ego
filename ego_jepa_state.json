@@ -1,0 +1,15 @@
+{
+  "bins": {
+    "memory": {
+      "count": 1,
+      "last_seen_tick": 256
+    }
+  },
+  "observations": [
+    {
+      "ts": "2026-06-16T12:11:39.617922+00:00",
+      "affordance": "summarize_recent_memory"
+    }
+  ],
+  "created_ts": "2026-06-16T12:11:39.617922+00:00"
+}

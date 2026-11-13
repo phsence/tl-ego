@@ -1,0 +1,20 @@
+10 bytes after old_bytes end (offset 569163):
+  +0: 0x3a :
+  +1: 0x0a .
+  +2: 0x20  
+  +3: 0x20  
+  +4: 0x20  
+  +5: 0x20  
+  +6: 0x20  
+  +7: 0x20  
+  +8: 0x20  
+  +9: 0x20  
+
+old_bytes length: 1043
+old_bytes last 10 bytes: 725f616374696f6e2829 b'r_action()'
+
+old_text length (chars): 1035
+old_text last 30 chars: 'scillating_integrator_action()'
+
+new_text last 30 chars: 'if _int_press_ctr > 0 or _osc:'
+new_text has \r: False

@@ -1,0 +1,128 @@
+{
+  "tree": "C:\\Users\\Administrator\\.openclaw\\workspace\\projects\\tl-ego",
+  "dry": false,
+  "restored": [
+    {
+      "file": "candidate_diversity_engine.py",
+      "source": "C:\\Users\\Administrator\\.openclaw\\workspace\\projects\\tl-ego\\candidate_diversity_engine.py.bak-cfrotate-20260921"
+    },
+    {
+      "file": "counterfactual_generator.py",
+      "source": "C:\\Users\\Administrator\\.openclaw\\workspace\\projects\\tl-ego\\counterfactual_generator.py.l5bak.l5g-20260920-019932.20260920-174531"
+    },
+    {
+      "file": "criticality_regulator.py",
+      "source": "C:\\Users\\Administrator\\.openclaw\\workspace\\projects\\tl-ego\\criticality_regulator.py.bak-20260911-lambda-quantization"
+    },
+    {
+      "file": "defect_to_repair_proposal.py",
+      "source": "C:\\Users\\Administrator\\.openclaw\\workspace\\projects\\tl-ego\\defect_to_repair_proposal.py.l5bak.l5g-20260724-000010.20260724-145354"
+    },
+    {
+      "file": "edge_sparsifier.py",
+      "source": "C:\\Users\\Administrator\\.openclaw\\workspace\\projects\\tl-ego\\edge_sparsifier.py.bak-20260911-dstset"
+    },
+    {
+      "file": "edge_store_v2.py",
+      "source": "C:\\Users\\Administrator\\.openclaw\\workspace\\projects\\tl-ego\\edge_store_v2.py.bak-20260911-231446"
+    },
+    {
+      "file": "ego_jepa.py",
+      "source": "C:\\Users\\Administrator\\.openclaw\\workspace\\projects\\tl-ego\\ego_jepa.py.bak-cfrotate-20260921"
+    },
+    {
+      "file": "ego_mc_body_bridge.py",
+      "source": "C:\\Users\\Administrator\\.openclaw\\workspace\\projects\\tl-ego\\ego_mc_body_bridge.py.bak-token-20260917"
+    },
+    {
+      "file": "ego_minecraft_bridge.py",
+      "source": "C:\\Users\\Administrator\\.openclaw\\workspace\\projects\\tl-ego\\ego_minecraft_bridge.py.bak-cmdrpos-20260923-223807"
+    },
+    {
+      "file": "fractal_attractor.py",
+      "source": "C:\\Users\\Administrator\\.openclaw\\workspace\\projects\\tl-ego\\fractal_attractor.py.l5bak"
+    },
+    {
+      "file": "genbench_ab.py",
+      "source": "C:\\Users\\Administrator\\.openclaw\\workspace\\projects\\tl-ego\\genbench_ab.py.bak-pre-hardbench-20260908"
+    },
+    {
+      "file": "jepa_residual_attributor.py",
+      "source": "C:\\Users\\Administrator\\.openclaw\\workspace\\projects\\tl-ego\\jepa_residual_attributor.py.l5bak.l5g-20260707-000151.20260707-211203"
+    },
+    {
+      "file": "l7_bridge.py",
+      "source": "C:\\Users\\Administrator\\.openclaw\\workspace\\projects\\tl-ego\\l7\\l7_bridge.py.bak-preevidence-20260825-1802"
+    },
+    {
+      "file": "l7_init.py",
+      "source": "C:\\Users\\Administrator\\.openclaw\\workspace\\projects\\tl-ego\\l7\\l7_init.py.l5bak.l5g-20260917-l7-fixes.20260917-115054"
+    },
+    {
+      "file": "l8_cognitive_lab.py",
+      "source": "C:\\Users\\Administrator\\.openclaw\\workspace\\projects\\tl-ego\\l8_cognitive_lab.py.l5bak.l5g-20260713-000103.20260713-093158"
+    },
+    {
+      "file": "l9_autonomy_monitor.py",
+      "source": "C:\\Users\\Administrator\\.openclaw\\workspace\\projects\\tl-ego\\.lae\\_bak_l010_lineage_20260926-165636\\l9_autonomy_monitor.py"
+    },
+    {
+      "file": "memory_bridge.py",
+      "source": "C:\\Users\\Administrator\\.openclaw\\workspace\\projects\\tl-ego\\memory_bridge.py.bak-20260911-hy"
+    },
+    {
+      "file": "min_dwell_policy.py",
+      "source": "C:\\Users\\Administrator\\.openclaw\\workspace\\projects\\tl-ego\\min_dwell_policy.py.l5bak.l5g-20260925-024262.20260925-123605"
+    },
+    {
+      "file": "predictive_plasticity.py",
+      "source": "C:\\Users\\Administrator\\.openclaw\\workspace\\projects\\tl-ego\\predictive_plasticity.py.bak-20260911-230906"
+    },
+    {
+      "file": "pulse_codec.py",
+      "source": "C:\\Users\\Administrator\\.openclaw\\workspace\\projects\\tl-ego\\pulse_codec.py.bak-20260911-idx"
+    },
+    {
+      "file": "residual_to_defect_classifier.py",
+      "source": "C:\\Users\\Administrator\\.openclaw\\workspace\\projects\\tl-ego\\residual_to_defect_classifier.py.l5bak.l5g-20260825-001320.20260825-053146"
+    },
+    {
+      "file": "stage1_consequence_sensor.py",
+      "source": "C:\\Users\\Administrator\\.openclaw\\workspace\\projects\\tl-ego\\stage1_consequence_sensor.py.bak-evkey-20260923-163250"
+    }
+  ],
+  "no_source": [
+    "adaptive_compute_controller.py",
+    "architect_framework.py",
+    "arena_merge_consumer.py",
+    "candidate_pool_expander.py",
+    "candidate_registry.py",
+    "capability_task_protocol.py",
+    "cluster_manager.py",
+    "continuity.py",
+    "counterfactual_pool_enricher.py",
+    "ego_openra_body_bridge.py",
+    "evolution_trigger_policy.py",
+    "fno_train.py",
+    "goal_lifecycle_store.py",
+    "identity_anchor.py",
+    "l0_meta_observer.py",
+    "l7_action_interface.py",
+    "l8_governance.py",
+    "l8_sandbox_verifier.py",
+    "memory_bus_tl_ego_bridge.py",
+    "neural_grid.py",
+    "proprioceptive_loop.py",
+    "runtime_governor.py",
+    "selection_gate.py",
+    "self_model_manifest.py",
+    "shadow_arena_with_judge.py",
+    "snn_layer.py",
+    "stage2_homeostatic_drives.py",
+    "stage3_causal_autobiography.py",
+    "stage4_s2_internalization.py",
+    "telemetry_selfcheck.py",
+    "the.py",
+    "value_check.py"
+  ]
+}

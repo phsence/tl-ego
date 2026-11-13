@@ -1,0 +1,20 @@
+{
+  "feature": "NeuralDirect 直答门控 (option 3, minimal)",
+  "insert_points": {
+    "contemplate path": "tl_ego_server.py:4759 nl_response = _call_llm(resp_prompt, max_tokens=2048)",
+    "chat path 8770": "agent_loop.py AgentLoop.run tool-loop 前"
+  },
+  "gate": {
+    "source": "memu.db memory_items, rows with correction markers + conf>=0.75",
+    "signal_1": "BGE-M3 embedding cosine similarity (port 8002, 1024d) query vs row text",
+    "signal_2": "token overlap re-rank (CJK bigram, same tokenizer logic as _memory_search)",
+    "signal_3": "correction-marker rows (你刚才答错了 etc.) weighted x2",
+    "signal_4": "s1_neural_report top neuron types vote (already computed in pipeline before 4759)",
+    "threshold": "gate passes only if (embedding_sim >= 0.60 AND corrected_row_top1) OR (embedding_sim >= 0.75 without marker)",
+    "fail_safe": "any exception -> return None -> original LLM path unchanged"
+  },
+  "direct_answer_format": "correction row content verbatim + provenance note",
+  "latency_budget": "embedding call ~200-400ms + sqlite ~10ms, vs LLM 4-20s",
+  "audit": "log[\"neural_direct\"] = {fired, sim, row_id, took_ms} -> visible in /contemplate-job response",
+  "rollout_flag": "EGO_NEURAL_DIRECT=0 env kills it instantly (default on, set 0 to disable)"
+}

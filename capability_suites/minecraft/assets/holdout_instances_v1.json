@@ -1,0 +1,15 @@
+{
+  "description": "Frozen hidden instances for reach_and_survive (plan Task 2). Coordinates probed read-only on the live Mosslorn world 2026-09-13, anchor (505, 101, 2077); each start/target column verified standable (air at stand y, solid below). LOCKED: any edit requires re-freezing manifest_v1.json (sha256).",
+  "task_id": "reach_and_survive",
+  "world_anchor": [505, 101, 2077],
+  "holdout": [
+    {"episode_id": "mc-holdout-000", "seed": 4100, "variant_seen": false, "start": [481, 96, 2077], "target": [495, 102, 2077], "threshold_h": 3.0},
+    {"episode_id": "mc-holdout-001", "seed": 4101, "variant_seen": false, "start": [525, 96, 2097], "target": [537, 92, 2093], "threshold_h": 3.0},
+    {"episode_id": "mc-holdout-002", "seed": 4102, "variant_seen": false, "start": [485, 85, 2097], "target": [473, 89, 2093], "threshold_h": 3.0},
+    {"episode_id": "mc-holdout-003", "seed": 4103, "variant_seen": false, "start": [491, 90, 2087], "target": [505, 94, 2087], "threshold_h": 3.0}
+  ],
+  "changed_condition": [
+    {"episode_id": "mc-changed-000", "seed": 4200, "variant_seen": false, "start": [477, 88, 2077], "target": [511, 98, 2083], "threshold_h": 3.0},
+    {"episode_id": "mc-changed-001", "seed": 4201, "variant_seen": false, "start": [505, 72, 2105], "target": [485, 85, 2097], "threshold_h": 3.0}
+  ]
+}

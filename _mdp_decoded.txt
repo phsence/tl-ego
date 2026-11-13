@@ -1,0 +1,179 @@
+"""Pure decision helpers for the resting min-dwell gate."""
+
+
+def is_int_press_escape(
+    *,
+    int_press_counter: int,
+    concentration: float,
+    candidate: str,
+    raw_attractor: str,
+) -> bool:
+    """Release the dwell hold when integration pressure is genuine,
+    independent of the candidate type. The pressure counter and
+    concentration are sufficient signals; a candidate-type guard causes
+    permanent early_hold lock when the selector proposes a non-integrator type."""
+    del raw_attractor  # Kept explicit so callers cannot hide the observed attractor.
+    return bool(
+        int_press_counter >= 6
+        and concentration >= 0.04
+    )
+
+
+def choose_continuing_dominant(
+    *,
+    incumbent: str,
+    candidate: str,
+    raw_attractor: str,
+    stagnation: int = 0,
+) -> str:
+    """Keep the behavioral incumbent when the gate reports `continue`.
+
+    Break the incumbent lock when stagnation is high and the selector's
+    candidate diverges from the raw attractor. Without this check, select_autonomous_dominant
+    can return the incumbent type (e.g. action) due to coverage+novelty bias even when the
+    KWTA attractor is cycling between rule_modification and integrator. The result is a
+    permanent behavioral lock on the incumbent type with stagnation climbing indefinitely.
+    """
+    if incumbent and candidate == incumbent:
+        if stagnation >= 5 and raw_attractor != incumbent:
+            return raw_attractor
+        return incumbent
+    return raw_attractor
+
+
+# ───────────────────────────────────────────────────────────────────────
+# l5g-20260823-000999 P-B v3: Gate-divergence diversity enforcement
+# ───────────────────────────────────────────────────────────────────────
+# Root cause (live observed at tick=146):
+#   * raw_profile has 6 distinct types (architect=58%, rule_modification=22%,
+#     integrator=15%, veto=3%, doubt=1%, action=1%)
+#   * profile (behavioral) has only 3 distinct types (action=70%, integrator=29%, doubt=1%)
+#   * rule_modification and veto from raw_profile are entirely missing from profile
+#   * gate_divergence_count = 126/146 = 86.3% (raw ≠ behavioral almost every tick)
+#   * dominant_dwell locks at action via min_dwell_continue:late_repeat_strong
+#
+# Prior patches v1/v2 worked at the affordance layer (cf-floor, int_press_inject)
+# but the routing chain (observed_raw → arbitration_candidate → behavioral) still
+# compresses 6 raw types into 1-2 behavioral types via the min_dwell dwell lock.
+#
+# Fix: when gate divergence is extreme (>=85%) AND raw is diverse (>=4 types
+# with >=10 ticks each) AND behavioral incumbent dominates (>65%), inject the
+# second-most-frequent raw type into the behavioral dominant for one tick.
+# This forces the profile to count a different type, breaking the dominant
+# lock at the persistence layer (PERSISTENT_IDENTITY updates every 10 ticks).
+#
+# Surgical: a pure-function override applied BEFORE _choose_continuing_dominant
+# in tl_ego_server.py. Returns None to defer to existing logic, or returns a
+# recommended dominant type to override the incumbent.
+def gate_divergence_diversity_override(
+    *,
+    incumbent: str,
+    raw_attractor: str,
+    raw_profile: dict,
+    profile: dict,
+    gate_divergence_count: int,
+    raw_total_ticks: int,
+    stagnation: int = 0,
+    int_press_counter: int = 0,
+    concentration: float = 0.0,
+    min_gate_div_ratio: float = 0.50,
+    min_raw_types: int = 4,
+    min_raw_type_ticks: int = 8,
+    min_behavioral_dominance: float = 0.60,
+) -> str | None:
+    """Return an override dominant type when gate divergence is extreme.
+
+    Conditions (all must hold):
+      1. raw_total_ticks >= 30 (don't fire on early-life data)
+      2. gate_divergence_count / raw_total_ticks >= min_gate_div_ratio (0.80)
+      3. raw_profile has >= min_raw_types distinct types
+      4. At least one non-incumbent raw type has >= min_raw_type_ticks ticks
+      5. incumbent dominates profile with >= min_behavioral_dominance share
+      6. raw_attractor != incumbent (raw already wants to switch)
+
+    Returns:
+      * The second-most-frequent raw type (excluding incumbent), or
+      * None to defer to existing routing logic
+    """
+    # Guard 1: enough ticks
+    if raw_total_ticks < 30:
+        return None
+
+    # Guard 2: gate divergence ratio
+    if raw_total_ticks > 0:
+        gate_div_ratio = gate_divergence_count / raw_total_ticks
+    else:
+        gate_div_ratio = 0.0
+    if gate_div_ratio < min_gate_div_ratio:
+        return None
+
+    # Guard 3: raw type diversity
+    if not isinstance(raw_profile, dict) or len(raw_profile) < min_raw_types:
+        return None
+
+    # Guard 6: raw wants to switch
+    if not raw_attractor or raw_attractor == incumbent:
+        return None
+
+    # Guard 4: a non-incumbent raw type has enough support
+    sorted_raw = sorted(
+        ((t, c) for t, c in raw_profile.items() if t and t != incumbent),
+        key=lambda x: -x[1],
+    )
+    non_inc_raw = [(t, c) for t, c in sorted_raw if c >= min_raw_type_ticks]
+    if not non_inc_raw:
+        return None
+
+    # Guard 5: behavioral incumbent dominance
+    if isinstance(profile, dict) and profile:
+        total = sum(profile.values())
+        if total > 0:
+            inc_share = profile.get(incumbent, 0) / total
+            if inc_share < min_behavioral_dominance:
+                return None
+        else:
+            return None
+    else:
+        return None
+
+    # All guards passed: pick the best non-incumbent raw type.
+    # Prefer raw_attractor_dominant if it has enough support; else the next.
+    override_target = raw_attractor
+    if not override_target or override_target == incumbent:
+        override_target = non_inc_raw[0][0]
+
+    return override_target
+
+
+def should_release_late_dwell(
+    *,
+    crisis: bool,
+    strong_repeated: bool,
+    integrator_escape: bool,
+    int_press_escape: bool = False,
+    raw_attr_int_press_escape: bool = False,
+    uniform_release: bool,
+    stale_incumbent_release: bool,
+    autonomous_competitive_release: bool,
+) -> bool:
+    """Return whether a late-dwell challenger may replace the incumbent.
+
+    int_press_escape: when _int_press_ctr >= 9, concentration >= 0.09, and
+    per-neuron margin >= 0, integration pressure is genuine and must be allowed
+    to break the dwell lock even in the late window (dwell >= 3).
+
+    raw_attr_int_press_escape: when _raw_attractor_dominant == integrator AND
+    _int_press_ctr >= 8 AND _md_conc >= 0.08, the raw KWTA attractor is
+    persistently integrator and integration pressure is genuine. This escapes
+    the late-window lock even when _md_cand == _md_prev (action→action deadlock)
+    and all other late-window conditions are False."""
+    return bool(
+        crisis
+        or strong_repeated
+        or integrator_escape
+        or int_press_escape
+        or raw_attr_int_press_escape
+        or uniform_release
+        or stale_incumbent_release
+        or autonomous_competitive_release
+    )
